@@ -889,7 +889,7 @@ Redis Compose 当前使用 latest。长期严格复现需在验证后固定镜�
 
 不要一概删除 tests/fixtures 或 deploy/ragflow/docs/real：当前代码直接引用其中部分文件。其他收集资料应核对分发授权、体积和来源，必要时提供获取说明。
 
-GitHub 托管源码，GitHub Pages 不能直接运行本项目 Python、Redis 和工作流。README 不代表已经创建远程仓库或完成推送。
+项目源码发布于 [yanyan759/mineguard-agents](https://github.com/yanyan759/mineguard-agents)，默认分支为 `main`。GitHub 托管源码；GitHub Pages 不能直接运行本项目 Python、Redis 和工作流，下载后请按第 7 节启动。
 
 超过 100 MiB 的完整研究档案不纳入 Git；相应来源、下载方法和回放命令见 [外部研究资料说明](docs/external-data.md)。这些本地文件仍可保留在原目录。
 
