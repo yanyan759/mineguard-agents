@@ -1,0 +1,203 @@
+{
+  "scenario_id": "e2e-005-resource-insufficient",
+  "description": "调度决策要求大型支护材料但库存不足，资源评估判定 infeasible，触发回退到调度决策 Agent 调整方案",
+  "perception_input": {
+    "context": {
+      "workflow_run_id": "run-005",
+      "trace_id": "trace-005",
+      "thread_id": "thread-005",
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-005",
+      "current_stage": "perception_warning",
+      "iteration_count": 0,
+      "max_iterations": 2,
+      "started_at": "2026-07-24T18:00:00"
+    },
+    "monitoring_window": {
+      "start_time": "2026-07-24T17:00:00",
+      "end_time": "2026-07-24T18:00:00",
+      "sampling_metadata": {
+        "expected_frequency_hz": 1.0,
+        "actual_frequency_hz": 0.85,
+        "missing_rate": 0.15
+      }
+    },
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "microseismic_events": [
+      {
+        "event_id": "evt-005-001",
+        "timestamp": "2026-07-24T17:05:00",
+        "area": "巷道-5",
+        "energy_j": 25000.0,
+        "event_frequency_per_hour": 10.0,
+        "source_coordinate": [500.0, 350.0, -600.0],
+        "b_value": 0.9
+      },
+      {
+        "event_id": "evt-005-002",
+        "timestamp": "2026-07-24T17:10:00",
+        "area": "巷道-5",
+        "energy_j": 35000.0,
+        "event_frequency_per_hour": 11.0,
+        "source_coordinate": [502.0, 352.0, -602.0],
+        "b_value": 0.85
+      },
+      {
+        "event_id": "evt-005-003",
+        "timestamp": "2026-07-24T17:20:00",
+        "area": "巷道-5",
+        "energy_j": 45000.0,
+        "event_frequency_per_hour": 12.0,
+        "source_coordinate": [501.0, 351.0, -601.0],
+        "b_value": 0.8
+      },
+      {
+        "event_id": "evt-005-004",
+        "timestamp": "2026-07-24T17:30:00",
+        "area": "巷道-5",
+        "energy_j": 55000.0,
+        "event_frequency_per_hour": 13.0,
+        "source_coordinate": [500.5, 350.5, -600.5],
+        "b_value": 0.78
+      },
+      {
+        "event_id": "evt-005-005",
+        "timestamp": "2026-07-24T17:40:00",
+        "area": "巷道-5",
+        "energy_j": 65000.0,
+        "event_frequency_per_hour": 14.0,
+        "source_coordinate": [499.0, 351.5, -599.0],
+        "b_value": 0.75
+      },
+      {
+        "event_id": "evt-005-006",
+        "timestamp": "2026-07-24T17:50:00",
+        "area": "巷道-5",
+        "energy_j": 70000.0,
+        "event_frequency_per_hour": 15.0,
+        "source_coordinate": [501.5, 350.8, -601.5],
+        "b_value": 0.72
+      }
+    ],
+    "borehole_stress": [],
+    "roof_separation": [],
+    "hydraulic_support_resistance": [],
+    "roadway_surface_displacement": []
+  },
+  "expected_warning": {
+    "agent_name": "感知预警 Agent",
+    "status": "success",
+    "warning_id": "warning-005",
+    "risk_level": "orange",
+    "risk_score": 0.52,
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "model_mode": "rule_based",
+    "affected_area": {
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-005",
+      "locations": ["巷道-5"]
+    },
+    "causal_factors": [
+      {
+        "factor": "微震事件频次升高",
+        "importance": 0.5,
+        "trend": "rising",
+        "evidence": [
+          "最大事件频次 15.00 次/小时",
+          "窗口首末频次变化 5.00 次/小时"
+        ]
+      },
+      {
+        "factor": "b值降低",
+        "importance": 0.5,
+        "trend": "falling",
+        "evidence": [
+          "最小 b 值 0.720",
+          "最近 b 值 0.720"
+        ]
+      },
+      {
+        "factor": "b值持续下降",
+        "importance": 0.5,
+        "trend": "falling",
+        "evidence": ["窗口首末 b 值下降 0.180"]
+      }
+    ],
+    "anomalies": ["微震事件频次升高", "b值降低", "b值持续下降"],
+    "data_quality": {
+      "completeness": 0.85,
+      "timeliness": 0.85,
+      "missing_sources": ["borehole_stress", "roof_separation", "hydraulic_support_resistance", "roadway_surface_displacement"],
+      "issues": ["监测采样缺失率超过 simulation-v1 数据质量边界"]
+    },
+    "triggered_rules": [
+      "max_energy_severity_2",
+      "frequency_severity_2",
+      "b_value_severity_2",
+      "b_value_drop_severity_2",
+      "high_energy_count_severity_2",
+      "event_count_severity_2",
+      "frequency_rising"
+    ],
+    "fast_alert_required": false,
+    "recommended_recheck_minutes": 10,
+    "summary": "橙色预警，但资源评估阶段发现支护材料（大型工字钢）库存严重不足",
+    "evidence": [
+      {
+        "source_type": "microseismic_monitor",
+        "description": "频次 10→15 次/小时，b 值 0.9→0.72",
+        "value": {"max_energy_j": 70000.0, "min_b_value": 0.72, "max_frequency": 15.0}
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "started_at": "2026-07-24T18:00:01",
+    "finished_at": "2026-07-24T18:00:03",
+    "duration_ms": 2200,
+    "next_action": "knowledge_retrieval",
+    "confidence": 0.80
+  },
+  "resource_snapshot": {
+    "personnel": [
+      {
+        "resource_id": "res-worker-003",
+        "name": "支护班组",
+        "required": 12.0,
+        "available": 14.0,
+        "unit": "人",
+        "status": "available"
+      }
+    ],
+    "support_materials": [
+      {
+        "resource_id": "res-material-004",
+        "name": "大型工字钢",
+        "required": 100.0,
+        "available": 15.0,
+        "unit": "根",
+        "status": "available"
+      },
+      {
+        "resource_id": "res-material-005",
+        "name": "锚索",
+        "required": 60.0,
+        "available": 80.0,
+        "unit": "根",
+        "status": "available"
+      }
+    ],
+    "equipment": [
+      {
+        "resource_id": "res-equip-003",
+        "name": "大型钻机",
+        "required": 3.0,
+        "available": 1.0,
+        "unit": "台",
+        "status": "available"
+      }
+    ]
+  },
+  "expected_resource_feasibility": "infeasible"
+}

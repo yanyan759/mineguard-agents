@@ -1,0 +1,199 @@
+{
+  "scenario_id": "e2e-006-reflection-rollback",
+  "description": "处置执行后风险未下降（橙色→仍橙色），反思 Agent 检测到风险变化趋势为 unchanged，触发定向返回到调度决策 Agent 重新生成方案",
+  "perception_input": {
+    "context": {
+      "workflow_run_id": "run-006",
+      "trace_id": "trace-006",
+      "thread_id": "thread-006",
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-006",
+      "current_stage": "perception_warning",
+      "iteration_count": 0,
+      "max_iterations": 2,
+      "started_at": "2026-07-25T08:00:00"
+    },
+    "monitoring_window": {
+      "start_time": "2026-07-25T07:00:00",
+      "end_time": "2026-07-25T08:00:00",
+      "sampling_metadata": {
+        "expected_frequency_hz": 1.0,
+        "actual_frequency_hz": 0.88,
+        "missing_rate": 0.12
+      }
+    },
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "microseismic_events": [
+      {
+        "event_id": "evt-006-001",
+        "timestamp": "2026-07-25T07:05:00",
+        "area": "工作面-6",
+        "energy_j": 90000.0,
+        "event_frequency_per_hour": 18.0,
+        "source_coordinate": [600.0, 400.0, -700.0],
+        "b_value": 0.55
+      },
+      {
+        "event_id": "evt-006-002",
+        "timestamp": "2026-07-25T07:10:00",
+        "area": "工作面-6",
+        "energy_j": 110000.0,
+        "event_frequency_per_hour": 16.0,
+        "source_coordinate": [602.0, 398.0, -702.0],
+        "b_value": 0.5
+      },
+      {
+        "event_id": "evt-006-003",
+        "timestamp": "2026-07-25T07:15:00",
+        "area": "工作面-6",
+        "energy_j": 130000.0,
+        "event_frequency_per_hour": 17.0,
+        "source_coordinate": [601.0, 401.0, -701.0],
+        "b_value": 0.48
+      },
+      {
+        "event_id": "evt-006-004",
+        "timestamp": "2026-07-25T07:25:00",
+        "area": "工作面-6",
+        "energy_j": 140000.0,
+        "event_frequency_per_hour": 19.0,
+        "source_coordinate": [599.0, 399.0, -699.0],
+        "b_value": 0.45
+      },
+      {
+        "event_id": "evt-006-005",
+        "timestamp": "2026-07-25T07:40:00",
+        "area": "工作面-6",
+        "energy_j": 160000.0,
+        "event_frequency_per_hour": 20.0,
+        "source_coordinate": [600.5, 400.5, -700.5],
+        "b_value": 0.42
+      }
+    ],
+    "borehole_stress": [],
+    "roof_separation": [],
+    "hydraulic_support_resistance": [],
+    "roadway_surface_displacement": []
+  },
+  "expected_warning": {
+    "agent_name": "感知预警 Agent",
+    "status": "success",
+    "warning_id": "warning-006",
+    "risk_level": "orange",
+    "risk_score": 0.70,
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "model_mode": "rule_based",
+    "affected_area": {
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-006",
+      "locations": ["工作面-6"]
+    },
+    "causal_factors": [
+      {
+        "factor": "微震事件频次升高",
+        "importance": 0.75,
+        "trend": "rising",
+        "evidence": [
+          "最大事件频次 20.00 次/小时",
+          "窗口首末频次变化 2.00 次/小时"
+        ]
+      },
+      {
+        "factor": "高能微震集中出现",
+        "importance": 0.75,
+        "trend": "rising",
+        "evidence": [
+          "高能事件 4 次",
+          "空间集中比例 100%"
+        ]
+      },
+      {
+        "factor": "最大能量异常升高",
+        "importance": 0.75,
+        "trend": "rising",
+        "evidence": ["最大微震能量 160000.00 J"]
+      },
+      {
+        "factor": "b值降低",
+        "importance": 1.0,
+        "trend": "falling",
+        "evidence": [
+          "最小 b 值 0.420",
+          "最近 b 值 0.420"
+        ]
+      },
+      {
+        "factor": "b值持续下降",
+        "importance": 1.0,
+        "trend": "falling",
+        "evidence": ["窗口首末 b 值下降 0.130"]
+      }
+    ],
+    "anomalies": [
+      "微震事件频次升高",
+      "高能微震集中出现",
+      "最大能量异常升高",
+      "b值降低",
+      "b值持续下降"
+    ],
+    "data_quality": {
+      "completeness": 0.88,
+      "timeliness": 0.88,
+      "missing_sources": ["borehole_stress", "roof_separation", "hydraulic_support_resistance", "roadway_surface_displacement"],
+      "issues": []
+    },
+    "triggered_rules": [
+      "max_energy_severity_3",
+      "frequency_severity_4",
+      "b_value_severity_3",
+      "b_value_drop_severity_3",
+      "high_energy_count_severity_2",
+      "event_count_severity_3",
+      "frequency_rising",
+      "high_energy_spatial_cluster"
+    ],
+    "fast_alert_required": true,
+    "recommended_recheck_minutes": 3,
+    "summary": "橙色预警，高能微震集中，b值低至0.42。本次场景聚焦于：第一轮处置执行后风险仍未下降，需要反思 Agent 识别问题并触发回退",
+    "evidence": [
+      {
+        "source_type": "microseismic_monitor",
+        "description": "5次事件中4次>50000J，b值0.55→0.42，空间高度聚类",
+        "value": {"max_energy_j": 160000.0, "min_b_value": 0.42, "max_frequency": 20.0}
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "started_at": "2026-07-25T08:00:01",
+    "finished_at": "2026-07-25T08:00:04",
+    "duration_ms": 2800,
+    "next_action": "knowledge_retrieval",
+    "confidence": 0.85
+  },
+  "resource_snapshot": {
+    "personnel": [
+      {
+        "resource_id": "res-worker-004",
+        "name": "应急队伍",
+        "required": 10.0,
+        "available": 12.0,
+        "unit": "人",
+        "status": "available"
+      }
+    ],
+    "support_materials": [
+      {
+        "resource_id": "res-material-006",
+        "name": "钢拱架",
+        "required": 40.0,
+        "available": 60.0,
+        "unit": "架",
+        "status": "available"
+      }
+    ],
+    "equipment": []
+  },
+  "expected_resource_feasibility": "feasible"
+}

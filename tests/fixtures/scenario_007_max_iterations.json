@@ -1,0 +1,216 @@
+{
+  "scenario_id": "e2e-007-max-iterations",
+  "description": "两次迭代后仍未解决问题，反思 Agent 达到 max_iterations=2 上限，停止自动迭代，标记 human_review_required=true 请求人工处理",
+  "perception_input": {
+    "context": {
+      "workflow_run_id": "run-007",
+      "trace_id": "trace-007",
+      "thread_id": "thread-007",
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-007",
+      "current_stage": "perception_warning",
+      "iteration_count": 2,
+      "max_iterations": 2,
+      "started_at": "2026-07-25T10:00:00"
+    },
+    "monitoring_window": {
+      "start_time": "2026-07-25T09:00:00",
+      "end_time": "2026-07-25T10:00:00",
+      "sampling_metadata": {
+        "expected_frequency_hz": 1.0,
+        "actual_frequency_hz": 0.75,
+        "missing_rate": 0.25
+      }
+    },
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "microseismic_events": [
+      {
+        "event_id": "evt-007-001",
+        "timestamp": "2026-07-25T09:05:00",
+        "area": "工作面-7",
+        "energy_j": 200000.0,
+        "event_frequency_per_hour": 25.0,
+        "source_coordinate": [700.0, 450.0, -800.0],
+        "b_value": 0.3
+      },
+      {
+        "event_id": "evt-007-002",
+        "timestamp": "2026-07-25T09:10:00",
+        "area": "工作面-7",
+        "energy_j": 280000.0,
+        "event_frequency_per_hour": 28.0,
+        "source_coordinate": [701.0, 451.0, -801.0],
+        "b_value": 0.28
+      },
+      {
+        "event_id": "evt-007-003",
+        "timestamp": "2026-07-25T09:12:00",
+        "area": "工作面-7",
+        "energy_j": 350000.0,
+        "event_frequency_per_hour": 30.0,
+        "source_coordinate": [702.0, 452.0, -802.0],
+        "b_value": 0.25
+      },
+      {
+        "event_id": "evt-007-004",
+        "timestamp": "2026-07-25T09:15:00",
+        "area": "工作面-7",
+        "energy_j": 400000.0,
+        "event_frequency_per_hour": 32.0,
+        "source_coordinate": [699.0, 449.0, -799.0],
+        "b_value": 0.22
+      },
+      {
+        "event_id": "evt-007-005",
+        "timestamp": "2026-07-25T09:20:00",
+        "area": "工作面-7",
+        "energy_j": 500000.0,
+        "event_frequency_per_hour": 35.0,
+        "source_coordinate": [700.5, 450.5, -800.5],
+        "b_value": 0.18
+      }
+    ],
+    "borehole_stress": [],
+    "roof_separation": [],
+    "hydraulic_support_resistance": [],
+    "roadway_surface_displacement": []
+  },
+  "expected_warning": {
+    "agent_name": "感知预警 Agent",
+    "status": "success",
+    "warning_id": "warning-007",
+    "risk_level": "red",
+    "risk_score": 0.95,
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "model_mode": "rule_based",
+    "affected_area": {
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-007",
+      "locations": ["工作面-7"]
+    },
+    "causal_factors": [
+      {
+        "factor": "微震事件频次升高",
+        "importance": 1.0,
+        "trend": "rising",
+        "evidence": [
+          "最大事件频次 35.00 次/小时",
+          "窗口首末频次变化 10.00 次/小时"
+        ]
+      },
+      {
+        "factor": "高能微震集中出现",
+        "importance": 1.0,
+        "trend": "rising",
+        "evidence": [
+          "高能事件 5 次",
+          "空间集中比例 100%"
+        ]
+      },
+      {
+        "factor": "最大能量异常升高",
+        "importance": 1.0,
+        "trend": "rising",
+        "evidence": ["最大微震能量 500000.00 J"]
+      },
+      {
+        "factor": "b值降低",
+        "importance": 1.0,
+        "trend": "falling",
+        "evidence": [
+          "最小 b 值 0.180",
+          "最近 b 值 0.180"
+        ]
+      },
+      {
+        "factor": "b值持续下降",
+        "importance": 1.0,
+        "trend": "falling",
+        "evidence": ["窗口首末 b 值下降 0.120"]
+      },
+      {
+        "factor": "微震事件空间集中",
+        "importance": 0.55,
+        "trend": "stable",
+        "evidence": ["5.0 坐标单位半径内比例 100%"]
+      }
+    ],
+    "anomalies": [
+      "微震事件频次升高",
+      "高能微震集中出现",
+      "最大能量异常升高",
+      "b值降低",
+      "b值持续下降",
+      "微震事件空间集中"
+    ],
+    "data_quality": {
+      "completeness": 0.75,
+      "timeliness": 0.75,
+      "missing_sources": ["borehole_stress", "roof_separation", "hydraulic_support_resistance", "roadway_surface_displacement"],
+      "issues": ["监测采样缺失率超过 simulation-v1 数据质量边界"]
+    },
+    "triggered_rules": [
+      "max_energy_severity_4",
+      "frequency_severity_4",
+      "b_value_severity_4",
+      "b_value_drop_severity_3",
+      "high_energy_count_severity_3",
+      "event_count_severity_3",
+      "spatial_cluster_severity_1",
+      "frequency_rising",
+      "high_energy_spatial_cluster"
+    ],
+    "fast_alert_required": true,
+    "recommended_recheck_minutes": 1,
+    "summary": "极高风险：最大能量500000J、频次35次/小时、b值骤降至0.18，数据缺失率高(25%)。iteration_count 已达 max_iterations=2，系统必须停止自动迭代并请求人工处理",
+    "evidence": [
+      {
+        "source_type": "microseismic_monitor",
+        "description": "能量持续攀升 200000→500000J，b值 0.30→0.18，已触发所有最高严重度规则",
+        "value": {"max_energy_j": 500000.0, "min_b_value": 0.18, "max_frequency": 35.0}
+      }
+    ],
+    "warnings": ["数据缺失率25%，置信度受限；iteration_count已等于max_iterations，本轮为最后一次自动迭代"],
+    "errors": [],
+    "started_at": "2026-07-25T10:00:01",
+    "finished_at": "2026-07-25T10:00:05",
+    "duration_ms": 4000,
+    "next_action": "knowledge_retrieval",
+    "confidence": 0.72
+  },
+  "resource_snapshot": {
+    "personnel": [
+      {
+        "resource_id": "res-worker-005",
+        "name": "全部井下人员",
+        "required": 30.0,
+        "available": 25.0,
+        "unit": "人",
+        "status": "available"
+      }
+    ],
+    "support_materials": [
+      {
+        "resource_id": "res-material-007",
+        "name": "重型液压支架",
+        "required": 20.0,
+        "available": 10.0,
+        "unit": "台",
+        "status": "available"
+      }
+    ],
+    "equipment": [
+      {
+        "resource_id": "res-equip-004",
+        "name": "大型钻机",
+        "required": 5.0,
+        "available": 2.0,
+        "unit": "台",
+        "status": "available"
+      }
+    ]
+  },
+  "expected_resource_feasibility": "infeasible"
+}

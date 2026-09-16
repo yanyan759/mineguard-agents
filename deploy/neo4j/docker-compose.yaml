@@ -1,0 +1,17 @@
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: coal-mine-neo4j
+    ports:
+      - "7687:7687"          # Bolt（Python 驱动连接）
+      - "7474:7474"          # HTTP（浏览器 / Neo4j Browser）
+    environment:
+      NEO4J_AUTH: "neo4j/agent1_dev"   # 初始账号/密码（对齐 Redis agent1_dev）
+    volumes:
+      - coal_mine_neo4j_data:/data
+      - coal_mine_neo4j_logs:/logs
+    restart: unless-stopped
+
+volumes:
+  coal_mine_neo4j_data:
+  coal_mine_neo4j_logs:

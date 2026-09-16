@@ -1,0 +1,1211 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>国家标准检索 - 全国标准信息公共服务平台</title>
+<link charset="utf-8" href="https://std.samr.gov.cn/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://std.samr.gov.cn/resources/filterMore/css/filterMore.min.css" />
+<link href="https://std.samr.gov.cn/css/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://std.samr.gov.cn/resources/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://std.samr.gov.cn/resources/filterMore/filterMore.min.js"></script>
+<script type="text/javascript" src="https://std.samr.gov.cn/js/bootstrap.autocomplete.js"></script>
+<style type="text/css">
+.tnum{width: 100%;table-layout: fixed;}
+/* .tnum1{text-align: left;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;width: 100%;} */
+/* .tnum1{text-align: left;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;width: 70%;}
+.tnum2{text-align: right;width: 30%} */
+.tnum1{text-align: left;}
+.tnum2{text-align: right;width: 10%;color: gray;}
+.typeahead{width: 100%;}
+.input-group{overflow: auto;}
+#basic_searchbox .control-type {
+	display: none;
+}
+
+#basic_searchbox {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.searchbox .c {
+	width: auto !important;
+}
+
+.searchbox .l {
+	border-radius: 3px;
+	text-align: center;
+	background: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.text {
+	color: #d51809
+}
+.list1 li {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 92%; /* padding-left: 3px !important; */
+}
+.searchbox-item .l{
+	box-sizing: content-box;
+	padding:0;
+}
+@media (max-width: 768px){
+	.main-body{
+		margin:10px;
+	}
+	#basic_searchbox {
+		margin-left: 0px;
+	}
+}
+</style>
+</head>
+<body>
+	
+
+
+<script type="text/javascript" src="https://std.samr.gov.cn/js/layer/layer.js"></script>
+<script type="text/javascript" src="https://std.samr.gov.cn/js/uni-webview-js@0.0.3/index.js"></script>
+<style>
+
+
+    .main-body {
+        padding: 15px;
+    }
+
+    .bs-docs-nav .navbar-toggle .icon-bar {
+        background-color: #563d7c;
+    }
+
+    .navbar-toggle {
+        margin-right: 0 !important;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: white;
+    }
+
+    .nav-menu {
+        background-color: #005da8;
+        overflow: hidden;
+    }
+
+    .nav-menu ul {
+        margin-bottom: 0 !important;
+        padding-left: 0;
+    }
+
+    .navbar-toggle {
+        position: absolute !important;
+        right: 6px;
+        cursor: pointer;
+    }
+
+    .navbar-toggle:hover {
+        background-color: #418ede;
+    }
+
+    .nav-menu ul li {
+        cursor: pointer;
+        list-style: none;
+        width: 96px;
+        text-align: center;
+        float: left;
+        height: 43px;
+        line-height: 43px;
+        color: #fff;
+        margin-right: 7px;
+        font-size: 16px;
+    }
+
+    .nav-menu ul li:hover {
+        background-color: #338eff;
+    }
+
+    .nav-menu ul li a {
+        color: #fff;
+    }
+
+    .nav-menu ul li a:hover, .nav-menu li a:focus, .nav-menu li a:link {
+        text-decoration: none;
+    }
+
+    .nav-menu .nav_in {
+        background-color: #0f89eb;
+    }
+
+
+    @media (max-width: 1200px) {
+        .nav-menu ul li {
+            width: 84px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .nav-menu ul li {
+            width: 68px;
+            margin-right: 4px;
+            font-size: 14px;
+        }
+
+        #login-area {
+            top: 3px !important;
+            right: 3px !important;
+        }
+    }
+
+    @media (max-width: 368px) {
+        .navbar-brand small {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main-body {
+            padding: 0;
+        }
+
+        .nav-menu-show {
+            display: block !important;
+            height: 200px !important;
+        }
+
+        .nav-menu {
+            height: 0;
+            background-color: #3f75b7;
+            transition: height 500ms;
+            -moz-transition: height 500ms; /* Firefox 4 */
+            -webkit-transition: height 500ms; /* Safari and Chrome */
+            -o-transition: height 500ms; /* Opera */
+        }
+
+        .nav-menu .nav_in {
+            background-color: #338eff;
+        }
+
+        .nav-menu ul li {
+            display: block;
+            width: 33.33333%;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            margin-right: 0;
+            border-top: 1px solid #ddd;
+            font-family: arial, tahoma, 'Microsoft Yahei', '\5b8b\4f53', sans-serif;
+        }
+
+        .nav-menu ul li:nth-child(-1n+4) {
+            border-top: 0;
+        }
+
+        .nav-menu ul li a {
+            color: white;
+        }
+
+        .header-carousel {
+            border: 0;
+        }
+
+        #top-bg {
+            background: url(https://std.samr.gov.cn/images/logoimg.jpg) right -110px center no-repeat #187ed0 !important;
+        }
+
+       
+
+    }
+    
+</style>
+<!-- PHPStat Start -->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3122593ef7de9af6abeec2ee6b2e11a4";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--/PHPStat End -->
+<script>
+    var isAppPlus = false;
+    var userAgent = 'Mozilla/5.0 &#40;Windows NT 10.0; Win64; x64&#41; AppleWebKit/537.36 &#40;KHTML, like Gecko&#41; Chrome/126.0 Safari/537.36';
+
+    $(function () {
+	if(userAgent.toLowerCase().indexOf("micromessenger")>-1) {
+    		$('.normal-banner').hide();
+    	}
+	uni.getEnv(function(res){
+		console.log('当前环境：' + JSON.stringify(res));
+		
+		if(res.plus||(res.h5&&(userAgent.indexOf("HBuilderX")>-1||userAgent.indexOf("uni-app")>-1))){
+			isAppPlus = true;
+			$(document).on("click", "a", function (event) {
+				var href = $(this).attr('href');
+				if(href!=null&&href!=''&&href.indexOf('javascript')<0){
+					uni.navigateTo({
+						url: '/pages/outter/outter?title=国标通-信息查询&src='+href
+					});
+					event.stopPropagation();
+					return false;
+				}
+			});
+		}
+	});
+        document.onkeydown = function (e) {
+            if (!e) {
+                e = window.event;
+            }
+            if ((e.keyCode || e.which) == 13) {
+                //登陆
+                $('.btnSumit').click();
+            }
+        }
+
+        $('.navbar-toggle').click(function () {
+            $('.nav-menu').toggleClass("nav-menu-show");
+        });
+        $('.nav-menu li').click(function () {
+            var target = $(this).find("a").attr('target');
+            var href = $(this).find("a").attr('href')
+            if (target == null || target == '') {
+                window.location.href = href;
+            } else {
+                window.open(href);
+            }
+            return false;
+        });
+
+        $.ajaxSetup({
+            cache: false, //关闭AJAX缓存
+            contentType: "application/x-www-form-urlencoded;charset=utf-8",
+            complete: function (XMLHttpRequest, textStatus) {
+                //通过XMLHttpRequest取得响应头，sessionstatus，
+                var sessionstatus = XMLHttpRequest.getResponseHeader("sessionstatus");
+                if (sessionstatus == "timeout") {
+                    layer.msg('登录超时');
+                    loginPop();
+                }
+            }
+        });
+    });
+
+
+    function getLoginedArea(data) {
+        var loginedArea = '<a href="https://std.samr.gov.cn/user/personalCenter" class="btn btn-secondary bg-primary btn-sm" style="background-color:#004984;color: #fff;">' + data.username
+            + ',个人中心</a>  <a href="javascript:logout()" class="btn btn-secondary bg-primary btn-sm" style="background-color:#004984;color: #fff;" title="注销">注销&nbsp;<span class="glyphicon glyphicon-off"></span></a>'
+            + '<input type="text" id="re_username" value=' + data.username + ' style="display:none" />  '
+            + '<input type="text" id="re_realname" value=' + data.realname + ' style="display:none" />  '
+            + '<input type="text" id="re_mobile"   value=' + data.mobile + '   style="display:none" />  '
+            + '<input type="text" id="re_email"    value=' + data.email + '    style="display:none" />  '
+            + '<input type="text" id="re_resource" value=' + data.resource + ' style="display:none" />  ';
+        return loginedArea;
+    }
+
+    var isLogon = false;
+    var uacServerUrl = 'https://puac.sacinfo.org.cn/uac';
+    var sacUacServerUrl = 'https://uac.sacinfo.org.cn/uac';
+    var loginChecking = false;
+
+    function invokeNotLoggedIn(onNotLoggedIn) {
+        loginChecking = false;
+        if (typeof onNotLoggedIn === 'function') {
+            onNotLoggedIn();
+        }
+    }
+
+    function redirectAfterLogin() {
+        loginChecking = false;
+        var requestURI = '';
+        if (requestURI == '') {
+            window.location.reload();
+        } else {
+            window.location.href = "https://std.samr.gov.cn" + requestURI;
+        }
+    }
+
+    function checkSacUuidLogin(onNotLoggedIn) {
+        $.ajax({
+            type: "GET",
+            url: sacUacServerUrl + "/clientLogin/checkUuid.do",
+            dataType: 'JSONP',
+            crossDomain: true,
+            jsonp: "jsonpCallback",
+            timeout: 1000,
+            success: function (data) {
+                if (data && data.result) {
+                    var uuid = (data.uuid);
+                    if (uuid == null || uuid == "") {
+                        invokeNotLoggedIn(onNotLoggedIn);
+                    } else {
+                        $.ajax({
+                            type: "GET",
+                            url: "https://std.samr.gov.cn/user/sacLoginByUUID.do",
+                            data: {'uuid': uuid},
+                            dataType: 'JSON',
+                            timeout: 10000,
+                            success: function (data) {
+                                if (data && data.result) {
+                                    redirectAfterLogin();
+                                } else {
+                                    invokeNotLoggedIn(onNotLoggedIn);
+                                }
+                            },
+                            error: function () {
+                                invokeNotLoggedIn(onNotLoggedIn);
+                            }
+                        });
+                    }
+                } else {
+                    invokeNotLoggedIn(onNotLoggedIn);
+                }
+            }
+        }).fail(function () {
+            invokeNotLoggedIn(onNotLoggedIn);
+        });
+    }
+
+    function checkUuidLogin(onNotLoggedIn) {
+        $.ajax({
+            type: "GET",
+            url: uacServerUrl + "/clientLogin/checkUuid.do",
+            dataType: 'JSONP',
+            crossDomain: true,
+            jsonp: "jsonpCallback",
+            timeout: 5000,
+            success: function (data) {
+                if (data && data.result) {
+                    var uuid = (data.uuid);
+                    if (uuid == null || uuid == "") {
+                        checkSacUuidLogin(onNotLoggedIn);
+                    } else {
+                        $.ajax({
+                            type: "GET",
+                            url: "https://std.samr.gov.cn/user/loginByUUID.do",
+                            data: {'uuid': uuid},
+                            dataType: 'JSON',
+                            timeout: 10000,
+                            success: function (data) {
+                                if (data && data.result) {
+                                    redirectAfterLogin();
+                                } else {
+                                    invokeNotLoggedIn(onNotLoggedIn);
+                                }
+                            },
+                            error: function () {
+                                invokeNotLoggedIn(onNotLoggedIn);
+                            }
+                        });
+                    }
+                } else {
+                    checkSacUuidLogin(onNotLoggedIn);
+                }
+            },
+            error: function () {
+                checkSacUuidLogin(onNotLoggedIn);
+            }
+        });
+    }
+
+    function handleLoginClick() {
+        if (loginChecking) {
+            return false;
+        }
+        loginChecking = true;
+        checkUuidLogin(redirectUacLogin);
+        return false;
+    }
+
+    $(function () {
+        isIntercepted();
+    });
+
+
+    //监控是否被拦截器拦出
+    function isIntercepted() {
+        var intercepted = !('' == '');
+        if (intercepted && !isLogon) {
+            /* loginLayer(); */
+            checkUuidLogin(redirectUacLogin);
+        }
+    }
+
+
+    var InterValObj; //timer变量，控制时间
+    var count = 180; //间隔函数，1秒执行
+    var curCount;//当前剩余秒数
+
+    function sendMessage(num) {
+        curCount = num;
+        //设置button效果，开始计时
+        $("#getPCodeInput").attr("disabled", "disabled");
+        $("#getPCodeInput").html(curCount + "秒");
+        InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+    }
+
+    //timer处理函数
+    function SetRemainTime() {
+        if (curCount == 0) {
+            window.clearInterval(InterValObj);//停止计时器
+            $("#getPCodeInput").removeAttr("disabled");//启用按钮
+            $("#getPCodeInput").html("获取验证码");
+        } else {
+            curCount--;
+            $("#getPCodeInput").html(curCount + "秒");
+        }
+    }
+
+    //停止计时器
+    function overRemainTime() {
+        window.clearInterval(InterValObj);//停止计时器
+        $("#getPCodeInput").removeAttr("disabled");
+        $("#getPCodeInput").html("获取验证码");
+    }
+
+    function changeCode() {
+        var imgNode = $(".layui-vimg");
+        var srcStr = "https://std.samr.gov.cn/user/get/vcode.do?t=" + Math.random();
+        imgNode.attr("src", srcStr);
+    }
+
+    function getPhoneMsg() {
+
+
+        var vcode = $.trim($('#vcode').val());
+
+
+        if (vcode == null || vcode == "") {
+            layer.tips('请输入图片验证码', '#vcode', {
+                tips: [1, '#f00e0e'],
+                time: 3000
+            });
+            return;
+        }
+
+        var username = $.trim($('#cellphone').val());
+        if (username == null || username == "") {
+            layer.tips('请输入用手机号', '#cellphone', {
+                tips: [1, '#f00e0e'],
+                time: 3000
+            });
+            return;
+        }
+
+        var result = getPCode('mLoginForm');
+
+
+        if (result.success == true) {
+            sendMessage(result.datetime);
+            return false;
+        } else {
+            layer.msg(result.errorMessage, {icon: 5});
+            return false;
+        }
+    }
+
+    var loginHtml = '<div>' +
+        '<div>' +
+        '<ul class="nav nav-tabs nav-justified search-head">' +
+        '<li onclick="changeTab(1)" class="loginHead active"><a href="javascript:void(0)">社会公众</a></li>' +
+        '<li onclick="changeTab(2)" class="loginHead"><a href="javascript:void(0)">SAC用户</a></li>' +
+        '</ul>' +
+        '<div class="search-body">' +
+        //社会公众
+        '<div class="search-form loginBody" style="display: block;">' +
+        '  <div style="margin: 25px;">' +
+        '	<label class="radio-inline">' +
+        '	  <input type="radio" name="loginSelect" onclick="changeLoginType(1)"  value="p" checked="checked"> 密码登录 ' +
+        '	</label>' +
+        '	<label class="radio-inline">' +
+        '	  <input type="radio" name="loginSelect" onclick="changeLoginType(2)" " value="m"> 短信登录 ' +
+        '	</label>' +
+        '  </div>' +
+        //密码登录
+        '  <div style="margin: 25px;">' +
+        '  <div id="pLogin">' +
+        '      <form id="pLoginForm" action="#" method="post">' +
+        '          <div class="form-group">' +
+        '          <label>用户名</label>' +
+        '          <input type="text" class="form-control" id="username1" placeholder="请在此输入用户名" name="username"/>' +
+        '          </div>' +
+        '          <div class="form-group">' +
+        '          <label>密码</label>' +
+        '          <input type="password" class="form-control" id="password1" placeholder="请在此输入密码" name="password" />' +
+        '          </div>' +
+        '          <button class="btn btn-danger radius form-submit btnSumit1 btnSumit"  type="button" onclick="doSubmitByPwd()">登 录</button>' +
+        '          <a href="https://std.samr.gov.cn/user/findPwd" target="_blank"> 忘记密码？  </a>' +
+        '      </form>' +
+        '  </div>' +
+        //短信登录
+        '  <div id="mLogin" style="display: none">' +
+        '      <form id="mLoginForm" action="#" method="post">' +
+        '          <div class="form-group">' +
+        '          <label>手机号码</label>' +
+        '          <input type="text" class="form-control" id="cellphone" placeholder="请在此输入手机号" name="account"/>' +
+        '          </div>' +
+        '          <div class="form-group">' +
+        '          <label>短信验证</label>' +
+        '          <div class="row">' +
+        '              <div class="col-md-8"><input type="text" id="pCode" class="form-control" id="pcode" placeholder="请在此输入短信验证码" name="pcode"/></div>' +
+        '              <div class="col-md-4"><button type="button" id="getPCodeInput" onclick="getPhoneMsg()" class="btn btn-default btncx" style="float: right; line-height: 20px; margin-top: 0px;">获取验证码</button> </div>' +
+        '          </div>' +
+        '          </div>' +
+        '          <div class="row">' +
+        '      	       <div class="col-md-8"><input  class="form-control" id="vcode" name="rand" placeholder="验证码" value=""></div>' +
+        '              <div class="col-md-4"><img class="layui-vimg" style="height: 34px; float: right;" title="点击更换" onclick="changeCode();" src="https://std.samr.gov.cn/user/get/vcode.do"></div>' +
+        '          </div><br/>' +
+        '          <button class="btn btn-danger radius form-submit btnSumit2"  type="button" onclick="doSubmitByPhone()">登 录</button>' +
+        '          <a href="https://std.samr.gov.cn/user/findPwd" target="_blank"> 忘记密码？  </a>' +
+        '      </form>' +
+        '  </div>' +
+        '  </div>' +
+        '</div>' +
+        //SAC用户公众
+        '<div  class="search-form loginBody" style="display: none;">' +
+        '' +
+        '  <div style="margin: 25px;">' +
+        '  <div id="sacLogin" style="margin-top: 40px;">' +
+        '      <form id="sacLoginForm" action="#" method="post">' +
+        '          <div class="form-group">' +
+        '          <label>用户名</label>' +
+        '          <input type="text" id="account3" class="form-control" placeholder="请输入SAC账号" name="account3"/>' +
+        '          </div>' +
+        '          <div class="form-group">' +
+        '          <label>密码</label>' +
+        '          <input type="password" class="form-control" id="pCode3" name="pCode3" placeholder="请在此输入密码" name="password" />' +
+        '          </div>' +
+        '          <input class="btn btn-danger radius form-submit btnSumit3"  type="button" onclick="ajaxLogin(\'https://uac.sacinfo.org.cn/uac\');" value="SAC登录" /><a href="http://uac.sacinfo.org.cn/uac/forget/findingPassword.do" target="_blank"> 忘记密码？  </a>' +
+        '          ' +
+        '          <P style="font-size: 12px; color: blue; min-height: 50px;">' +
+        '          <br> <em id="J_ErrorMsg" style="color: red;"></em> ' +
+        '          </P>' +
+        '      </form>' +
+        '  </div>' +
+        '  </div>' +
+        '' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
+
+    function loginPop() {
+        layer.open({
+            type: 1,
+            title: '用户登录',
+            closeBtn: false,
+            skin: 'layui-layer-rim', //加上边框
+            content: loginHtml
+        });
+        $('#username1').focus();
+    }
+
+    function loginLayer() {
+        layer.open({
+            type: 1,
+            title: '用户登录',
+            shadeClose: true,
+            skin: 'layui-layer-rim', //加上边框
+            content: loginHtml
+        });
+        $('#loginATag').blur();
+    }
+
+    //跳转至uac登录页
+    function redirectUacLogin() {
+        //判断是否存在session
+        if (!isLogon) {
+            var url = 'https://puac.sacinfo.org.cn' + '?service=' + window.location.href;
+            window.location.href = url;
+        }
+        return false;
+    }
+
+    //切换tab页面
+    function changeTab(num) {
+        var heads = $(".loginHead");
+        var bodys = $(".loginBody");
+        for (var i = 0; i < heads.length; i++) {
+            $(heads[i]).removeClass("active");
+            $(bodys[i]).css('display', 'none');
+            if (i == (num - 1)) {
+                $(heads[i]).addClass("active");
+                $(bodys[i]).css('display', 'block');
+            }
+        }
+
+
+        //如果num为1则为社会公众登陆，将回车键绑定到btnSumit1上，否则绑定到btnSumit3上
+        if (num == 1) {
+            if ($(".btnSumit1").hasClass("btnSumit")) {
+
+            } else {
+                $(".btnSumit1").addClass("btnSumit");
+                $(".btnSumit2").removeClass("btnSumit");
+                $(".btnSumit3").removeClass("btnSumit");
+            }
+        } else {
+            if ($(".btnSumit3").hasClass("btnSumit")) {
+
+            } else {
+                $(".btnSumit3").addClass("btnSumit");
+                $(".btnSumit2").removeClass("btnSumit");
+                $(".btnSumit1").removeClass("btnSumit");
+            }
+        }
+    }
+
+    //控制登录方式
+    function changeLoginType(num) {
+        if (num == 1) {
+            $("#pLogin").css("display", "block");
+            $("#mLogin").css("display", "none");
+
+            //控制回车绑定
+            if ($(".btnSumit1").hasClass("btnSumit")) {
+
+            } else {
+                $(".btnSumit1").addClass("btnSumit");
+                $(".btnSumit2").removeClass("btnSumit");
+                $(".btnSumit3").removeClass("btnSumit");
+            }
+        }
+        if (num == 2) {
+            $("#mLogin").css("display", "block");
+            $("#pLogin").css("display", "none");
+
+            //控制回车绑定
+            if ($(".btnSumit2").hasClass("btnSumit")) {
+
+            } else {
+                $(".btnSumit2").addClass("btnSumit");
+                $(".btnSumit1").removeClass("btnSumit");
+                $(".btnSumit3").removeClass("btnSumit");
+            }
+
+        }
+    }
+
+    //获取验证码
+    function changeCode() {
+        var imgNode = $(".layui-vimg");
+        var srcStr = "https://std.samr.gov.cn/user/get/vcode.do?t=" + Math.random();
+        imgNode.attr("src", srcStr);
+    }
+</script>
+<!--用于社会公众登录的js-->
+<script type="text/javascript">
+    var uacServerUrl = 'https://puac.sacinfo.org.cn/uac';
+    var casServerUrl = 'https://puac.sacinfo.org.cn';
+
+    function doSubmitByPwd() {
+        var username = $.trim($('#username1').val());
+        var pwd = $.trim($('#password1').val());
+        var systemCode = 'system001-unite-certification';
+        var url = uacServerUrl + "/clientLogin/ajaxLogin.do";
+        if (username == null || username == "") {
+            layer.tips('请输入用户名', '#username1', {
+                tips: [1, '#f00e0e'],
+                time: 3000
+            });
+            return;
+        } else if (pwd == null || pwd == "") {
+            layer.tips('请输入用密码', '#password1', {
+                tips: [1, '#f00e0e'],
+                time: 3000
+            });
+            return;
+        } else {
+            var index = layer.load(1, {
+                shade: [0.1, '#fff'] //0.1透明度的白色背景
+            });
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: {'sysd': systemCode, 'un': username, 'pwd': pwd},
+                dataType: 'JSONP',
+                crossDomain: true,
+                jsonp: "jsonpCallback", //固定写法
+                success: function (data) {
+                    layer.close(index);
+                    if (data.result) {
+                        var uuid = data.uuid;
+                        //获取到uuid后，将uuid传到后台，通过接口获取到用户信息，完成本地session初始化，登录完成
+                        $.ajax({
+                            type: "GET",
+                            url: "https://std.samr.gov.cn/user/loginByUUID.do",
+                            data: {'uuid': uuid},
+                            dataType: 'JSON',
+                            success: function (data) {
+
+                                var requestURI = '';
+
+                                if (requestURI == '') {
+                                    $("#login-area").html(getLoginedArea(data));
+                                    layer.closeAll();
+                                    //window.location.reload();
+
+                                } else {
+                                    window.location.href = "https://std.samr.gov.cn" + requestURI;
+                                }
+
+                            }
+                        });
+                    } else {
+                        layer.msg(data.msg, {icon: 5});
+                    }
+                }
+            });
+        }
+    }
+
+    function doSubmitByPhone() {
+        var username = $.trim($('#cellphone').val());
+        var pCode = $.trim($('#pCode').val());
+        var systemCode = 'system001-unite-certification';
+        //var url = uacServerUrl + "/clientLogin/ajaxLogin.do?sysd=" + systemCode+"&un=" + username + "&pwd=" + pwd;
+        var url = uacServerUrl + "/clientLogin/ajaxLogin.do";
+        if (username == null || username == "") {
+            layer.tips('请输入用手机号', '#cellphone', {
+                tips: [1, '#f00e0e'],
+                time: 3000
+            });
+        } else if (pCode == null || pCode == "") {
+            layer.tips('请输入短信验证码', '#pCode', {
+                tips: [1, '#f00e0e'],
+                time: 3000
+            });
+        } else {
+            var index = layer.load(1, {
+                shade: [0.1, '#fff'] //0.1透明度的白色背景
+            });
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: {'sysd': systemCode, 'un': username, 'pwd': pCode, 'isPhoneLogin': 'true'},
+                dataType: 'JSONP',
+                crossDomain: true,
+                jsonp: "jsonpCallback", //固定写法
+                success: function (data) {
+                    layer.close(index);
+                    if (data.result) {
+                        var uuid = data.uuid;
+                        //获取到uuid后，将uuid传到后台，通过接口获取到用户信息，完成本地session初始化，登录完成
+                        $.ajax({
+                            type: "GET",
+                            url: "https://std.samr.gov.cn/user/loginByUUID.do",
+                            data: {'uuid': uuid},
+                            dataType: 'JSON',
+                            success: function (data) {
+                                var requestURI = '';
+
+                                if (requestURI == '') {
+
+                                    $("#login-area").html(getLoginedArea(data));
+                                    layer.closeAll();
+
+                                    //window.location.reload();
+
+                                } else {
+
+                                    window.location.href = "https://std.samr.gov.cn" + requestURI;
+
+                                }
+                            }
+                        });
+                    } else {
+                        layer.msg(data.msg, {icon: 5});
+                    }
+                }
+            });
+        }
+    }
+
+    //注销
+    function logout() {
+        $.ajax({
+            type: "GET",
+            url: casServerUrl + "/logout?server=system0012-cpsc",
+            dataType: 'JSONP',
+            crossDomain: true,
+            jsonp: "jsonpCallback",
+            success: function (data) {
+                window.location = "https://std.samr.gov.cn/user/logout.do";
+            },
+            error: function (data) {
+                window.location = "https://std.samr.gov.cn/user/logout.do";
+            }
+        });
+        window.location = "https://std.samr.gov.cn/user/logout.do";
+    }
+
+    //获取短信验证码
+    function getPCode(str) {
+        var result;
+        $.ajax({
+            url: "https://std.samr.gov.cn/user/getPhoneCode.do",
+            type: "post",
+            dataType: "json",
+            data: $('#' + str).serialize(),
+            async: false,
+            success: function (data) {
+                result = data;
+            }
+        });
+        return result;
+    }
+</script>
+<!--用于SAC登录的js-->
+<script type="text/javascript">
+    var ajaxLogin = function (url) {
+        var usm = $.trim($('#account3').val());
+        var pwd = $.trim($('#pCode3').val());
+        var msg = '';
+        if ($.trim(usm).length == 0) {
+            msg = "用户名不能为空。";
+        } else if ($.trim(pwd).length == 0) {
+            msg = "密码不能为空。";
+        }
+        if (msg && msg.length > 0) {
+            $('#J_ErrorMsg').text(msg);
+            return false;
+        }
+        $('#J_ErrorMsg').text('');
+        $.ajax({
+            type: "GET",
+            url: url + "/clientLogin/ajaxLogin.do?un=" + usm + "&pwd=" + encodeURIComponent(pwd) + "&sysd=system0011-tcrm",
+            dataType: 'JSONP',
+            crossDomain: true,
+            jsonp: "jsonpCallback",
+            success: function (data) {
+                if (data.result) {
+                    //登录成功，在本地写入session
+                    $.post("https://std.samr.gov.cn/user/sacUserLogin.do", {"username": usm, "realname": data.realname, "uid": data.uid, "mobile": data.mobile, "email": data.email}, function (data2) {
+                        if (data2.result) {
+                            $("#login-area").html('<a href="https://std.samr.gov.cn/proposal/proposalQuery" class="btn btn-secondary bg-primary btn-sm" style="background-color:#004984;color: #fff;">' + data.username + ',个人中心</a>  <a href="javascript:logout()" class="btn btn-secondary bg-primary btn-sm" style="background-color:#004984;color: #fff;" title="注销">注销&nbsp;<span class="glyphicon glyphicon-off"></span></a>');
+                            layer.closeAll();
+                            /* window.location.reload(); */
+                        } else {
+                            $('#J_ErrorMsg').text(data2.msg);
+                            return;
+                        }
+                    });
+                } else {
+                    $('#J_ErrorMsg').text(data.msg);
+                    return;
+                }
+            }
+        });
+    };
+</script>
+<div class="top_nav" style="background:url(https://std.samr.gov.cn/images/bgrep.jpg) top repeat-x;width:100%;background-color: #187ed0;">
+    <!-- <div style="background-color:rgba(83, 83, 83, 0.32);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="color:#ff9c3d;padding:5px 0"><span class="label label-danger" style="margin-right: 15px;">重要通知</span>因机房设备维修，2022年10月28日17点到10月29日24点，系统暂时停止访问服务，望请知悉，带来不便，敬请谅解。</div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div style="background-color:rgba(0, 95, 171, 0.32);">
+        <div class="container normal-banner">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="color:#ff9c3d;padding:5px 0;height:35px;position:relative;">
+
+                        <div id="login-area" style="position: absolute;top: 4px;right: 0px;display: inline-block;min-width:96px; height:35px;line-height: 35px;text-align: center; border-radius:3px;background-color:#0071cb;border:0px #fff solid;color: white;">
+                            
+                                
+                                <!-- 不使用弹出层 <a style="color: white;font-weight: bolder;" id="loginATag" href="javascript:loginLayer();">登录</a> -->
+                                
+                                <a  class="btn btn-secondary bg-primary btn-sm" type="button" style="float:right;background-color:#004984;color:white;"  href="https://puac.sacinfo.org.cn/uac/registerv2/register-individual.do?registerServer=http://std.samr.gov.cn/" target="_blank">
+									<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册
+								</a>
+						        <button id="loginATag" class="btn btn-secondary bg-primary btn-sm" type="button" style="float:right;margin-right:10px;background-color:#004984;color:white;" onclick="handleLoginClick();return false;">
+									<span class="glyphicon glyphicon-lock"></span>&nbsp;&nbsp;登录
+								</button>
+
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="overflow: visible;">
+        <div class="row" style="overflow: visible;">
+            <div id="top-bg" class="col-sm-12" style="overflow: visible;width:100%;font-family: arial,tahoma,'Microsoft Yahei','\5b8b\4f53',sans-serif;z-index:2;">
+                <img class="hidden-xs" src="https://std.samr.gov.cn/images/bgrep.gif" style="position:absolute;right:-180px;top:0;height:100%;z-index:-1;"/>
+                <img class="hidden-xs" src="https://std.samr.gov.cn/images/logonew.png" style="z-index:2;"/>
+
+                <div style="padding:5px 0;padding-right:30px;" class="visible-xs" class="navbar-header">
+                    <button class=" navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="color:white;padding:15px 0;" href="https://std.samr.gov.cn" class="navbar-brand">
+                        <img style="display:inline-block;margin-right:10px;margin-top:-5px;" width="30px" src="https://std.samr.gov.cn/images/shareLogo.png"/>
+                        全国标准信息公共服务平台
+                    </a>
+
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nav-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li class="hidden-xs nav_in"><a href="https://std.samr.gov.cn/">首页</a></li>
+                    <li ><a href="https://openstd.samr.gov.cn/bzgk/std/">国家标准</a></li>
+                    <li ><a href="https://hbba.sacinfo.org.cn" target="_blank">行业标准</a></li>
+                    <li ><a href="https://dbba.sacinfo.org.cn" target="_blank">地方标准</a></li>
+                    <li ><a href="https://www.ttbz.org.cn/" target="_blank">团体标准</a></li>
+                    <li ><a href="https://www.qybz.org.cn/" target="_blank">企业标准</a></li>
+                    <li ><a href="https://std.samr.gov.cn/#gj">国际标准</a></li>
+                    <li ><a href="https://std.samr.gov.cn/#gw">国外标准</a></li>
+                    <!-- <li ><a href="https://sfq.sacinfo.org.cn/" target="_blank">示范试点</a></li> -->
+                    <li ><a href="https://std.samr.gov.cn/org">技术委员会</a></li>
+                    <!--  <li ><a href="https://talent.sacinfo.org.cn/">标准化人才</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+	<div class="container main-body">
+		<div class="row">
+			<div class="col-sm-9">
+				<div class="linex">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="120"><p>标准检索</p></td>
+							<td align="right" style="padding-bottom: 6px;">
+								<div class="input-group"  style="width:320px;">
+							      <input id="searchInput" type="text" class="form-control" value="GB/T 25217.8"  minlength="2" required placeholder="关键词"/>
+							      <div id="searchBtn" class="input-group-addon" style="background-color: #ff6d00;color:white;"><span class="glyphicon glyphicon-search"></span></div>
+							    </div>
+							</td>	
+						</tr>
+					</table>
+					
+						<div class="searchbox" id="basic_searchbox"></div>
+						<iframe src="https://std.samr.gov.cn/search/stdPage?q=GB/T 25217.8&tid="
+							id="myiframe" scrolling="no" frameborder="0" width="100%"
+							height="1000"></iframe>
+					
+					
+				</div>
+			</div>
+			<div class="col-sm-3 hidden-xs">
+				
+					<div class="bor4">
+						<div class="lm3">相关专业词汇</div>
+						<ul class="list1">
+							
+								<li>· <a href="javascript:void(0)">11394-2009</a></li>
+							
+						</ul>
+					</div>
+				
+				
+					<div class="bor4">
+						<div class="lm3">相关单位</div>
+						<ul class="list1">
+							
+								<li>· <a href="javascript:void(0)" title="中国煤炭工业协会" rid="org">中国煤炭工业协会</a></li>
+							
+						</ul>
+					</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+<style>
+@media (max-width: 768px) {
+	.footer-body li {
+	    color: white;
+	    font-size: 12px;
+	}
+}
+</style>
+<div class="footer-body" style="background-color: #0566ab;font-family: arial,tahoma,'Microsoft Yahei','\5b8b\4f53',sans-serif;">
+	<div class="container">
+		<div class="row" style="padding:15px 0;">
+			<div class="col-sm-5 col-xs-6">
+				<ul style="list-style:none;">
+					<li style="margin: 10px 0px;"><h6 style="color:white;font-weight: bold;line-height: 1.1;font-size: 14px;">版权所有 侵权必究</h6></li>
+					<li style="margin: 2px 0px;color:#bec8ce;" >主管：国家市场监督管理总局 国家标准化管理委员会</li>
+					<li style="margin: 2px 0px;color:#bec8ce;" >主办：国家市场监督管理总局国家标准技术审评中心</li>
+					<li style="margin: 2px 0px;color:#bec8ce;" >技术支持：北京中标赛宇科技有限公司</li>
+					<li style="margin: 2px 0px;color:#bec8ce;" >支持电话：010-82261054</li>
+					<li style="margin: 2px 0px;color:#bec8ce;" >备案号：<a style="color:#bec8ce;" href="https://beian.miit.gov.cn/" target="_blank">京ICP备18022388号-1</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<ul style="list-style:none;"> 
+					<li style="margin: 10px 0px"><h6 style="color:white;font-weight: bold;line-height: 1.1;font-size: 14px;">重要网站链接</h6></li>
+					<li style="margin: 2px 0px;color:#bec8ce;" ><a style="color:#bec8ce;" href="http://www.samr.gov.cn/" target="_blank">国家市场监督管理总局</a></li>
+					<li style="margin: 2px 0px;color:#bec8ce;" ><a style="color:#bec8ce;" href="http://www.sac.gov.cn/" target="_blank">国家标准化管理委员会</a></li> 
+					<li style="margin: 2px 0px;color:#bec8ce;" ><a style="color:#bec8ce;" href="http://ncse.ac.cn/" target="_blank">国家市场监督管理总局国家标准技术审评中心</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-2" style="text-align:center;">
+				<div>
+				<a href="javascript:return void(0);" onclick="Link('bm31370001')"><img src="https://std.samr.gov.cn/images/jiucuo.png" style="width: 90px;"/></a>
+				</div>
+				<div style="margin-top: 15px;">
+				<a target="_blank" href="https://bszs.conac.cn/sitename?method=show&id=A1B86006AA736CD2E05310291AAC4CC7"><img src="https://std.samr.gov.cn/images/dzjg.png" /></a>
+				</div>
+			</div>
+			<div class="col-sm-2 hidden-xs" style="text-align:center;"> 
+				<img width="100%" src="https://std.samr.gov.cn/images/ewm.jpg" style="width: 128px;height: 128px;"/> 
+			</div>
+		</div>
+	</div>
+	<script>
+        //点击图标
+        function Link(site_code) {
+            //获取该站点需要纠错页面的url地址
+            var url = getCurrUrl();
+            //跳转至纠错系统填写页面 
+            window.open("https://zfwzgl.www.gov.cn/exposure/jiucuo.html?site_code=" + site_code + "&url=" + encodeURIComponent(url));
+        }
+        //获取该站点需要纠错页面的url地址
+        function getCurrUrl() {
+            var url = "";
+            if (parent !== window) {
+                try {
+                    url = window.top.location.href;
+                } catch (e) {
+                    url = window.top.document.referrer;
+                }
+            }
+            if (url.length == 0)
+                url = document.location.href;
+            return url;
+        }
+    </script>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	var options = {
+			"search": function (paramList) {
+		        var ps=[];
+		        $("#searchitem_G_TRADE_DEPT_FULL").hide();
+		        $("#searchitem_G_PROVINCE").hide();
+		        $("#searchitem_G_STATE").hide();
+				for(var i=0;i<paramList.length;i++){
+					if(i==0){//当前点击标准类型时
+						$("#searchitem_G_STATE").hide();
+						$("#searchitem_CURRENT_LINK").hide();
+						$("#searchitem_G_TRADE_DEPT_FULL").hide();
+						$("#searchitem_G_PROVINCE").hide();
+						//如果选择行业标准
+						if($.inArray("行业标准", paramList[i].ValueList)!=-1){$("#searchitem_G_TRADE_DEPT_FULL").show();}
+						//如果选择地方标准
+						if($.inArray("地方标准", paramList[i].ValueList)!=-1){$("#searchitem_G_PROVINCE").show();}
+						//如果选择国家标准计划
+						if($.inArray("国家标准计划", paramList[i].ValueList)!=-1){
+							$("#searchitem_CURRENT_LINK").show();
+							$("#searchitem_CURRENT_LINK>div:eq(1)>div:eq(1)>span").show();
+						}
+						//如果选择国家标准
+						if($.inArray("国家标准", paramList[i].ValueList)!=-1){
+							$("#searchitem_G_STATE").show();
+							$("#searchitem_G_STATE>div:eq(1)>div:eq(1)>span").show();
+						}
+						//如果选择全部
+						if(paramList[i].ValueList==0){$("#searchitem_G_TRADE_DEPT_FULL").show();$("#searchitem_G_PROVINCE").show();$("#searchitem_G_STATE").show();$("#searchitem_CURRENT_LINK").show();}
+					}
+					
+		        	for(var j = 0;j<paramList[i].ValueList.length;j++){
+		        		if(paramList[i].id=='CURRENT_LINK' && (!$("#searchitem_CURRENT_LINK").is(':visible')))continue;
+		        		if(paramList[i].id=='G_STATE' && (!$("#searchitem_G_STATE").is(':visible')))continue;
+		        		if(paramList[i].id=='G_TRADE_DEPT_FULL' && (!$("#searchitem_G_TRADE_DEPT_FULL").is(':visible')))continue;
+		        		if(paramList[i].id=='G_PROVINCE' && (!$("#searchitem_G_PROVINCE").is(':visible')))continue;
+		        		
+		        		ps.push(paramList[i].id+":\""+paramList[i].ValueList[j]+"\"");
+		        	}
+		        }
+		    	var url = "https://std.samr.gov.cn/search/stdPage?tid=&q="+encodeURIComponent($("#searchInput").val().trim())+"&op="+encodeURIComponent(ps.toString()) ;
+		    	$("#myiframe").attr("src",url) 
+		   	},
+			"expandRow": 4,
+            "isShowAll":false,
+            "searchBoxs": [{"data":[{"text":"国家标准","value":"国家标准"}],"isMultiple":true,"id":"G_STD_DOMAIN","title":"标准类型"},{"data":[{"text":"推荐性","value":"推荐性"}],"isMultiple":true,"id":"G_STD_NATURE","title":"标准性质"},{"data":[{"text":"现行","value":"现行"}],"isMultiple":true,"id":"G_STATE","title":"标准状态"},{"data":[{"text":"73_采矿和矿产品","value":"73_采矿和矿产品"}],"isMultiple":true,"id":"G_ICS_NAME","title":"ICS分类"}]
+	    };
+	
+		$("#basic_searchbox").fiterMore(options);
+	
+	
+	$("#searchBtn").click(function(){
+		var uri = 'https://std.samr.gov.cn/search/std?tid=&q='+encodeURIComponent($("#searchInput").val().trim())
+		window.location.href = uri;
+	});
+	$(".list1 a").click(function(){
+		var uri = 'https://std.samr.gov.cn/search/std?q='+encodeURIComponent($(this).html());
+		if($(this).attr('rid')){
+			uri = 'https://std.samr.gov.cn/search/org?q='+encodeURIComponent($(this).html());
+		}
+		window.open(uri,'_blank');
+	});
+	
+	 $("#searchInput").autocomplete({
+         source:function(query,process){
+			var keyWord = $('#searchInput').val() ;
+       	 if(keyWord){
+       		if(checkRate(keyWord) && keyWord.length==1)return ;//如果输入的是 1个数字或者1个字母时，不匹配
+       		 var ps = {"type":"std","prefix":keyWord};
+            $.post("https://std.samr.gov.cn/search/autoComplete",ps,function(respData){
+                return process(respData);  
+             });
+       	   }
+          },
+         formatItem:function(item){
+        	 //return "<table class=\"tnum\"><tr><td class=\"tnum1\">"+item["name"]+"</td></tr></table>";
+        	 return "<table class='tnum'><tr><td class=\"tnum1\">"+item["name"]+"</td><td class=\"tnum2\">"+item["value"]+"</td></tr></table>"; 
+        	 //return "<table class='tnum'><tr><td align=\"left\">"+item["name"]+"</td><td align=\"right\">约 "+item["value"]+" 条数据</td></tr></table>"; 
+          },  
+         setValue:function(item){
+             return {'data-value':item["name"],'real-value':item["value"]};  
+          }
+      }).click(function () {
+          $(this).autocomplete("lookup");
+          event.stopPropagation();
+      }).keypress(function(event){
+    	  if(event.keyCode == "13"){
+    	    	$("#searchBtn").click();
+    	    	event.stopPropagation();
+    	    }
+        }).change(function(event){
+        	$("#searchBtn").click();
+        	event.stopPropagation();
+      })
+});
+
+function pageTop(){
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+</script>
+</html>

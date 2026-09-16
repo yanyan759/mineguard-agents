@@ -1,0 +1,29 @@
+{
+  "text": "本文件仅用于验证上传方案被程序消费。",
+  "actions": [
+    {
+      "sequence": 1,
+      "action": "复查监测记录并记录巡检仪状态",
+      "owner_role": "监测值班员",
+      "deadline_minutes": 25,
+      "requires_approval": false,
+      "acceptance_criteria": [
+        "留存复查记录"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "group": "personnel",
+      "name": "监测值班员",
+      "required": 1,
+      "unit": "人"
+    },
+    {
+      "group": "equipment",
+      "name": "巡检仪",
+      "required": 1,
+      "unit": "台"
+    }
+  ]
+}

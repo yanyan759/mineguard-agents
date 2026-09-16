@@ -1,0 +1,118 @@
+# ⚠️ HALLUCINATION: 以下全部条款为开发者仿真构造，参考真实规程结构但内容非真实条文。
+# 需要: 应急管理部下载《煤矿安全规程》全文 → RAGFlow 导入后替换本文件。
+# 模拟煤矿顶板安全规程与防治规范数据
+# 第一版：用于知识检索 Agent 测试和 fixture 验证
+# 条款参考真实规程结构编写，内容均为仿真构造，不代表正式规程条文
+
+regulations:
+  - regulation_id: "reg-001"
+    document: "煤矿安全规程（顶板管理篇）"
+    clause: "第 158 条"
+    requirement: "采掘工作面顶板管理必须执行敲帮问顶制度，发现顶板离层、松动、掉渣等异常现象时必须立即停止作业、撤出人员并上报调度室。"
+    mandatory: true
+    applicable_conditions:
+      - "所有采掘工作面"
+      - "顶板离层仪位移量超限"
+      - "现场目视顶板异常"
+    source_type: "safety_regulation"
+    source: "煤矿安全规程"
+
+  - regulation_id: "reg-002"
+    document: "煤矿安全规程（冲击地压防治篇）"
+    clause: "第 232 条"
+    requirement: "冲击地压危险区域必须安装微震监测系统，微震事件能量超过 100000J 或频次超过 15 次/小时时，必须停止作业并分析原因。"
+    mandatory: true
+    applicable_conditions:
+      - "冲击地压矿井"
+      - "微震事件能量 > 100000J"
+      - "微震事件频次 > 15 次/小时"
+    source_type: "rock_burst"
+    source: "煤矿安全规程"
+
+  - regulation_id: "reg-003"
+    document: "煤矿安全规程（冲击地压防治篇）"
+    clause: "第 235 条"
+    requirement: "b 值持续下降（<0.8）且微震频次升高时，应启动橙色预警；b 值低于 0.5 时，应立即启动红色预警，撤出危险区域人员。"
+    mandatory: true
+    applicable_conditions:
+      - "b 值 < 0.8（橙色预警）"
+      - "b 值 < 0.5（红色预警）"
+      - "频次升高趋势"
+    source_type: "rock_burst"
+    source: "煤矿安全规程"
+
+  - regulation_id: "reg-004"
+    document: "冲击地压防治技术规范"
+    clause: "第 5.3.2 条"
+    requirement: "冲击危险区域巷道支护应采用锚网索联合支护，锚索长度应锚固到稳定岩层中不少于 1.5m。在高应力区应增设 U 型钢可缩性支架。"
+    mandatory: false
+    applicable_conditions:
+      - "冲击地压危险区域"
+      - "高应力区"
+    source_type: "support_standard"
+    source: "冲击地压防治技术规范"
+
+  - regulation_id: "reg-005"
+    document: "煤矿顶板事故应急预案"
+    clause: "第 4.2.1 条"
+    requirement: "橙色及以上预警触发后，矿调度室应在 3 分钟内通知矿总工程师和安全副矿长；红色预警应在 5 分钟内启动全矿应急广播，10 分钟内完成井下人员定位核查。"
+    mandatory: true
+    applicable_conditions:
+      - "风险等级 >= orange"
+    source_type: "emergency_plan"
+    source: "煤矿顶板事故应急预案"
+
+  - regulation_id: "reg-006"
+    document: "煤矿顶板事故应急预案"
+    clause: "第 4.3.2 条"
+    requirement: "处置方案涉及停产、断电、撤人或设备控制的高风险动作，必须经矿总工程师或安全副矿长书面审批后方可执行。紧急情况下可先执行后补批，但须同步电话报告。"
+    mandatory: true
+    applicable_conditions:
+      - "方案包含停产、断电、撤人、设备控制动作"
+      - "红色预警"
+    source_type: "emergency_plan"
+    source: "煤矿顶板事故应急预案"
+
+  - regulation_id: "reg-007"
+    document: "煤矿安全规程（支护管理篇）"
+    clause: "第 162 条"
+    requirement: "掘进工作面到永久支护之间必须使用临时支护，严禁空顶作业。临时支护形式应根据顶板条件选择前探梁、单体液压支柱配铰接顶梁等。"
+    mandatory: true
+    applicable_conditions:
+      - "所有掘进工作面"
+      - "永久支护尚未完成区域"
+    source_type: "safety_regulation"
+    source: "煤矿安全规程"
+
+  - regulation_id: "reg-008"
+    document: "煤矿安全规程（监测监控篇）"
+    clause: "第 488 条"
+    requirement: "顶板离层仪安装间距：I 类顶板不超过 100m，II 类顶板不超过 50m，III 类顶板不超过 30m。离层值超过 50mm 时必须进行分析并采取加固措施。"
+    mandatory: true
+    applicable_conditions:
+      - "所有采掘巷道"
+      - "离层位移 ≥ 50mm"
+    source_type: "safety_regulation"
+    source: "煤矿安全规程"
+
+  - regulation_id: "reg-009"
+    document: "煤矿防治水细则"
+    clause: "第 67 条"
+    requirement: "喀斯特地区矿井在采掘活动接近已知溶洞发育层位 50m 范围内时，必须进行超前探测，确认无水患和顶板稳定性后方可继续作业。"
+    mandatory: true
+    applicable_conditions:
+      - "喀斯特地区矿井"
+      - "距离溶洞发育层位 < 50m"
+    source_type: "safety_regulation"
+    source: "煤矿防治水细则"
+
+  - regulation_id: "reg-010"
+    document: "煤矿矿压观测规范"
+    clause: "第 3.4.1 条"
+    requirement: "液压支架工作阻力连续 3 个循环超过额定工作阻力 80% 时，应判定为来压显现，必须记录并分析来压步距和强度，必要时调整支护参数。"
+    mandatory: false
+    applicable_conditions:
+      - "支架工作阻力 > 额定值 80%"
+      - "连续 3 个循环"
+    source_type: "support_standard"
+    source: "煤矿矿压观测规范"

@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GB/T 25217.7-2019-冲击地压测定、监测与防治方法 第7部分：采动应力监测方法-国家标准馆·国家数字标准馆</title>
+    <link rel="icon" href="/img/favicon.ico?v=1785730216"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta name="keywords"
+          content="国家标准冲击地压测定、监测与防治方法 第7部分：采动应力监测方法矿业 - 固体燃料矿 - 固体燃料矿综合 采矿和矿产品 - 煤">
+    <meta name="description"
+          content="GB/T 25217.7-2019冲击地压测定、监测与防治方法 第7部分：采动应力监测方法GB/T 25217的本部分规定了煤矿冲击地压采动应力监测所涉及的术语和定义、监测方案和冲击危险性的确定。本部分适用于煤矿冲击地压采动应力监测">
+    <link href="/css/index.css?v=1785730216" rel="stylesheet" type="text/css"/>
+    <link href="/css/index-container-5.css?v=1785730216" rel="stylesheet" type="text/css"/>
+    <link href="/css/standard-info.css?v=1785730216" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/share/css/share.min.css?v=1785730216"/>
+    <link rel="stylesheet" href="/layui-v2.9.16/css/layui.css" media="all"/>
+    <link href="/css/element-index.css?v=1785730216" rel="stylesheet" type="text/css"/>
+    <link href="/css/dialog.css?v=1785730216" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/common.css" media="all"/>
+    <link href="/css/scheduled-arrival.css?v=1785730216" rel="stylesheet" type="text/css"/>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <style type="text/css">
+        #chart-panel {
+            height: 500px;
+            width: 1100px;
+            background-color: #fff;
+        }
+
+        .controls {
+            position: absolute;
+            top: 15%;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 60px;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(12, 75, 198, 0.1);
+            padding: 10px;
+        }
+
+        .controls svg {
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 15px;
+            background: rgba(80, 223, 219, 0.7);
+            cursor: pointer;
+        }
+
+        .layui-input-wrap {
+            display: flex;
+        }
+
+        .layui-form-radio:hover > *, .layui-form-radioed, .layui-form-radioed > i {
+            color: #4B9FFF;
+        }
+
+        .layui-laydate .layui-this, .layui-laydate .layui-this > div {
+            background-color: #4B9FFF !important;
+        }
+
+        .layui-btn {
+            background-color: #4B9FFF;
+            border-radius: 18px;
+            width: 110px !important;
+        }
+
+        .layui-layer {
+            border-radius: 10px !important;
+        }
+
+        .layui-laydate-footer span:hover {
+            color: #4B9FFF;
+        }
+
+        .layui-btn-normal {
+            color: #5f5f5f;
+            border: 1px solid #d2d2d2;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .layui-btn-normal:hover {
+            border-color: #4B9FFF !important;
+            color: #333 !important;
+        }
+
+        .dgRead {
+            padding: 24px;
+            display: flex;
+            align-content: center;
+            line-height: 28px;
+            font-size: 14px;
+            flex-direction: column;
+            color: #151515;
+        }
+
+    </style>
+</head>
+<body>
+<head>
+    <link rel="icon" href="/img/favicon.ico?v=1785730216"/>
+    <link href="/css/base.css?v=1785730216" rel="stylesheet" type="text/css"/>
+    <style>
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6a662c79233f654163c0e022619cc249";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body class="base-container">
+<div class="base-header">
+    <a href="/index" style="display: flex">
+        <div style="text-align: left; flex: 1; ">
+            <img src="/img/logo.png?v=1785730216" style="height: 80px; position: relative; left: -40px;"/>
+        </div>
+    </a>
+    <div class="login-view no-login" style="display: none">
+        <span class="login-register login-btn">登&nbsp;录&nbsp;/&nbsp;注&nbsp;册</span>
+    </div>
+    <div class="login-view yes-login" style="display: none">
+        <div class="user-info">
+            <img class="user-icon" src="/img/user-icon.png?v=1785730216"/>
+            <span class="user-name"></span>
+            <img class="arrow-icon" src="/img/user-arrow-icon.png?v=1785730216" class="arrow-icon"/>
+        </div>
+        <div class="user-info-menu" style="display: none">
+            <div class="menu-item" onclick="openUrl('/user/user-information')">
+                <img src="/img/user-center-icon.png?v=1785730216" alt=""/>
+                <a href="javascript:void 0;">个人中心</a>
+            </div>
+            <div class="menu-item message-menu" onclick="openUrl('/user/message')" style="position: relative">
+                <img src="/img/message-icon-dark.png?v=1785730216" alt=""/>
+                <a href="javascript:void 0;">我的消息</a>
+            </div>
+            <div class="menu-line"></div>
+            <div class="menu-item" id="return-account">
+                <img src="/img/return-account-icon.png?v=1785730216" alt=""/>
+                <a href="javascript:void 0;">退出账号</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="base-navigation">
+    <div class="base-navigation-view">
+        <a class="nav-btn active" href="/"><img src="/img/home-icon.png?v=1785730216"/>首页</a>
+        <a class="nav-btn" target="_blank" href="/resources/precious"><img
+                    src="/img/icon/nav-resources-icon.gif?v=1785730216"/>馆藏资源</a>
+        <a class="nav-btn" target="_blank" href="/news/index?type=0"><img
+                    src="/img/icon/nav-news-icon.gif?v=1785730216"/>标准快讯</a>
+        <a class="nav-btn" target="_blank" style="min-width: 150px;" href="/standard-digit/index?index=1"><img
+                    src="/img/digitization-icon.png?v=1785730216"/>标准数字化</a>
+        <a class="nav-btn" target="_blank" href="/standard-submit/index"><img
+                    src="/img/chengjiao-icon.png?v=1785730216"/>呈缴征集</a>
+        <a class="nav-btn" target="_blank" href="/standard-services/document?index=1"><img
+                    src="/img/service-icon.png?v=1785730216"/>标准服务</a>
+        <a class="nav-btn" target="_blank" href="/aboutus/index?index=1"><img
+                    src="/img/aboutus-icon.png?v=1785730216"/>关于我们</a>
+    </div>
+    <div class="subnav hide">
+        <div class="dot" style="left: 0px;"></div>
+        <div class="box">
+            <div class="item" style="top: -9999em;"></div>
+
+            <!-- 馆藏资源 -->
+            <div class="item" style="top: -9999em; left: 0px; right: auto;">
+                <a target="_blank" href="/resources/precious">珍贵馆藏</a>
+                <a target="_blank" href="/resources/index?index=1">国家标准</a>
+                <a target="_blank" href="/resources/index?index=2">行业标准</a>
+                <a target="_blank" href="/resources/index?index=3">地方标准</a>
+                <a target="_blank" href="/resources/index?index=4">团体标准</a>
+                <a target="_blank" href="/resources/index?index=5">国际（区域）标准</a>
+                <a target="_blank" href="/resources/index?index=6">国外国家标准</a>
+                <a target="_blank" href="/resources/index?index=7">国际性专业标准</a>
+                <a target="_blank" href="/resources/index?index=8">技术法规</a>
+            </div>
+            <div class="item" style="top: -9999em; left: 0px; right: auto;">
+                <a target="_blank" href="/news/index?type=0">国内快讯</a>
+                <a target="_blank" href="/news/index?type=1">国际快讯</a>
+                <a target="_blank" href="/resources/new-collection?type=1">标准速递</a>
+                <a target="_blank" href="/resources/new-collection?type=0">馆藏上新</a>
+            </div>
+            <div class="item" style="top: -9999em;">
+                <a target="_blank" href="/standard-digit/index?index=1">组织建设</a>
+                <a target="_blank" href="/standard-digit/index?index=2">标准研制</a>
+                <a target="_blank" href="/standard-digit/index?index=3">科研工作</a>
+                <a target="_blank" href="/standard-digit/index?index=4">系统工具</a>
+                <a target="_blank" href="/standard-digit/index?index=5">蓝皮书</a>
+            </div>
+
+
+            <div class="item" style="top: -9999em;">
+                <a target="_blank" href="/standard-submit/index?tab=national">国标呈缴</a>
+                <a target="_blank" href="/standard-submit/index?tab=voluntary">自愿呈缴</a>
+                <a target="_blank" href="/standard-submit/index?tab=donation">藏品征集</a>
+            </div>
+
+            <div class="item" style="top: -9999em;">
+                <a target="_blank" href="/standard-services/document?index=1">文献服务</a>
+                <a target="_blank" href="/standard-services/document?index=2">知识服务</a>
+                <a target="_blank" href="/standard-services/document?index=3">服务站点</a>
+                <a target="_blank" href="/topics/index?index=4">专题服务</a>
+            </div>
+
+            <!-- 关于我们 -->
+            <div class="item" style="top: 0px; left: 681px; right: auto;">
+                <a target="_blank" href="/aboutus/index?index=1">国家标准馆</a>
+                <a target="_blank" href="/aboutus/index?index=2">国家数字标准馆</a>
+                <a target="_blank" href="/aboutus/index?index=3">发展大事记</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="/js/jquery-3.7.1.min.js" type="text/javascript"></script>
+<script src="/js/base.js?v=1785730216"></script>
+<script src="/js/sockjs.min.js"></script>
+<script src="/js/stomp.min.js"></script>
+
+<script type="application/javascript">
+
+    function openUrl(url, openNewWindow) {
+        if (openNewWindow) {
+            window.open(url)
+        } else {
+            window.location.href = url
+        }
+    }
+
+    const baseFun = {
+        menu: function () {
+            var menuTimer = null;
+
+            $('.base-navigation-view>a').hover(function () {
+                clearInterval(menuTimer);
+                let winW = $(window).width();
+                let menuRight = $('.base-navigation-view').offset().left + $('.base-navigation-view').innerWidth();
+                let index = $(this).index();
+                let radius = $(this).innerWidth() / 2;
+                let left = $(this).offset().left + radius;
+                let subNavRadius = $('.subnav .item').eq(index).width() / 2;
+                var _subnav = $('.subnav .item').eq(index)
+                let subNavWidth = $('.subnav .item').eq(index).innerWidth();
+                if (_subnav.find('a').length < 1) {
+                    $('.subnav').addClass('hide');
+                } else {
+                    $('.subnav').removeClass('hide');
+                    $('.subnav .dot').css({left: left - 4 + 'px'});
+                    $('.subnav .item').css('top', '-9999em');
+                    if (left + subNavRadius >= winW) {
+                        $('.subnav .item').eq(index).css({
+                            right: (winW - menuRight < 0 ? 40 : winW - menuRight) + 'px',
+                            left: 'auto',
+                            top: 0
+                        });
+                    } else {
+                        $('.subnav .item').eq(index).css({
+                            left: (left - subNavRadius < 0 ? 40 : left - subNavRadius) + 'px',
+                            right: 'auto',
+                            top: 0
+                        });
+                    }
+                }
+
+                $(this).addClass('hover-active').siblings().removeClass('hover-active');
+
+
+            }, function () {
+                menuTimer = setTimeout(function () {
+                    // 一级菜单选中取消
+                    $('.subnav').addClass('hide');
+                    $('.base-navigation-view>a').removeClass('hover-active');
+                }, 100);
+            })
+            $('.subnav').hover(function () {
+                clearInterval(menuTimer);
+            }, function () {
+                menuTimer = setTimeout(function () {
+                    // 二级菜单选中取消
+                    $('.subnav').addClass('hide');
+                    $('.base-navigation-view>a').removeClass('hover-active');
+                }, 100);
+            })
+        }
+    }
+
+    // 跨窗口登录状态同步：广播登录/登出事件
+    function broadcastAuthEvent(type) {
+        try {
+            const event = {
+                type: type,
+                time: Date.now()
+            };
+            localStorage.setItem('AUTH_SYNC_EVENT', JSON.stringify(event));
+        } catch (e) {
+            console && console.warn && console.warn('broadcastAuthEvent error', e);
+        }
+    }
+
+    /** 顶部展示名：用户中心可能只回填 name/mobile，userName 为空 */
+    function headerDisplayUserName(data) {
+        if (!data) {
+            return '用户';
+        }
+        var s = data.userName || data.name || data.mobile || data.email;
+        if (s != null && String(s).trim() !== '') {
+            return String(s).trim();
+        }
+        return '用户';
+    }
+
+    function syncAuthWasLoggedIn(loggedIn) {
+        try {
+            localStorage.setItem('AUTH_WAS_LOGGED_IN', loggedIn ? '1' : '0')
+        } catch (e) {
+        }
+    }
+
+    function switchHeaderToNoLogin() {
+        $('.yes-login').hide()
+        $('.no-login').show()
+        $('.user-info-menu').hide()
+        sessionStorage.removeItem('AUTH_LOGIN_BROADCASTED');
+        // 切为未登录后关闭通知连接，避免继续接收登录态消息
+        if (window.noticeSocket && window.noticeSocket.readyState !== WebSocket.CLOSED) {
+            try {
+                window.noticeSocket.close();
+            } catch (e) {
+            }
+        }
+    }
+
+    // 供全站统一鉴权提示调用：当前窗口发现 2010 时，顶部立即切未登录
+    window.addEventListener('NDLS_AUTH_EXPIRED', function () {
+        switchHeaderToNoLogin();
+    });
+
+    // 监听其他窗口的登录/登出事件
+    window.addEventListener('storage', function (e) {
+        if (!e.key || e.key !== 'AUTH_SYNC_EVENT' || !e.newValue) {
+            return;
+        }
+        let data;
+        try {
+            data = JSON.parse(e.newValue);
+        } catch (err) {
+            return;
+        }
+        if (!data || !data.type) {
+            return;
+        }
+
+        if (data.type === 'logout' || data.type === 'expired') {
+            // 其他窗口登出/过期：当前窗口直接切未登录态，不整页刷新
+            switchHeaderToNoLogin();
+            // 明确登出时清理“曾登录”标识，避免后续误判为“登录过期”
+            if (data.type === 'logout') {
+                try {
+                    localStorage.removeItem('AUTH_WAS_LOGGED_IN')
+                } catch (e) {
+                }
+            }
+        } else if (data.type === 'login') {
+            // 其他窗口登录：异步同步当前窗口登录状态和用户信息（不整页刷新）
+            $.ajax({
+                url: '/api/user/get-user-info',
+                type: 'GET',
+                cache: false,
+                success: res => {
+                    if (res && res.code === 0 && res.data) {
+                        syncAuthWasLoggedIn(true)
+                        // 更新头部登录区域
+                        $('.yes-login').show();
+                        $('.no-login').hide();
+                        $('.user-name').html(headerDisplayUserName(res.data));
+
+                        // 为避免重复连接，先关闭已有socket再初始化
+                        if (window.noticeSocket && window.noticeSocket.readyState !== WebSocket.CLOSED) {
+                            try {
+                                window.noticeSocket.close();
+                            } catch (e) {
+                            }
+                        }
+                        if (window.initSocket) {
+                            window.initSocket();
+                        }
+                    } else if (res && (res.code === 2001 || res.code === 2010)) {
+                        switchHeaderToNoLogin()
+                    }
+                }
+            });
+        }
+    });
+
+    $(document).ready(() => {
+
+        baseFun.menu()
+
+        $('.login-btn').on('click', function () {
+            // 前端统一跳转到后端SSO登录入口，由后端记录当前页面并发起授权
+            const currentUrl = window.location.href
+            const loginUrl = '/sso/login?currentUrl=' + encodeURIComponent(currentUrl)
+            window.open(loginUrl)
+        })
+        $('.register-btn').on('click', function () {
+            window.open('https://www.ndls.org.cn/ndls-user/register')
+        })
+        $('.nav-btn').on('mouseover', function () {
+            $(this).children('.nav-btn-sub').show()
+            $(this).children('.nav-btn-sub-arrow').show()
+        })
+        $('.nav-btn').on('mouseout', function () {
+            var that = $(this);
+            var $subMenu = that.find('.nav-btn-sub');
+            var $subArrow = that.find('.nav-btn-sub-arrow');
+            if ($subMenu.length) {
+                setTimeout(function () {
+                    if (!that.is(':hover') && !$subMenu.is(':hover')) {
+                        $subMenu.stop(true, true).fadeOut();
+                        $subArrow.stop(true, true).fadeOut();
+                    }
+                }, 100)
+            }
+        })
+        $('.user-info').on('mouseover', function () {
+            $('.user-info-menu').show()
+            $('.user-info-menu-arrow').show()
+        })
+        $('.user-info').on('mouseout', function () {
+            var that = $(this);
+            var $subMenu = $('.user-info-menu');
+            if ($subMenu.length) {
+                setTimeout(function () {
+                    if (!that.is(':hover') && !$subMenu.is(':hover')) {
+                        $subMenu.stop(true, true).fadeOut();
+                    }
+                }, 100)
+            }
+        })
+        $('.user-info-menu').on('mouseout', function () {
+            var that = $(this);
+            var $subMenu = $('.user-info');
+            if ($subMenu.length) {
+                setTimeout(function () {
+                    if (!that.is(':hover') && !$subMenu.is(':hover')) {
+                        that.stop(true, true).fadeOut();
+                    }
+                }, 100)
+            }
+        })
+
+        $('#return-account').on('click', function () {
+            // 先调用后端登出接口，让后端获取token并调用SSO登出
+            $.ajax({
+                url: '/sys/logout',
+                type: 'POST',
+                success: () => {
+                    // 明确登出后清理“曾登录”标识：避免将后续 2001 推断为过期
+                    try {
+                        localStorage.removeItem('AUTH_WAS_LOGGED_IN')
+                    } catch (e) {
+                    }
+                    // 通知其他窗口登出
+                    broadcastAuthEvent('logout');
+                    // 当前窗口直接切未登录态，不刷新页面
+                    switchHeaderToNoLogin()
+                    // 当前页面跳转到首页
+                    try {
+                        window.location.href = '/index'
+                    } catch (e) {
+                        window.location.replace('/index')
+                    }
+                },
+                error: function () {
+                    // 即使登出接口失败，也将当前页面置为首页，避免留在不可用的鉴权页面
+                    try {
+                        window.location.href = '/index'
+                    } catch (e) {
+                        window.location.replace('/index')
+                    }
+                }
+            })
+        })
+
+        // 顶部登录信息不依赖前端读取 cookie（HttpOnly/host-only 可能导致 getCookie 失败）
+        // 每次页面加载都请求一次后端鉴权接口来决定是否显示用户名。
+        $.ajax({
+            url: '/api/user/get-user-info',
+            type: 'GET',
+            cache: false,
+            success: res => {
+                if (res && res.code === 0 && res.data) {
+                    syncAuthWasLoggedIn(true)
+                    $('.yes-login').show()
+                    $('.no-login').hide()
+                    $('.user-name').html(headerDisplayUserName(res.data))
+                    if (window.initSocket) {
+                        window.initSocket()
+                    }
+
+                    // 本窗口登录成功后，仅在首次登录时广播一次登录事件
+                    if (!sessionStorage.getItem('AUTH_LOGIN_BROADCASTED')) {
+                        broadcastAuthEvent('login');
+                        sessionStorage.setItem('AUTH_LOGIN_BROADCASTED', '1');
+                    }
+                } else if (res && (res.code === 2001 || res.code === 2010)) {
+                    switchHeaderToNoLogin()
+                } else {
+                    $('.yes-login').hide()
+                    $('.no-login').show()
+                }
+            },
+            error: function (xhr, status, error) {
+                if (window.layer && typeof layer.msg === 'function') {
+                    layer.msg('网络错误！');
+                } else if (window.console && typeof console.warn === 'function') {
+                    console.warn('get-user-info failed', status, error);
+                }
+                $('.yes-login').hide()
+                $('.no-login').show()
+            }
+        });
+
+        var heartbeatTimer = null;//心跳执行timer
+        var checkTime = 10000; //心跳检查时间间隔-毫秒 10秒
+        var reconnectTimer = null;//重连接timer
+        var reconnectTime = 10000;//重连接时间10秒后
+        var lastHealthTime = 0
+        var healthTimeOut = 20000;//心跳时间间隔-毫秒  20秒
+        // 全局WebSocket连接对象，用于避免重复连接和在跨窗口同步时安全重连
+        window.noticeSocket = window.noticeSocket || null;
+
+        // 挂到 window 上，供跨窗口同步时调用
+        window.initSocket = function () {
+            // 如已有连接，先关闭以避免重复连接
+            if (window.noticeSocket && window.noticeSocket.readyState !== WebSocket.CLOSED) {
+                try {
+                    window.noticeSocket.close();
+                } catch (e) {
+                }
+            }
+
+            // console.log('socket 连接>>>')
+            window.noticeSocket = new WebSocket("/webSocketByNotice"); // 连接到服务器的 WebSocket URL
+            let socket = window.noticeSocket;
+            // 连接成功时
+            socket.onopen = function (event) {
+                // console.log("WebSocket 连接成功", event);
+                lastHealthTime = new Date().getTime();//更新客户端的最后一次心跳时间
+                if (heartbeatTimer) {
+                    clearInterval(heartbeatTimer)
+                }
+                heartbeatTimer = setInterval(() => {
+                    keepalive(socket)
+                }, checkTime);
+            };
+
+            // 接收到消息时
+            socket.onmessage = function (event) {
+                // console.log("收到来自服务器的消息：", event.data);
+                lastHealthTime = new Date().getTime();//更新客户端的最后一次心跳时间
+                // 判断数据是否可能是一个 JSON
+                if (isLikelyJson(event.data)) {
+                    let parsedData;
+                    try {
+                        parsedData = JSON.parse(event.data); // 尝试解析
+                        if (parsedData && parsedData.type === 0) {
+                            // 消息数量
+                            setUnReadMessage(Number(parsedData.body));
+                        }
+                    } catch (e) {
+                        console.log("解析失败：收到的消息格式不合法", event.data);
+                    }
+                } else {
+                    console.log("收到的消息不是有效的 JSON 格式:", event.data);
+                }
+            };
+
+            // 连接关闭时
+            socket.onclose = function (event) {
+                console.log("WebSocket 连接关闭", event);
+                if (event.code === 1006) {
+                    reconnectTimer = setTimeout(function () {
+                        if (window.initSocket) {
+                            window.initSocket();
+                        }
+                    }, reconnectTime)
+                }
+            };
+
+            // 连接错误时
+            socket.onerror = function (error) {
+                console.log("WebSocket 连接关闭", event);
+                console.log("关闭代码：", event.code);  // 输出关闭代码
+                console.log("关闭原因：", event.reason);  // 输出关闭原因
+
+            };
+        }
+
+        function isLikelyJson(data) {
+            // 判断数据是否是 JSON 字符串的一部分，像是一个对象或数组的开始符号
+            return (data.trim().startsWith('{') && data.trim().endsWith('}')) ||
+                (data.trim().startsWith('[') && data.trim().endsWith(']'));
+        }
+
+
+        function keepalive(ws) {
+            var time = new Date();
+            if ((time.getTime() - lastHealthTime) > healthTimeOut) {
+                if (heartbeatTimer) {
+                    clearInterval(heartbeatTimer);
+                    // n秒后重连接
+                    ws.close();
+                    reconnectTimer = setTimeout(function () {
+                        if (window.initSocket) {
+                            window.initSocket();
+                        }
+                    }, reconnectTime);
+                }
+            } else {
+                // console.log('ping')
+                // 发送心跳消息
+                ws.send('ping');
+            }
+        }
+
+
+    });
+</script>
+
+
+<div class="info-content">
+    <div class="info-content-title">
+        <div class="info-item-1">
+            <div class="info-item-1-title">
+                <span class="label" style="background: rgb(92, 184, 92)">现行</span>
+                <span class="title" style="color: rgb(92, 184, 92)">GB/T 25217.7-2019</span>
+            </div>
+            <div class="options">
+                <div class="options-row">
+                        <div class="dg-read" data-yf001="8073126bddb00296ed8b5f753972edf8" data-a100="GB/T 25217.7-2019"
+                             data-a298="冲击地压测定、监测与防治方法 第7部分：采动应力监测方法" data-a301="冲击地压测定、监测与防治方法 第7部分：采动应力监测方法">
+                            <img src="/img/go-read-icon.png?v=1785730216">
+                            <span class="options-text">到馆阅读</span>
+                        </div>
+
+                    <div class="fav-collect"
+                         data-yf001="8073126bddb00296ed8b5f753972edf8"
+                         data-a000="现行"
+                         data-a100="GB/T 25217.7-2019"
+                         data-a298="冲击地压测定、监测与防治方法 第7部分：采动应力监测方法"
+                         data-a301="冲击地压测定、监测与防治方法 第7部分：采动应力监测方法"
+                    >
+                            <img class="fav-icon" src="/img/fav-icon.png?v=1785730216"/>
+                        <span class="collect options-text">收藏跟踪</span>
+                    </div>
+                    <div class="share" data-value="8073126bddb00296ed8b5f753972edf8">
+                        <img src="/img/share-icon.png?v=1785730216">
+                        <span class="options-text">分享链接</span>
+                        <div class="social-share" data-sites="weibo,qq,wechat"></div>
+                    </div>
+
+                    <div class="buy-btn">
+                        <div class="buy-btn-open" style="display: flex; align-items: center">
+                            <img src="/img/bag-icon.png?v=1785730216">
+                            <span class="options-text">购买正版</span>
+                        </div>
+                        <div class="buy-info default-shadow" style="display: none">
+                            <div class="buy-info-content">
+
+                            </div>
+                            <div class="title-view">
+                                <span class="title-1">选择购买版本</span>
+                                <span class="title-2">本服务由中国标准服务网提供</span>
+                            </div>
+                            <div class="con-view">
+                                                <div class="con-item">
+                                                    <div class="con-item-row-1">
+                                                        <img src="/img/buy-icon-2.png?v=1785730216"
+                                                             style="width: 32px;height: 32px;border-radius: 50%;"/>
+                                                        <span class="name">
+                                                        电子版
+                                                    </span>
+                                                    </div>
+                                                    <div class="con-item-row-2">
+                                                        <span class="name">中文(简体)/电子版/约1分钟可下载/有水印</span>
+                                                    </div>
+                                                    <div class="con-item-row-3">
+                                                        <span class="price">¥ 28</span>
+                                                        <img data-yf001="8073126bddb00296ed8b5f753972edf8"
+                                                             data-value="b9448386bacd01cfbbb52be61e566b01"
+                                                             class="buy-push"
+                                                             src="/img/buy-btn.png?v=1785730216"
+                                                             style="width: 101px;height: 30px;"/>
+                                                    </div>
+                                                </div>
+                                                <div class="con-item">
+                                                    <div class="con-item-row-1">
+                                                        <img src="/img/buy-icon-1.png?v=1785730216"
+                                                             style="width: 32px;height: 32px;border-radius: 50%;"/>
+                                                        <span class="name">纸质版</span>
+                                                    </div>
+                                                    <div class="con-item-row-2">
+                                                        <span class="name">中文(简体)/纸质版/约1个工作日发快递/无授权单位水印</span>
+                                                    </div>
+                                                    <div class="con-item-row-3">
+                                                        <span class="price">¥ 28</span>
+                                                        <img data-yf001="8073126bddb00296ed8b5f753972edf8"
+                                                             data-value="e12e70df6bfe7399621e0a198755e03f"
+                                                             class="buy-push"
+                                                             src="/img/buy-btn.png?v=1785730216"
+                                                             style="width: 101px;height: 30px;"/>
+                                                    </div>
+                                                </div>
+                                    <div class="con-item">
+                                        <div class="con-item-row-1">
+                                            <img src="/img/buy-icon-3.png?v=1785730216"
+                                                 style="width: 32px;height: 32px;border-radius: 50%;"/>
+                                            <span class="name">更多</span>
+                                        </div>
+                                        <div class="con-item-row-2">
+                                            <span class="name">前往中国标准服务网获取更多购买信息</span>
+                                            <span class="name"><br/>支持批量购买纸质版标准</span>
+                                        </div>
+                                        <div class="con-item-row-3">
+                                            <span></span>
+                                            <img class="buy-push-gd" data-id="8073126bddb00296ed8b5f753972edf8"
+                                                 src="/img/buy-btn-2.png?v=1785730216"
+                                                 style="width: 101px;height: 30px;"/>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="info-item-1-content">
+            <span class="info-item-1-content-title">
+                  冲击地压测定、监测与防治方法 第7部分：采动应力监测方法
+            </span>
+            <span class="info-item-1-content-desc">
+                    Methods for test, monitoring and prevention of rock burst—Part 7: Monitoring method of mining-induced stress
+            </span>
+        </div>
+
+        <div class="info-item-1-info">
+                    <div>发布日期：
+                        <span>2019-08-30</span>
+                    </div>
+                <div>实施日期：
+                    <span>2020-03-01</span>
+                </div>
+
+        </div>
+        <span class="info-item-1-info-desc"
+              style="max-height: 150px; overflow: hidden;"
+        >
+            <div style="white-space: pre-wrap; display: inline-block"><span
+                        style="width: 28px; display: inline-block">
+                </span>GB/T 25217的本部分规定了煤矿冲击地压采动应力监测所涉及的术语和定义、监测方案和冲击危险性的确定。本部分适用于煤矿冲击地压采动应力监测</div>
+            <div style="white-space: pre-wrap;"></div>
+        </span>
+
+
+    </div>
+
+    <div class="info-item-2">
+        <div class="info-item-title">
+            <img src="/img/label-icon.png?v=1785730216" alt=""/>
+            <span class="info-item-title-1">分类信息</span>
+        </div>
+        <div class="info-text">
+            <div>
+                <span class="title">发布单位或类别：</span>
+                <a class="text" href="/standard/index?a104=CN-GB">
+                    中国-国家标准
+                </a>
+            </div>
+                <div>
+                    <span class="title">CCS分类：</span>
+                    <span class="text">
+                                <a href="/standard/index?a825=D20">
+                                    D20矿业 - 固体燃料矿 - 固体燃料矿综合
+                                </a>
+                    </span>
+                </div>
+
+                <div>
+
+                    <span class="title">ICS分类：</span>
+                    <span class="text">
+                                <a href="/standard/index?a826=73.040">
+                                    73.040采矿和矿产品 - 煤
+                                </a>
+                    </span>
+                </div>
+        </div>
+    </div>
+
+    <div class="info-item-3">
+        <div class="info-item-title">
+            <img src="/img/label-icon.png?v=1785730216" alt=""/>
+            <span class="info-item-title-1">关联关系</span>
+        </div>
+        <div id="chart-panel"></div>
+        <div class="controls">
+            <svg id="zoomIn" t="1727588600862" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="5453" width="200" height="200">
+                <path d="M801.895 481.895h-259.79v-259.79C542.105 205.479 528.627 192 512 192s-30.105 13.479-30.105 30.105v259.789h-259.79C205.479 481.895 192 495.373 192 512c0 16.627 13.479 30.105 30.105 30.105h259.789v259.789C481.895 818.521 495.373 832 512 832s30.105-13.479 30.105-30.105v-259.79h259.789C818.521 542.105 832 528.627 832 512c0-16.627-13.479-30.105-30.105-30.105z"
+                      p-id="5454" fill="#1296db"></path>
+            </svg>
+            <svg id="zoomOut" t="1727588720178" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="5634" width="200" height="200">
+                <path d="M801.895 542.105h-579.79C205.479 542.105 192 528.627 192 512c0-16.627 13.479-30.105 30.105-30.105h579.789C818.521 481.895 832 495.373 832 512c0 16.627-13.479 30.105-30.105 30.105z"
+                      p-id="5635" fill="#1296db"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="info-item-4">
+        <div class="info-item-title">
+            <img src="/img/label-icon.png?v=1785730216" alt=""/>
+            <span class="info-item-title-1">研制信息</span>
+        </div>
+        <div class="info-text">
+                <div>
+                    <span class="title">归口单位：</span>
+                    <a href="/standard/index?owner=中国煤炭工业协会" class="text"
+                       style="color: #32ADE6;">中国煤炭工业协会</a>
+                </div>
+
+
+                <div>
+                    <span class="title">起草单位：</span>
+                    <span class="text">
+                            <a data-name="天地科技股份有限公司" href="/standard/index?a209=天地科技股份有限公司">
+                                天地科技股份有限公司、
+                            </a>
+                            <a data-name="煤炭科学技术研究院有限公司" href="/standard/index?a209=煤炭科学技术研究院有限公司">
+                                煤炭科学技术研究院有限公司、
+                            </a>
+                            <a data-name="兖矿集团有限公司" href="/standard/index?a209=兖矿集团有限公司">
+                                兖矿集团有限公司、
+                            </a>
+                            <a data-name="北京科技大学" href="/standard/index?a209=北京科技大学">
+                                北京科技大学、
+                            </a>
+                            <a data-name="辽宁工程技术大学" href="/standard/index?a209=辽宁工程技术大学">
+                                辽宁工程技术大学、
+                            </a>
+                            <a data-name="中国矿业大学" href="/standard/index?a209=中国矿业大学">
+                                中国矿业大学
+                            </a>
+                </span>
+                </div>
+                <div>
+                    <span class="title">起草人：</span>
+                    <span class="text">
+                            <a class="tocaoren" data-name="齐庆新" href="/standard/index?draftman=齐庆新">
+                                齐庆新、
+                            </a>
+                            <a class="tocaoren" data-name="潘俊锋" href="/standard/index?draftman=潘俊锋">
+                                潘俊锋、
+                            </a>
+                            <a class="tocaoren" data-name="张修峰" href="/standard/index?draftman=张修峰">
+                                张修峰、
+                            </a>
+                            <a class="tocaoren" data-name="姜福兴" href="/standard/index?draftman=姜福兴">
+                                姜福兴、
+                            </a>
+                            <a class="tocaoren" data-name="王书文" href="/standard/index?draftman=王书文">
+                                王书文、
+                            </a>
+                            <a class="tocaoren" data-name="张宏伟" href="/standard/index?draftman=张宏伟">
+                                张宏伟、
+                            </a>
+                            <a class="tocaoren" data-name="窦林名" href="/standard/index?draftman=窦林名">
+                                窦林名、
+                            </a>
+                            <a class="tocaoren" data-name="刘少虹" href="/standard/index?draftman=刘少虹">
+                                刘少虹、
+                            </a>
+                            <a class="tocaoren" data-name="赵善坤" href="/standard/index?draftman=赵善坤">
+                                赵善坤、
+                            </a>
+                            <a class="tocaoren" data-name="秦子晗" href="/standard/index?draftman=秦子晗">
+                                秦子晗
+                            </a>
+                </span>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="info-item-5">
+        <div class="info-item-title">
+            <img src="/img/label-icon.png?v=1785730216" alt=""/>
+            <span class="info-item-title-1">相似标准/计划/法规</span>
+        </div>
+        <div class="xs-list">
+
+                    <a class="xs-list-item" href="/standard/detail/cc1a3abe40efc32ec9c72340571e62cb">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.4-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第4部分:微震监测方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 4: Monitoring method of microseismicity
+                        </div>
+                        <div>2019-10-18</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/84c9b69c16f111b2c7fc678460f042cb">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.5-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第5部分:地音监测方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 5: Monitoring method of earth-sound
+                        </div>
+                        <div>2019-10-18</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/64dd3ec320191bc3d8d6f695365e9a07">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.6-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第6部分：钻屑监测方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 6: Monitoring method of drilling bits
+                        </div>
+                        <div>2019-10-18</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/ba4cd1029b197c11e2f9674dd021aef7">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.8-2021</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第8部分：电磁辐射监测方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 8: Monitoring method of electromagnetic radiation
+                        </div>
+                        <div>2021-04-30</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/21390bbca39dee91c7bc6de0fa71eafa">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.12-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第12部分：开采保护层防治方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 12: Prevention method of protective seam mining
+                        </div>
+                        <div>2019-08-30</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/42849d234b47da05457a6c0210e9d370">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.14-2020</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第14部分：顶板水压致裂防治方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 14: Prevention method of roof hydraulic fracturing
+                        </div>
+                        <div>2020-11-19</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/cba2394c5e1b5b10537e246d7aad3789">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.2-2010</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第2部分：煤的冲击倾向性分类及指数的测定方法
+                            <br/>
+                                Methods for test，monitoring and prevention of rock burst - Part 2: Classification and laboratory test method on bursting liability of coal
+                        </div>
+                        <div>2010-09-26</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/b471db349593731757f48d6e60fad23c">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.3-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第3部分:煤岩组合试件冲击倾向性分类及指数的测定方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 3: Classification and laboratory test method on bursting liability of coal-rock combinations sample
+                        </div>
+                        <div>2019-10-18</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/7a29a777ef52aebb233169f0a97c23da">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.9-2020</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第9部分：煤层注水防治方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 9: Prevention method of water infusion on coal seam
+                        </div>
+                        <div>2020-11-19</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/f5df2ff2f34a23c1c9de2557d24115ba">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.10-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第10部分：煤层钻孔卸压防治方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 10: Prevention method of drillhole destressing on coal-seam
+                        </div>
+                        <div>2019-08-30</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/b2aef7dbf6925ac7d02f3361fe28a25c">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.11-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第11部分：煤层卸压爆破防治方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part 11: Prevention method of destress blasting in coal seam
+                        </div>
+                        <div>2019-08-30</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/c59a4bb988d3b175dede118bcac28853">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.1-2010</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第1部分：顶板岩层冲击倾向性分类及指数的测定方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst - Part 1: Classification and laboratory test method on bursting liability of roof strata
+                        </div>
+                        <div>2010-09-26</div>
+                    </a>
+
+                    <a class="xs-list-item" href="/standard/detail/a350283dbff6e36a079e6ccd136f197b">
+                        <span class="pointer"></span>
+                        <div class="label-title"
+                             style="background-color: rgb(92, 184, 92)">现行</div>
+                        <div class="to-info">GB/T 25217.13-2019</div>
+                        <div>
+                            冲击地压测定、监测与防治方法 第13部分：顶板深孔爆破防治方法
+                            <br/>
+                                Methods for test, monitoring and prevention of rock burst—Part13: Prevention method of deep-hole blasting in roof
+                        </div>
+                        <div>2019-08-30</div>
+                    </a>
+        </div>
+    </div>
+    <div id="fav-dialog" class="fav-dialog" style="display: none">
+        <div class="fav-btn">
+            <i></i>
+            创建收藏夹
+        </div>
+        <div class="fav-list">
+        </div>
+    </div>
+    <div id="add-fav" class="el-dialog" style="display: none">
+        <div class="el-header">
+            <div class="layui-layer-setwin"><span
+                        class="layui-icon layui-icon-close layui-layer-close layui-layer-close1"></span></div>
+        </div>
+        <div class="el-dialog__body">
+            <div style="font-size: 16px; display: flex; flex-direction: column; align-items: center;">
+                <img src="/img/icon/add-favorite-icon.png" style="height: 68px; width: 68px;">
+                <div style="margin-top: 12px; color: rgb(0, 0, 0);">新建收藏夹</div>
+            </div>
+            <form class="el-form el-form--label-left"
+                  style="margin-top: 25px; display: flex; flex-direction: column; width: 100%;">
+                <div class="el-form-item__label">
+                    标题：
+                </div>
+                <div class="el-input" style="width: 100%;"><input oninput="favInputChange(this.value)" name="folderName"
+                                                                  type="text" autocomplete="off" maxlength="20"
+                                                                  placeholder="请输入标题" class="el-input__inner">
+                    <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><!----><!---->
+                            <!----><span class="el-input__count"><span class="el-input__count-inner">
+            0/20
+          </span></span></span></span></div>
+                <div class="el-form-item__label" style="margin-top: 10px;">
+                    描述（选填）：
+                </div>
+                <div class="el-textarea" style="width: 100%;"><textarea name="folderRemark" autocomplete="off" rows="4"
+                                                                        maxlength="200" placeholder="请输入描述内容"
+                                                                        class="el-textarea__inner"
+                                                                        style="min-height: 32.6px;"></textarea><span
+                            class="el-input__count">0/200</span></div>
+            </form>
+
+            <div style="margin-top: 50px; display: flex; justify-content: flex-end; width: 100%;">
+                <button type="button" class="el-button el-button--default el-button--small fav-back"><!---->
+                    <span>取消</span></button>
+                <button disabled="disabled" type="button"
+                        class="el-button el-button--primary el-button--small is-disabled fav-save"><!---->
+                    <span>确认</span></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        #total-count {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .total-count-animation {
+            animation: heartbeat 1.5s forwards;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .count-view:hover .count-tips {
+            display: flex;
+        }
+
+        .count-tips {
+            position: absolute;
+            right: -190px;
+            top: 18px;
+            background: #E4E7ED;
+            align-items: center;
+            font-size: 13px;
+            padding: 2px 5px 2px 10px;
+            display: none;
+        }
+
+        .count-tips::before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #E4E7ED;
+        }
+
+        .footer-bottom {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="footer">
+    <div class="footer-top">
+        <div>
+            <div>
+                <li class="footer-title">关于国家数字标准馆</li>
+                <li>
+                    《国家标准化发展纲要》提出建设国家数字标准馆，推动标准化工作向数字化、网络化、智能化转型。中国标准化研究院正在全力推进国家数字标准馆建设，力争建成“一个中心”和“一个平台”，即全球领先的标准数据资源中心，涵盖标准全生命周期的数字化、网络化、智能化研究与服务平台。
+                </li>
+                <span class="gz-img">
+                    <span class="gz-text">
+                        <img class="gz-icon" src="/img/icon/gz-icon.png"/>
+                        <span style="margin-left: 4px;">关于我们</span>
+                    </span>
+                    <img class="gz-img-2" src="/img/ndls-qrcode.png?v=1785730216" alt=""/>
+                </span>
+            </div>
+        </div>
+        <div>
+            <div class="footer-title">文献服务</div>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=1&level2Index=1">查标准</a></li>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=1&level2Index=2">看标准</a></li>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=1&level2Index=3">买标准</a></li>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=1&level2Index=4">译标准</a></li>
+            <li class="">
+                <a target="_blank" href="/standard/order-info">
+                    <div class="find-order">
+                        <img style="cursor: pointer; width: 17px; height: 17px;margin-right: 2px;"
+                             src="/img/icon/select-order-icon.png"/>
+                        <span>订单查询</span>
+                    </div>
+                </a>
+            </li>
+        </div>
+        <div>
+            <div class="footer-title">知识服务</div>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=2&level2Index=1">查新颖性</a>
+            </li>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=2&level2Index=2">查有效性</a>
+            </li>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=2&level2Index=3">跟踪标准</a>
+            </li>
+            <li class="item"><a target="_blank" href="/standard-services/document?index=2&level2Index=4">比对标准</a>
+            </li>
+        </div>
+
+        <div>
+            <div class="footer-title">标准数字化</div>
+            <li class="item"><a target="_blank" href="/standard-digit/index?index=4&level2Index=1">专题数据库</a>
+            </li>
+            <li class="item"><a target="_blank" href="/standard-digit/index?index=4&level2Index=2">标准管理系统</a>
+            </li>
+            <li class="item"><a target="_blank" href="/standard-digit/index?index=4&level2Index=3">大数据分析系统</a>
+            </li>
+            <li class="item"><a target="_blank" href="/intelligent/index?index=3">标准智能编写系统</a></li>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <div style="width: 1000px;display: flex;justify-content: space-between;">
+            <div>地址：北京市海淀区知春路4号</div>
+            <a href="/standard/order-info" target="_blank">技术支持：010-58811974/1972/1360/1341/1328</a>
+            <div>邮箱：service@cnis.ac.cn</div>
+            <div class="count-view">
+                访问量：<span id="total-count"> </span>
+                <span class="count-tips">自2024年10月至今总访问量</span>
+            </div>
+        </div>
+        <div style="width: 1000px;display: flex;justify-content: space-between;">
+            <div>出版物经营许可证：新出发京批字第直170229号</div>
+            <div>
+                <div>备案号：</div>
+                <a style="" href="http://beian.miit.gov.cn/" target="_blank">京ICP备10046988号-46</a>
+                <img src="/img/icon/beian-icon.png" alt="" style="width: 16px; margin-left: 10px;"/>
+                <a style="margin-left: 2px;" href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802045562"
+                   target="_blank">京公网安备11010802045562号</a>
+            </div>
+            <div>
+                <img style="width: 22.1px; position:relative; top: 0.6px; left: 3px;" src="/img/copyright-icon.png"/>
+                ️版权归中国标准化研究院所有
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+<script type="application/javascript">
+
+    const TOTAL_COUNT_KEY = "TOTAL_COUNT_KEY"
+    let TOTAL_COUNT = ''
+
+    function updateTotalCount(count) {
+        if (!count || TOTAL_COUNT === count) {
+            return
+        }
+        TOTAL_COUNT = count
+        const el = $('#total-count')
+        const formattedCount = new Intl.NumberFormat('zh-CN').format(count);
+        if (el.hasClass('total-count-animation')) {
+            el.removeClass('total-count-animation');
+        }
+        el.addClass('total-count-animation');
+        el.text(formattedCount);
+    }
+
+    function visitRecordCount() {
+        $.ajax({
+            url: '/api/visit-record/visit-count',
+            type: 'POST',
+            success: function (res) {
+                if (res.code === 0) {
+                    updateTotalCount(res.data)
+                    localStorage.setItem(TOTAL_COUNT_KEY, res.data)
+                } else {
+                    console.error('获取访问总量失败:', res.message);
+                }
+            },
+            error: function (xhr) {
+                console.error('请求访问总量失败:', xhr.statusText);
+            }
+        });
+    }
+
+    $(document).ready(() => {
+        visitRecordCount()
+        window.addEventListener('storage', function (event) {
+            if (event.key === TOTAL_COUNT_KEY && event.newValue) {
+                updateTotalCount(event.newValue)
+            }
+        });
+    })
+
+</script>
+</html>
+
+<div id="dgRead" style="display: none">
+    <div class="dg-header">
+        <img syle="width: 100%;" src="/img/dg-read-bg.png"/>
+        <div class="img-text">
+            <p class="title">国家标准馆</p>
+            <p><img src="/img/icon/dg-time-icon.png"/>开放时间：每周一至周五8:30-17:00（节假日不开放）</p>
+            <p><img src="/img/icon/dg-address-icon.png"/>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：北京市海淀区知春路4号
+            </p>
+            <p><img src="/img/icon/dg-address-icon.png"/>乘车路线：乘坐地铁10号线、昌平线，在西土城站下车D口出后西行150米即可到达
+            </p>
+        </div>
+    </div>
+
+    <div class="dgRead">
+        <p>
+            国家标准馆位于北京市海淀区知春路4号，可接待到馆读者，为读者提供标准文献检索、文献阅览、信息咨询、信息跟踪、信息推送等服务。</p>
+        <div class="keyPoint">注意事项</div>
+        <p>1. 本馆向在国家数字标准馆网络平台上完成实名注册和预约的读者开放。</p>
+        <p>2. 请勿在非开放范围随意走动和从事与国家标准馆所提供服务无关的活动。</p>
+        <p>3. 请勿携带食品、有色和含糖饮料进入阅览区域。</p>
+        <p>4. 禁止在馆区内吸烟和使用明火，禁止携带易燃、易爆、有毒等危险品。</p>
+        <p>5. 请注意仪表着装，衣冠整洁得体，言谈举止文明。</p>
+        <p>6. 请遵守公共秩序和国家标准馆相关管理规定，服从工作人员管理，自觉维护参观秩序和良好的阅读环境。</p>
+        <div class="keyPoint">联系方式</div>
+        <div class="contact-box">
+            <div class="item">
+                <p>赵老师</p>
+                <p><img src="/img/icon/dg-lx-phone-icon.png"/>电话：010-58811369</p>
+                <p><img src="/img/icon/dg-lx-email-icon.png"/>邮箱：zhaoping@cnis.ac.cn</p>
+            </div>
+            <div class="item">
+                <p>田老师</p>
+                <p><img src="/img/icon/dg-lx-phone-icon.png"/>电话：010-58811378</p>
+                <p><img src="/img/icon/dg-lx-email-icon.png"/>邮箱：tianfang@cnis.ac.cn</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 36px; ">
+            <button class="layui-btn el-button--primary confirm-dgReader"
+                    style="border-radius: 6px; height: 36px; line-height: 36px;">已阅
+            </button>
+        </div>
+    </div>
+</div>
+<script>
+    let dgParamsData = {}
+
+    function verificationCode() {
+        $.ajax({
+            url: '/api/common/verification-code',
+            type: 'get',
+            success: res => {
+                if (res.code == 0) {
+                    $('#veriCode').attr('src', res.data.img); // 加载初始验证码图像
+                    $('#veriCode').attr('data-key', res.data.key); // 初始化 data-key
+                }
+            }
+        })
+    }
+
+    function dgRead(dgData) {
+        checkLogin(true).then(isLogin => {
+            if (isLogin) {
+                // 设置值
+                dgParamsData = dgData
+                // 提示框
+                layer.open({
+                    type: 1,
+                    area: '660px',
+                    resize: false,
+                    scrollbar: false,
+                    shadeClose: true,
+                    title: '到馆阅览须知',
+                    content: $('#dgRead'),
+                    success: function () {
+                    }
+                });
+            }
+        })
+    }
+
+    let layerIndexDgReader
+    $(document).on('click', '.confirm-dgReader', function () {
+        layer.closeAll()
+        layerIndexDgReader = layer.open({
+            type: 1,
+            area: '450px',
+            resize: false,
+            scrollbar: false,
+            shadeClose: true,
+            title: '到馆阅读',
+            content: `
+                          <div class="layui-form layui-form-pane" lay-filter="filter-test-layer" style="margin: 16px;padding: 0 20px">
+                              <div class="layui-form-item">
+                                <label class="layui-form-label">真实姓名<span class="required">*</span></label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="userName" autocomplete="off" placeholder="请输入真实姓名" lay-reqtext="请输入真实姓名" maxlength="20" lay-verify="required" class="layui-input">
+                                </div>
+                              </div>
+                              <div class="layui-form-item">
+                                <label class="layui-form-label">手机号码<span class="required">*</span></label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="phone" autocomplete="off" lay-verify="required|phone" placeholder="请输入手机号码"  maxlength="11" lay-reqtext="手机号码不能为空" lay-verify="required" class="layui-input">
+                                </div>
+                              </div>
+                              <div class="layui-form-item">
+                                <label class="layui-form-label">邮箱</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="email" autocomplete="off"  placeholder="请输入邮箱"  maxlength="255" lay-reqtext="请输入正确的邮箱" lay-verify="email" class="layui-input">
+                                </div>
+                              </div>
+
+                              <div class="layui-form-item">
+                                <div class="layui-inline">
+                                  <label class="layui-form-label">到馆日期<span class="required">*</span></label>
+                                  <div class="layui-input-inline layui-input-wrap">
+                                    <input type="text" readonly name="arrivalTime"
+                                    style="width: 162px;"
+                                    id="date" lay-verify="required" placeholder="请选择到馆日期"
+                                    lay-reqtext="请选择到馆日期" autocomplete="off" class="layui-input">
+                                  </div>
+                                </div>
+                              </div>              <div class="layui-form-item">
+                                <label class="layui-form-label">到馆时间<span class="required">*</span></label>
+                                <div class="layui-input-block">
+                                  <input type="radio" autocomplete="off" name="timeType" value="0" title="上午" checked>
+                                  <input type="radio" autocomplete="off" name="timeType" value="1" title="下午">
+                                </div>
+                              </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">单位名称<span class="required">*</span></label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="unitName" autocomplete="off" placeholder="请输入单位名称" maxlength="20"   class="layui-input">
+                                </div>
+                              </div>
+<!--                            <div class="layui-form-item">-->
+<!--                                <label class="layui-form-label">车牌号</label>-->
+<!--                                <div class="layui-input-block">-->
+<!--                                  <input type="text" name="carNumber" autocomplete="off" placeholder="请输入车牌号" maxlength="20" class="layui-input">-->
+<!--                                </div>-->
+<!--                              </div>-->
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">工作地址</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="workAddress" autocomplete="off" placeholder="请输入工作地址" maxlength="50" class="layui-input">
+                                </div>
+                              </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">同行人数</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="peerCount" autocomplete="off" placeholder="无" class="layui-input" lay-verify="number" maxlength="4">
+                                </div>
+                              </div>
+                            <div class="layui-form-item">
+                              <div class="layui-row">
+                                <label class="layui-form-label" style="padding: 9px 12px;">图形验证码<span class="required">*</span></label>
+                                <div class="layui-col-xs4">
+                                  <div class="layui-input-wrap">
+                                    <input type="text" name="captcha" maxlength="4" value="" lay-verify="required" placeholder="验证码" lay-reqtext="请输入验证码" autocomplete="off" class="layui-input" lay-affix="clear">
+                                  </div>
+                                </div>
+                                <div class="layui-col-xs3">
+                                  <div style="margin-left: 10px;">
+                                    <img id="veriCode"  data-key='' src="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div style="width: 100%;margin:40px 0;display: flex;justify-content: center;">
+                                 <button id="dg-form-button" type="submit" class="layui-btn" lay-submit lay-filter="button"  style="width: 80px">提交</button>
+                            </div>
+                          </div>
+        `, success: function () {
+                layui.use(['form', 'laydate', 'util'], function () {
+                    const form = layui.form;
+                    const layer = layui.layer;
+                    const laydate = layui.laydate;
+                    form.render()
+                    var button = document.getElementById('dg-form-button');  // 获取按钮元素
+                    // 提交事件
+                    form.on('submit(button)', function (data) {
+                        button.disabled = true;  // 禁用按钮，防止重复点击
+                        if (dgParamsData) {
+                            data.field.standardNumber = dgParamsData.a100
+                            if (dgParamsData.a298 && dgParamsData.a298.length > 0) {
+                                data.field.title = dgParamsData.a298 || ''
+                            } else {
+                                data.field.title = dgParamsData.a301 || ''
+                            }
+                            data.field.tid = dgParamsData.yf001 || ''
+                        }
+                        data.field.dataKey = $("#veriCode").attr('data-key');
+                        $.ajax({
+                            type: "POST",
+                            url: '/api/standard/scheduledAdd',
+                            data: JSON.stringify(data.field),
+                            dataType: "json",
+                            contentType: "application/json;charset=UTF-8",//指定发送的数据格式
+                            success: function (data) {
+                                if (data.code === 0) {
+                                    layer.msg("预约成功！您可在【个人中心-到馆预约】查看预约记录。")
+                                    setTimeout(() => {
+                                        button.disabled = false;  // 请求完成后启用按钮
+                                        layer.close(layerIndexDgReader)
+                                    }, 500)
+                                } else {
+                                    button.disabled = false;  // 如果没有 dgData，恢复按钮状态
+                                    verificationCode();
+                                    layer.close(layerIndexDgReader)
+                                    layer.msg(data.message)
+
+                                }
+                            },
+                        });
+                        button.disabled = false;
+                        return false; // 阻止默认 form 跳转
+                    });
+                    // 日期
+                    laydate.render({
+                        elem: '#date'
+                    });
+                    $('#veriCode').on('click', function () {
+                        verificationCode();
+                    })
+                });
+            }
+        });
+        verificationCode();
+    })
+
+</script>
+</body>
+<script src="/js/echarts.min.js"></script>
+<script src="/share/js/social-share.min.js?v=1785730216"></script>
+<script src="/layui-v2.9.16/layui.js"></script>
+<script>
+
+    // 保存每个节点的初始展开状态
+    let initialState = {}
+
+    let favDialog = null;
+    let dgData = {}
+
+    function favInputChange(e) {
+        if (e && e.length > 0) {
+            $('.el-button--primary').removeClass('is-disabled')
+            $('.el-button--primary').prop('disabled', false)
+        } else {
+            $('.el-button--primary').addClass('is-disabled')
+            $('.el-button--primary').prop('disabled', true)
+        }
+    }
+
+    $(document).on('click', '.fav-collect', function () {
+        checkLogin(true).then(isLogin => {
+            console.log('isLogin', isLogin)
+            if (isLogin) {
+                // 打开预约到管弹框
+                dgData = {
+                    yf001: this.dataset.yf001,
+                    a000: this.dataset.a000,
+                    a298: this.dataset.a298,
+                    a301: this.dataset.a301,
+                    a100: this.dataset.a100
+                }
+                // 提示框
+                let layerIndex1 = layer.open({
+                    type: 1,
+                    area: '530px',
+                    resize: false,
+                    scrollbar: false,
+                    shadeClose: true,
+                    title: '添加收藏',
+                    content: $('#fav-dialog'),
+                    success: function () {
+                        showLoading('#fav-dialog')
+                        getFoldersList(true)
+                    }
+                });
+            }
+        })
+    })
+
+    function syncListFavStatus(yf001) {
+        $.get('/api/standard/detail/' + yf001, res => {
+            if (res.data) {
+                console.log($('.fav-collect'))
+                if (res.data.fav === 1) {
+                    $('.fav-collect').each((index, item) => {
+                        if ($(item).attr('data-yf001') === yf001) {
+                            $(item).find('.fav-icon').attr('src', '/img/icon/success-fav-icon.png?v=1785730216')
+                        }
+                    })
+                } else {
+                    $('.fav-collect').each((index, item) => {
+                        if ($(item).attr('data-yf001') === yf001) {
+                            $(item).find('.fav-icon').attr('src', '/img/fav-icon.png?v=1785730216')
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+    function getFoldersList(falg) {
+        $('.fav-list').show()
+        $('.fav-btn').show()
+        $('.add-fav').hide()
+
+        if (falg) {
+            $('.fav-list').html('')
+        }
+        $.ajax({
+            url: '/api/user-folders/list?yf001=' + dgData.yf001,
+            type: 'get',
+            dataType: "json",
+            success: res => {
+                let html = '';
+                if (res.data) {
+                    $('#fav-list').html('')
+                    for (let i = 0; i < res.data.length; i++) {
+                        const favorites = res.data[i]
+                        html += '         <div class="fav-item">'
+                        html += '         <div class="fav-item_left">'
+                        html += '         <div class="fav-item_left_title">' + (favorites.folderName ? favorites.folderName : '') + '</div>'
+                        html += '     <div class="fav-item_left_ext">'
+                        html += '         <span>' + favorites.contentCount + '条</span>'
+                        html += '     </div>'
+                        html += ' </div>'
+
+
+                        if (favorites.favId) {
+                            html += '     <div class="collect-btn" data-id="' + favorites.favId + '" data-type="1" data-folderid="' + favorites.id + '">'
+                            html += '         取消收藏'
+                            html += '     </div>'
+                        } else {
+                            html += '     <div class="collect-btn" data-type="0" data-folderid="' + favorites.id + '">'
+                            html += '         收藏'
+                            html += '     </div>'
+                        }
+
+                        html += ' </div>'
+                    }
+                }
+                $('.fav-list').html(html)
+                hideLoading('#fav-dialog')
+            },
+            error: function () {
+                hideLoading('#fav-dialog')
+            }
+        })
+    }
+
+    $(document).on('click', '.fav-back', function () {
+        $('input[name="folderName"]').val('')
+        $('textarea[name="folderRemark"]').val('')
+        if (favDialog) {
+            layer.close(favDialog)
+            favDialog = null
+        }
+
+    })
+    $(document).on('click', '.fav-save', function () {
+        this.disabled = true
+        const data = {
+            'folderName': $('input[name="folderName"]').val(),
+            'remark': $('textarea[name="folderRemark"]').val(),
+        }
+        $.ajax({
+            url: '/api/user-folders/add',
+            type: 'post',
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify(data),
+            success: res => {
+                if (res.code === 0) {
+                    $('input[name="folderName"]').val('')
+                    $('textarea[name="folderRemark"]').val('')
+                    this.disabled = false
+                    layer.msg('新增成功')
+                    showLoading('#fav-dialog')
+                    if (favDialog) {
+                        layer.close(favDialog)
+                        favDialog = null
+                    }
+                    getFoldersList(false)
+                } else {
+                    this.disabled = false
+                    layer.msg(res.message)
+                }
+            }, error: function () {
+                this.disabled = false
+            }
+        })
+    })
+    $(document).on('click', '.fav-btn', function () {
+        // 提示框
+        favDialog = layer.open({
+            type: 1,
+            area: '400px',
+            resize: false,
+            title: false,
+            scrollbar: true,
+            shadeClose: true,
+            closeBtn: 0,
+            content: $('#add-fav')
+        });
+    })
+    $(document).on('click', '.collect-btn', function () {
+        let $this = $(this)
+        this.disabled = true
+        if (Number(this.dataset.type) === 0) {
+            const data = {
+                yf001: dgData.yf001,
+                a000: dgData.a000,
+                type: 0, // 0 标准
+                folderId: this.dataset.folderid,
+                a298: dgData.a298,
+                a301: dgData.a301,
+                a100: dgData.a100
+            }
+            $.ajax({
+                url: '/api/user-folders/add-fav',
+                type: 'post',
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(data),
+                success: res => {
+                    this.disabled = false
+                    if (res.code === 0) {
+                        layer.msg('收藏成功')
+                        showLoading('#fav-dialog')
+                        syncListFavStatus(dgData.yf001)
+                        getFoldersList(false)
+                    } else {
+                        layer.msg(res.message)
+                    }
+                }, error: function () {
+                    this.disabled = false
+                }
+            })
+        } else if (Number(this.dataset.type) === 1) {
+            $.ajax({
+                url: '/api/user-folders/del-fav',
+                type: 'post',
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    id: this.dataset.id
+                }),
+                success: res => {
+                    this.disabled = false
+                    if (res.code === 0) {
+                        layer.msg('取消成功')
+                        showLoading('#fav-dialog')
+                        syncListFavStatus(dgData.yf001)
+                        getFoldersList(false)
+                    } else {
+                        layer.msg(res.message)
+                    }
+                }, error: function () {
+                    this.disabled = false
+                }
+            })
+        }
+    })
+
+    $(function () {
+        var $config = {
+            url: '',
+            source: '',
+            title: '',
+            description: '',
+            image: '',
+            wechatQrcodeTitle: '微信扫一扫：分享',
+            wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
+            target: '_blank'
+        };
+        socialShare('.social-share', $config);
+    })
+    $(document).ready(function () {
+        postVisitRecord('详情', null, '/standard/detail/', 'ndls-platform:VISIT-TOKEN:L3N0YW5kYXJkL2RldGFpbC84MDczMTI2YmRkYjAwMjk2ZWQ4YjVmNzUzOTcyZWRmOA==972102dc-426c-4dc7-b808-2b48ff7c570e')
+        var infoDesc = $('.info-item-1-info-desc');
+        if (infoDesc[0].scrollHeight > 150) {
+            let html = ''
+            html += '         <div class="launch-box">'
+            html += '         <div class="launch-box-title">'
+            html += '         <span class="launch-box-title-text">展开</span>'
+            html += '     <img class="launch-icon" src="/img/launch-icon.png?v=1785730216" />'
+            html += '     <img class="pack-up-icon" style="display: none" src="/img/pack-up-icon.png?v=1785730216" />'
+            html += ' </div>'
+            html += ' </div>'
+            $('.info-item-1-info-desc').after(html)
+
+        } else {
+        }
+    });
+    setTimeout(() => {
+        var infoDesc = $('.info-item-1-info-desc');
+        if (infoDesc[0].scrollHeight > 150) {
+            $('.launch-box').show()
+        } else {
+        }
+    }, 0)
+
+    $('.buy-btn-open').on('mouseover', function () {
+        $('.buy-info').show()
+    })
+    $('.buy-btn-open').on('mouseout', function () {
+        setTimeout(function () {
+            if (!$('.buy-btn-open').is(":hover") && !$('.buy-info').is(":hover")) {
+                $('.buy-info').hide()
+            }
+        }, 100)
+    })
+
+    $('.explain-body').on('mouseover', function () {
+        $('.explain-text').show()
+    })
+    $('.explain-body').on('mouseout', function () {
+        setTimeout(function () {
+            if (!$('.explain-body').is(":hover") && !$('.explain-text').is(":hover")) {
+                $('.explain-text').hide()
+            }
+        }, 100)
+    })
+
+
+    $(document).on('click', '.launch-box-title', function () {
+        if ($('.launch-box-title>.launch-icon').is(':visible')) {
+            $('.launch-box-title-text').text('收起')
+            $('.launch-box-title>.launch-icon').hide();
+            $('.launch-box-title>.pack-up-icon').show();
+            $('.launch-box').addClass('launch-box-open')
+            $('.info-item-1-info-desc').css('max-height', 'none')
+        } else {
+            $('.launch-box-title-text').text('展开')
+            $('.launch-box-title>.pack-up-icon').hide();
+            $('.launch-box-title>.launch-icon').show();
+            $('.launch-box-open').removeClass('launch-box-open')
+
+            $('.info-item-1-info-desc').css('max-height', '150px')
+        }
+    })
+
+    $('.buy-info').on('mouseout', function () {
+        setTimeout(function () {
+            if (!$('.buy-btn-open').is(":hover") && !$('.buy-info').is(":hover")) {
+                $('.buy-info').hide()
+            }
+        }, 100)
+    })
+    $('.buy-push-gd').on('click', function () {
+        window.open('https://www.cssn.net.cn/cssn/productDetail/' + this.dataset.id)
+    })
+
+    $('.buy-push').on('click', function () {
+        var data = {
+            uid: $(this).attr('data-value'),
+            yf001: this.dataset.yf001,
+        }
+        var form = objToQueryString(data)
+        window.location.href = '/standard/buy-info?' + form
+    })
+
+
+    let standard = {"yf001":"8073126bddb00296ed8b5f753972edf8","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.7-2019","yf100":"GB/T 25217.7-2019","a298":"冲击地压测定、监测与防治方法 第7部分：采动应力监测方法","a300":"zh-CN","a300cn":"中文(简体)","a301":"冲击地压测定、监测与防治方法 第7部分：采动应力监测方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 7: Monitoring method of mining-induced stress","a101":"2019-08-30","a205":"2020-03-01","a502list":["GB/T 7665-2005","GB/T 16414-2008"],"a825list":["D20"],"a826list":["73.040"],"a825namelist":["矿业 - 固体燃料矿 - 固体燃料矿综合"],"a826namelist":["采矿和矿产品 - 煤"],"a209list":["天地科技股份有限公司","煤炭科学技术研究院有限公司","兖矿集团有限公司","北京科技大学","辽宁工程技术大学","中国矿业大学"],"draftmanlist":["齐庆新","潘俊锋","张修峰","姜福兴","王书文","张宏伟","窦林名","刘少虹","赵善坤","秦子晗"],"country_name":"中国","continent":"亚洲","a305":8,"a330":"GB/T 25217的本部分规定了煤矿冲击地压采动应力监测所涉及的术语和定义、监测方案和冲击危险性的确定。本部分适用于煤矿冲击地压采动应力监测","a331":"GB/T 25217的本部分规定了煤矿冲击地压采动应力监测所涉及的术语和定义、监测方案和冲击危险性的确定。本部分适用于煤矿冲击地压采动应力监测","owner":"中国煤炭工业协会","formats":[{"uid":"b9448386bacd01cfbbb52be61e566b01","lang_name":"中文(简体)","source_price":28.0,"payload":"E","a100pub":"GB/T 25217.7-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":28.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"e12e70df6bfe7399621e0a198755e03f","lang_name":"中文(简体)","source_price":28.0,"payload":"P","a100pub":"GB/T 25217.7-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":28.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1};
+    let relevantRegulations = [{"yf001":"cc1a3abe40efc32ec9c72340571e62cb","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.4-2019","yf100":"GB/T 25217.4-2019","a298":"冲击地压测定、监测与防治方法 第4部分:微震监测方法","a301":"冲击地压测定、监测与防治方法 第4部分:微震监测方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 4: Monitoring method of microseismicity","a825":"D20","a825name":"固体燃料矿综合","a826":"73.010","a826name":"采矿和矿产品综合","country_name":"中国","a101":"2019-10-18","publicyear":2019,"a205":"2020-05-01","code_type":"STANDARD","formats":[{"uid":"4f390ebcfd13760c1dccf9340f88b0c6","lang_name":"中文(简体)","source_price":33.0,"payload":"E","a100pub":"GB/T 25217.4-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":33.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"731fc27648d422d76f3a8098ddaca51c","lang_name":"中文(简体)","source_price":33.0,"payload":"P","a100pub":"GB/T 25217.4-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":33.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"84c9b69c16f111b2c7fc678460f042cb","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.5-2019","yf100":"GB/T 25217.5-2019","a298":"冲击地压测定、监测与防治方法 第5部分:地音监测方法","a301":"冲击地压测定、监测与防治方法 第5部分:地音监测方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 5: Monitoring method of earth-sound","a825":"D20","a825name":"固体燃料矿综合","a826":"73.010","a826name":"采矿和矿产品综合","country_name":"中国","a101":"2019-10-18","publicyear":2019,"a205":"2020-05-01","code_type":"STANDARD","formats":[{"uid":"d87f15c9498fcebe80188eb9f38f133d","lang_name":"中文(简体)","source_price":33.0,"payload":"E","a100pub":"GB/T 25217.5-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":33.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"79a8b23b2b5ed872beae6eab836bea5b","lang_name":"中文(简体)","source_price":33.0,"payload":"P","a100pub":"GB/T 25217.5-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":33.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"64dd3ec320191bc3d8d6f695365e9a07","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.6-2019","yf100":"GB/T 25217.6-2019","a298":"冲击地压测定、监测与防治方法 第6部分：钻屑监测方法","a301":"冲击地压测定、监测与防治方法 第6部分：钻屑监测方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 6: Monitoring method of drilling bits","a825":"D20","a825name":"固体燃料矿综合","a826":"73.040","a826name":"煤","country_name":"中国","a101":"2019-10-18","publicyear":2019,"a205":"2020-05-01","code_type":"STANDARD","formats":[{"uid":"f747b5345fc78e202a4f3d4623ac425b","lang_name":"中文(简体)","source_price":33.0,"payload":"E","a100pub":"GB/T 25217.6-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":33.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"72441ca68aea74abea99837a203b9961","lang_name":"中文(简体)","source_price":33.0,"payload":"P","a100pub":"GB/T 25217.6-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":33.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"ba4cd1029b197c11e2f9674dd021aef7","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.8-2021","yf100":"GB/T 25217.8-2021","a298":"冲击地压测定、监测与防治方法 第8部分：电磁辐射监测方法","a301":"冲击地压测定、监测与防治方法 第8部分：电磁辐射监测方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 8: Monitoring method of electromagnetic radiation","a825":"D20","a825name":"固体燃料矿综合","a826":"73.040","a826name":"煤","country_name":"中国","a101":"2021-04-30","publicyear":2021,"a205":"2021-11-01","code_type":"STANDARD","formats":[{"uid":"c1456aae7ee4df546749a515dbae2054","lang_name":"中文(简体)","source_price":36.0,"payload":"E","a100pub":"GB/T 25217.8-2021","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":36.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"f9dfcbdf00452e5e45179f6191ba062a","lang_name":"中文(简体)","source_price":36.0,"payload":"P","a100pub":"GB/T 25217.8-2021","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":36.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"21390bbca39dee91c7bc6de0fa71eafa","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.12-2019","yf100":"GB/T 25217.12-2019","a298":"冲击地压测定、监测与防治方法 第12部分：开采保护层防治方法","a301":"冲击地压测定、监测与防治方法 第12部分：开采保护层防治方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 12: Prevention method of protective seam mining","a825":"D20","a825name":"固体燃料矿综合","a826":"73.020","a826name":"采矿和挖掘","country_name":"中国","a101":"2019-08-30","publicyear":2019,"a205":"2020-03-01","code_type":"STANDARD","formats":[{"uid":"b40add799d9a8154a29f15aa8279db94","lang_name":"中文(简体)","source_price":33.0,"payload":"E","a100pub":"GB/T 25217.12-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":33.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"54c191a29b19e50873976edc504e2eec","lang_name":"中文(简体)","source_price":33.0,"payload":"P","a100pub":"GB/T 25217.12-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":33.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"42849d234b47da05457a6c0210e9d370","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.14-2020","yf100":"GB/T 25217.14-2020","a298":"冲击地压测定、监测与防治方法 第14部分：顶板水压致裂防治方法","a301":"冲击地压测定、监测与防治方法 第14部分：顶板水压致裂防治方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 14: Prevention method of roof hydraulic fracturing","a825":"D04","a825name":"基础标准与通用方法","a826":"73.010","a826name":"采矿和矿产品综合","country_name":"中国","a101":"2020-11-19","publicyear":2020,"a205":"2021-06-01","code_type":"STANDARD","formats":[{"uid":"d484d40c0749fefeea9c99e9d8f147f7","lang_name":"中文(简体)","source_price":36.0,"payload":"E","a100pub":"GB/T 25217.14-2020","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":36.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"ad94af4a1d23882d919a4e9c4850cf81","lang_name":"中文(简体)","source_price":36.0,"payload":"P","a100pub":"GB/T 25217.14-2020","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":36.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"cba2394c5e1b5b10537e246d7aad3789","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.2-2010","yf100":"GB/T 25217.2-2010","a298":"冲击地压测定、监测与防治方法 第2部分：煤的冲击倾向性分类及指数的测定方法","a301":"冲击地压测定、监测与防治方法 第2部分：煤的冲击倾向性分类及指数的测定方法","a302":"Methods for test，monitoring and prevention of rock burst - Part 2: Classification and laboratory test method on bursting liability of coal","a825":"D04","a825name":"基础标准与通用方法","a826":"73.010","a826name":"采矿和矿产品综合","country_name":"中国","a101":"2010-09-26","publicyear":2010,"a205":"2011-02-01","code_type":"STANDARD","formats":[{"uid":"062a6ce415279e383257e22eab127c3d","lang_name":"中文(简体)","source_price":50.0,"payload":"E","a100pub":"GB/T 25217.2-2010","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":50.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"67a8b6d51939efd5d4a9887a715ce315","lang_name":"中文(简体)","source_price":50.0,"payload":"P","a100pub":"GB/T 25217.2-2010","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":50.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"b471db349593731757f48d6e60fad23c","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.3-2019","yf100":"GB/T 25217.3-2019","a298":"冲击地压测定、监测与防治方法 第3部分:煤岩组合试件冲击倾向性分类及指数的测定方法","a301":"冲击地压测定、监测与防治方法 第3部分:煤岩组合试件冲击倾向性分类及指数的测定方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 3: Classification and laboratory test method on bursting liability of coal-rock combinations sample","a825":"D20","a825name":"固体燃料矿综合","a826":"73.010","a826name":"采矿和矿产品综合","country_name":"中国","a101":"2019-10-18","publicyear":2019,"a205":"2020-05-01","code_type":"STANDARD","formats":[{"uid":"19bb46c2a7aab0257ad70f35c54cbac0","lang_name":"中文(简体)","source_price":36.0,"payload":"E","a100pub":"GB/T 25217.3-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":36.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"a6dfb727290ea3f66e79114ebf8100e2","lang_name":"中文(简体)","source_price":36.0,"payload":"P","a100pub":"GB/T 25217.3-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":36.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"7a29a777ef52aebb233169f0a97c23da","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.9-2020","yf100":"GB/T 25217.9-2020","a298":"冲击地压测定、监测与防治方法 第9部分：煤层注水防治方法","a301":"冲击地压测定、监测与防治方法 第9部分：煤层注水防治方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 9: Prevention method of water infusion on coal seam","a825":"D20","a825name":"固体燃料矿综合","a826":"73.040","a826name":"煤","country_name":"中国","a101":"2020-11-19","publicyear":2020,"a205":"2021-06-01","code_type":"STANDARD","formats":[{"uid":"5babb432408e5c2076785776c9ce3865","lang_name":"中文(简体)","source_price":33.0,"payload":"E","a100pub":"GB/T 25217.9-2020","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":33.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"23d492294217815c7c0eddc045dbbc58","lang_name":"中文(简体)","source_price":33.0,"payload":"P","a100pub":"GB/T 25217.9-2020","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":33.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"f5df2ff2f34a23c1c9de2557d24115ba","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.10-2019","yf100":"GB/T 25217.10-2019","a298":"冲击地压测定、监测与防治方法 第10部分：煤层钻孔卸压防治方法","a301":"冲击地压测定、监测与防治方法 第10部分：煤层钻孔卸压防治方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 10: Prevention method of drillhole destressing on coal-seam","a825":"D20","a825name":"固体燃料矿综合","a826":"73.040","a826name":"煤","country_name":"中国","a101":"2019-08-30","publicyear":2019,"a205":"2020-03-01","code_type":"STANDARD","formats":[{"uid":"800968923eb18ccd3055e6356b8ad28e","lang_name":"中文(简体)","source_price":33.0,"payload":"E","a100pub":"GB/T 25217.10-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":33.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"363b386183ef026e86f3d0b2d2feed52","lang_name":"中文(简体)","source_price":33.0,"payload":"P","a100pub":"GB/T 25217.10-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":33.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"b2aef7dbf6925ac7d02f3361fe28a25c","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.11-2019","yf100":"GB/T 25217.11-2019","a298":"冲击地压测定、监测与防治方法 第11部分：煤层卸压爆破防治方法","a301":"冲击地压测定、监测与防治方法 第11部分：煤层卸压爆破防治方法","a302":"Methods for test, monitoring and prevention of rock burst—Part 11: Prevention method of destress blasting in coal seam","a825":"D20","a825name":"固体燃料矿综合","a826":"73.040","a826name":"煤","country_name":"中国","a101":"2019-08-30","publicyear":2019,"a205":"2020-03-01","code_type":"STANDARD","formats":[{"uid":"c736a0da43206ac3dc52000a9575870d","lang_name":"中文(简体)","source_price":33.0,"payload":"E","a100pub":"GB/T 25217.11-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":33.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"d0a52b06e5bc0c836a5e2bc914970db7","lang_name":"中文(简体)","source_price":33.0,"payload":"P","a100pub":"GB/T 25217.11-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":33.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"c59a4bb988d3b175dede118bcac28853","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.1-2010","yf100":"GB/T 25217.1-2010","a298":"冲击地压测定、监测与防治方法 第1部分：顶板岩层冲击倾向性分类及指数的测定方法","a301":"冲击地压测定、监测与防治方法 第1部分：顶板岩层冲击倾向性分类及指数的测定方法","a302":"Methods for test, monitoring and prevention of rock burst - Part 1: Classification and laboratory test method on bursting liability of roof strata","a825":"D04","a825name":"基础标准与通用方法","a826":"73.010","a826name":"采矿和矿产品综合","country_name":"中国","a101":"2010-09-26","publicyear":2010,"a205":"2011-02-01","code_type":"STANDARD","formats":[{"uid":"5f97941028ba063514777f5ddd295930","lang_name":"中文(简体)","source_price":28.0,"payload":"E","a100pub":"GB/T 25217.1-2010","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":28.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"e224dd5df4d41638719acf6483a8d9cd","lang_name":"中文(简体)","source_price":28.0,"payload":"P","a100pub":"GB/T 25217.1-2010","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":28.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1},{"yf001":"a350283dbff6e36a079e6ccd136f197b","a000":"现行","a104":"CN-GB","a104name":"国家标准","a100":"GB/T 25217.13-2019","yf100":"GB/T 25217.13-2019","a298":"冲击地压测定、监测与防治方法 第13部分：顶板深孔爆破防治方法","a301":"冲击地压测定、监测与防治方法 第13部分：顶板深孔爆破防治方法","a302":"Methods for test, monitoring and prevention of rock burst—Part13: Prevention method of deep-hole blasting in roof","a825":"D20","a825name":"固体燃料矿综合","a826":"73.020","a826name":"采矿和挖掘","country_name":"中国","a101":"2019-08-30","publicyear":2019,"a205":"2020-03-01","code_type":"STANDARD","formats":[{"uid":"58d4eb0c88ff16df7f9e21f57b83794c","lang_name":"中文(简体)","source_price":36.0,"payload":"E","a100pub":"GB/T 25217.13-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCELEC","sale_price_rmb":36.0,"spec":"电子版/约1分钟可下载/有水印","a300":"zh-CN"},{"uid":"05257f9d6bd835c84bc7a54717838796","lang_name":"中文(简体)","source_price":36.0,"payload":"P","a100pub":"GB/T 25217.13-2019","lang_id":"zh-CN","currency":"CNY","site_code":"SPCPRINT","sale_price_rmb":36.0,"spec":"纸质版/约1个工作日发快递/无授权单位水印","a300":"zh-CN"}],"nsl_collection_e":1}];
+    let itemStyles = [{color: '#9A60B4'}, {color: '#EA7CCC'}, {color: '#008B8B'}, {color: '#483D8B'}, {color: '#3385FF'}]
+    let nodes = [{
+        id: null, name: standard.a100 + isEmpty(standard.a000) + standard.a298
+        , a000: standard.a000, a298: standard.a298, itemStyle: itemStyles[0], children: []
+    }]
+    let dom = document.getElementById("chart-panel");
+    let myChart = echarts.init(dom);
+    detailEcharts(nodes[0])
+    let option = {
+        tooltip: {
+            formatter: function (params) {
+                return params.name;
+            }
+        },
+        legend: {},
+        toolbox: {
+            show: true,
+            feature: {
+                myTool: {
+                    show: true,
+                    title: '全屏',
+                    icon: "path://M919.920093 725.414549q3.014188 26.122962 7.033105 58.776664t7.53547 66.814498 7.53547 67.819227 7.033105 60.786122q6.028376 47.222277-41.193901 44.208089-25.118232-2.009459-56.767205-5.526011t-64.805039-7.53547-65.809769-8.037834-59.781393-7.033105q-29.137149-3.014188-37.174984-16.578033t9.042564-30.644243q11.052022-10.047293 27.127691-27.630056t27.127691-28.634785q11.052022-12.056752 7.033105-22.104044t-16.075669-23.108774q-28.13242-27.127691-51.241194-49.231735t-51.241194-51.241194q-6.028376-6.028376-12.056752-13.061481t-9.042564-15.573304-1.004729-18.085127 13.061481-20.59695q6.028376-6.028376 10.047293-10.549658t8.037834-8.037834 8.540199-8.037834 11.554387-12.559116q20.094586-20.094586 37.174984-17.080398t37.174984 23.108774 41.193901 40.691536 47.222277 46.719912q19.089857 18.085127 32.653702 25.118232t26.625326-6.028376q9.042564-9.042564 22.606409-21.60168t23.611138-22.606409q17.080398-17.080398 30.644243-13.061481t16.578033 30.141879zM43.79615 383.80659q-3.014188-26.122962-7.033105-58.776664t-7.53547-66.814498-7.53547-67.819227-7.033105-60.786122q-3.014188-26.122962 6.53074-36.170255t33.658431-8.037834q25.118232 2.009459 56.767205 5.526011t64.805039 7.53547 65.809769 8.037834 59.781393 7.033105q30.141879 3.014188 37.677348 16.578033t-9.544928 30.644243q-10.047293 10.047293-24.615868 26.122962t-25.620597 27.127691q-12.056752 12.056752-8.037834 22.104044t17.080398 23.108774q13.061481 14.06621 24.615868 24.615868t22.606409 21.099315 23.108774 22.606409l25.118232 25.118232q6.028376 6.028376 11.554387 14.06621t8.037834 17.080398-0.502365 19.089857-13.061481 20.094586l-11.052022 11.052022q-4.018917 4.018917-7.53547 8.037834t-8.540199 8.037834l-11.052022 12.056752q-20.094586 20.094586-34.663161 15.070939t-34.663161-25.118232-38.179713-37.677348-44.208089-43.705724q-18.085127-18.085127-32.151337-25.118232t-27.127691 6.028376q-9.042564 10.047293-25.118232 24.615868t-26.122962 24.615868q-17.080398 17.080398-30.141879 13.061481t-16.075669-30.141879zM905.853883 84.397261q26.122962-3.014188 36.170255 6.53074t8.037834 34.663161-5.526011 56.767205-7.53547 64.805039-8.037834 65.809769-7.033105 59.781393q-3.014188 29.137149-16.578033 37.174984t-30.644243-10.047293q-10.047293-10.047293-26.122962-24.615868t-27.127691-25.620597q-12.056752-11.052022-22.104044-7.53547t-23.108774 16.578033q-27.127691 27.127691-47.724641 49.231735t-48.729371 50.236465q-6.028376 6.028376-14.06621 11.554387t-17.080398 8.037834-19.089857-0.502365-20.094586-14.06621q-6.028376-6.028376-10.549658-10.047293t-8.540199-8.037834-8.540199-8.037834-11.554387-12.056752q-20.094586-20.094586-16.075669-35.165525t25.118232-35.165525l38.179713-40.189172q19.089857-20.094586 45.212818-46.217547 19.089857-18.085127 26.122962-32.151337t-7.033105-26.122962q-9.042564-9.042564-23.108774-24.615868t-24.113503-25.620597q-17.080398-17.080398-13.061481-30.141879t30.141879-16.075669 58.776664-7.033105 67.316863-7.53547 67.819227-7.53547 60.283758-7.033105zM350.238584 640.012559q6.028376 6.028376 10.549658 10.047293t8.540199 8.037834l8.037834 9.042564 12.056752 11.052022q20.094586 20.094586 17.582763 36.672619t-23.611138 37.677348q-19.089857 19.089857-40.189172 40.691536t-47.222277 47.724641q-18.085127 18.085127-22.606409 29.639514t8.540199 24.615868q10.047293 9.042564 22.606409 22.606409t22.606409 23.611138q17.080398 17.080398 12.559116 30.141879t-30.644243 16.075669-58.274299 7.033105-66.814498 8.037834-68.321592 8.037834-60.786122 7.033105q-25.118232 2.009459-35.66789-7.53547t-8.540199-33.658431q2.009459-25.118232 5.526011-56.767205t7.53547-64.805039 8.037834-65.809769 7.033105-59.781393q3.014188-30.141879 16.578033-37.677348t30.644243 9.544928q10.047293 10.047293 27.630056 26.122962t28.634785 27.127691q12.056752 12.056752 20.094586 10.549658t20.094586-14.568575q13.061481-13.061481 25.118232-25.620597t24.113503-24.615868 24.615868-25.118232 26.625326-27.127691q6.028376-6.028376 13.061481-12.056752t15.573304-9.042564 18.085127-0.502365 20.59695 13.563845z",
+                    onclick: function (e) {
+                        const element = document.getElementById('chart-panel');
+                        const c = document.getElementById('test-c');
+                        if (element.requestFullScreen) {
+                            element.requestFullScreen();
+                        } else if (element.msRequestFullscreen) {
+                            element.msRequestFullScreen();
+                        } else if (element.webkitRequestFullScreen) {
+                            element.webkitRequestFullScreen();
+                        } else if (element.mozRequestFullScreen) {
+                            element.mozRequestFullScreen();
+                        }
+                        if (element.requestFullScreen) {
+                            document.exitFullscreen();
+                            c.exitFullscreen();
+                        } else if (element.msRequestFullScreen) {
+                            document.msExitFullscreen();
+                        } else if (element.webkitRequestFullScreen) {
+                            document.webkitCancelFullScreen();
+                        } else if (element.mozRequestFullScreen) {
+                            document.mozCancelFullScreen();
+                        }
+                    }
+                },
+                myTTool: {
+                    show: true,
+
+                },
+                restore: {
+                    title: '还原'
+                },
+                saveAsImage: {
+                    title: '保存为图片'
+                },
+            },
+            textStyle: {
+                color: "#fff",
+            },
+        },
+        series: [{
+            emphasis: {
+                focus: 'relative'
+            },
+
+            zoom: 1,
+            symbolSize: 0,
+            avoidLabelOverlap: true,
+            animationDurationUpdate: 750,
+            type: 'tree',
+            data: nodes,
+            left: '20%',
+            right: '50%',
+            lineStyle: {
+                width: 1, // 设置连线的宽度
+                curveness: 0.7 // 连线的弯曲度，值为 0 到 1，0 为直线，1 为弯曲最大
+            },
+            hoverAnimation: true,
+            roam: true, // 启用拖拽功能
+            symbol: "circle",
+            initialTreeDepth: -1,
+            label: {
+                normal: {
+                    borderRadius: 5,
+                    position: "center",
+                    verticalAlign: "middle",
+                    align: "center",
+                    padding: 3,
+                    formatter: ["{box|{b}}"].join("\n"),
+                    rich: {
+                        box: {
+                            backgroundColor: "rgba(161,2,248,0.06)",
+                            borderRadius: 5,
+                            fontFamily: "sans-serif",
+                            height: 30,
+                            lineHeight: 30,
+                            padding: [0, 5],
+                            align: "center",
+                            fontSize: 14,
+                        },
+                    },
+                },
+            },
+            leaves: {
+                label: {
+                    normal: {
+                        borderRadius: 5,
+                        position: "center",
+                        verticalAlign: "middle",
+                        align: "left",
+                        formatter: ["{box|{b}}"].join("\n"),
+                        rich: {
+                            box: {
+                                borderColor: '#50dfdb',
+                                borderWidth: 0.4,
+                                backgroundColor: "rgba(0,123,255,0.06)",
+                                height: 20,
+                                lineHeight: 20,
+                                padding: [0, 5],
+
+                                fontFamily: "sans-serif",
+                                align: "center",
+                                fontSize: 14,
+                            },
+                        },
+                    },
+                },
+            },
+            animationDuration: 550,
+        }]
+    };
+    if (option && typeof option === 'object') {
+
+        myChart.setOption(option);
+    }
+
+    function isEmpty(obj) {
+        if (typeof obj !== "undefined" && obj !== null && obj !== '') {
+            return '【' + obj + '】';
+        }
+        return "";
+    }
+
+
+    // 异步加载数据并刷新图表
+    function refreshChartWithInitialState() {
+        // 获取当前图表的配置
+        let option = myChart.getOption()
+        const data = option.series[0].data
+        return data
+    }
+
+    myChart.on("click", (params) => {
+
+        const treeAncestors = params.treeAncestors || []
+        let level = 0
+        let right = 5
+        if (treeAncestors.length > 1) {
+            level = treeAncestors.length - 1
+            if (level < 4) {
+                right = 5
+            } else {
+                right = 5 - (level - 4)
+            }
+            right = right < 0 ? 10 : (right * 10)
+        }
+
+        if (params.data.type === 'bz') {
+            $.ajax({
+                url: '/api/standard/acckw',
+                type: 'POST',
+                contentType: "application/json",
+                data: JSON.stringify({keyWord: typeof params.data.name2 !== 'undefined' ? params.data.name2 : params.data.name}),
+                success: function (data) {
+                    if (typeof params.data.children === 'undefined' || params.data.children.length === 0) {
+                        params.data.children = data.stds.map(item => ({
+                            id: item.yf001,
+                            name: item.yf100 + isEmpty(item.a000) + item.a298,
+                            name2: item.yf100,
+                            itemStyle: itemStyles[4],
+                            level: '2-1'
+                        }));
+                        myChart.setOption({
+                            series: [{
+                                right: right + '%',
+                                data: refreshChartWithInitialState()
+                            }]
+                        });
+                    }
+                }
+            })
+        } else if (params.data.type === 'qcr') {
+            $.ajax({
+                url: '/api/standard/list',
+                type: 'POST',
+                contentType: "application/json",
+                data: JSON.stringify({page: 1, size: 20, draftman: params.data.name}),
+                success: function (res) {
+                    if (typeof params.data.children === 'undefined' || params.data.children.length === 0) {
+                        data = res.data
+                        params.data.children = data.results.map(item => ({
+                            id: item.yf001,
+                            name: item.yf100 + isEmpty(item.a000) + item.a298,
+                            name2: item.yf100,
+                            itemStyle: itemStyles[4],
+                            level: '2-1'
+                        }));
+
+                        myChart.setOption({
+                            series: [{
+                                right: right + '%',
+                                data: refreshChartWithInitialState()
+                            }]
+                        });
+                    }
+                }
+            })
+        } else if (params.data.type === 'dw') {
+            $.ajax({
+                url: '/api/standard/list',
+                type: 'POST',
+                contentType: "application/json",
+                data: JSON.stringify({page: 1, size: 20, a209: params.data.name}),
+                success: function (res) {
+                    data = res.data.results
+                    if (typeof params.data.children === 'undefined' || params.data.children.length === 0) {
+                        params.data.children = data.map(item => ({
+                            collapsed: false, id: item.yf001, a000: item.a000,
+                            name: item.yf100 + isEmpty(item.a000) + item.a298,
+                            name2: item.yf100
+                            , itemStyle: itemStyles[4], level: '2-1'
+                        }));
+                        myChart.setOption({
+                            series: [{
+                                right: right + '%',
+                                data: refreshChartWithInitialState()
+                            }]
+                        });
+                    }
+                }
+            })
+        }
+        if (params.data.level === '2-1') {
+            $.get('/standard/echarts/detail/' + params.data.id, res => {
+                if (typeof params.data.children === 'undefined' || params.data.children.length === 0) {
+                    standard = res.standards
+                    relevantRegulations = res.relevantRegulationsWor
+                    params.data.children = [];
+                    params.data.itemStyle = itemStyles[0];
+                    params.data.collapsed = false;
+                    detailEcharts(params.data)
+                    myChart.setOption({
+                        series: [{
+                            right: right + '%',
+                            data: refreshChartWithInitialState()
+                        }]
+                    });
+                }
+            })
+        }
+        setTimeout(() => {
+            params.data.collapsed = params.collapsed
+        }, 500)
+    });
+
+
+    $("#chart-panel").append($(".controls"));
+
+    $("#zoomIn").on("click", (e) => {
+        myChart.setOption({
+            series: [{
+                zoom: (myChart.getOption().series[0].zoom += 1)
+            }]
+        });
+    })
+
+    $("#zoomOut").on("click", (e) => {
+        if (myChart.getOption().series[0].zoom <= 1) {
+            return;
+        }
+        myChart.setOption({
+            series: [{
+                zoom: (myChart.getOption().series[0].zoom + -1)
+            }]
+        });
+    })
+
+    function handleFullscreenChange() {
+        if (!document.fullscreenElement) {
+            myChart.setOption(option, true);
+        }
+    }
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener("webkitfullscreenchange", handleFullscreenChange); // Safari
+    document.addEventListener("mozfullscreenchange", handleFullscreenChange); // Firefox
+    document.addEventListener("MSFullscreenChange", handleFullscreenChange); // IE/Edge
+
+    window.addEventListener("resize", function (e) {
+        myChart.resize();
+    })
+
+    function detailEcharts(node) {
+        let manufacture = false;
+        let yz = [];
+
+        if (typeof standard.draftmanlist !== 'undefined' && standard.draftmanlist !== null && standard.draftmanlist.length > 0) {
+            const formattedList = standard.draftmanlist.map((name, index) => ({
+                name: name,
+                type: 'qcr',
+                itemStyle: itemStyles[3]
+            }));
+            yz.push({id: null, name: '起草人', itemStyle: itemStyles[2], children: formattedList})
+            manufacture = true;
+        }
+
+        if (typeof standard.a209list !== 'undefined' && standard.a209list !== null && standard.a209list.length > 0) {
+            const a209list = standard.a209list.map((name, index) => ({
+                name: name,
+                itemStyle: itemStyles[3],
+                type: 'dw'
+            }));
+            yz.push({name: '起草单位', itemStyle: itemStyles[2], children: a209list})
+            manufacture = true;
+        }
+        if (manufacture) {
+            node.children.push({id: null, name: '研制信息', itemStyle: itemStyles[1], children: yz})
+        }
+        let relation = false;
+        let gx = [];
+
+        if (typeof standard.a502list !== 'undefined' && standard.a502list !== null && standard.a502list.length > 0) {
+            const a502list = standard.a502list.map((name, index) => ({
+                name: name,
+                itemStyle: itemStyles[3],
+                type: 'bz'
+            }));
+            gx.push({
+                name: '引用标准(' + standard.a502list.length + ')',
+                itemStyle: itemStyles[2], children: a502list
+            })
+            relation = true
+        }
+
+        if (typeof standard.a800list !== 'undefined' && standard.a800list !== null && standard.a800list.length > 0) {
+            const a800list = standard.a800list.map((name, index) => ({
+                id: null,
+                name: name,
+                itemStyle: itemStyles[3],
+                type: 'bz'
+            }));
+            gx.push({
+                id: null,
+                name: '采用标准(' + standard.a800list.length + ')',
+                itemStyle: itemStyles[2], children: a800list
+            })
+            relation = true
+        }
+
+        if (typeof standard.a461list !== "undefined" && standard.a461list !== null && standard.a461list.length > 0) {
+            const a461list = standard.a461list.map((name, index) => ({
+                id: null,
+                name: name,
+                itemStyle: itemStyles[3],
+                type: 'bz'
+            }));
+            gx.push({
+                id: null,
+                name: '代替标准(' + standard.a461list.length + ')',
+
+                itemStyle: itemStyles[2], children: a461list
+            })
+            relation = true
+        }
+
+        if (typeof standard.a462list !== "undefined" && standard.a462list !== null && standard.a462list.length > 0) {
+            const a462list = standard.a462list.map((name, index) => ({
+                name: name,
+                itemStyle: itemStyles[3],
+                type: 'bz'
+            }));
+            gx.push({
+                id: null,
+                name: '被代替标准(' + standard.a462list.length + ')',
+
+                itemStyle: itemStyles[2], children: a462list
+            })
+            relation = true
+        }
+        if (relation) {
+            node.children.push({id: null, name: '关联关系', itemStyle: itemStyles[1], children: gx})
+        }
+        if (typeof relevantRegulations !== "undefined" && relevantRegulations !== null && relevantRegulations.length > 0) {
+            const relevant = relevantRegulations.map(item => ({
+                id: item.yf001,
+                name: item.yf100 + isEmpty(item.a000) + item.a298,
+                itemStyle: itemStyles[2],
+                level: '2-1',
+                name2: item.yf100
+            }));
+            node.children.push({
+                id: null, name: '相似标准/计划/法规', itemStyle: itemStyles[1],
+                children: relevant
+            })
+        }
+    }
+
+    function objToQueryString(obj) {
+        return Object.keys(obj)
+            .map(key => {
+                var value = ''
+                if (obj[key] !== undefined && obj[key] !== null) {
+                    value = obj[key]
+                }
+                return encodeURIComponent(key) + '=' + value
+            })
+            .join('&');
+    }
+
+    // 到馆提醒
+    $(document).on('click', '.dg-warn', function () {
+        const $this = $(this);
+        checkLogin(true).then(isLogin => {
+            if (isLogin) {
+                // 构建要发送的数据对象
+                const data = {
+                    status: this.dataset.a000,
+                    standardNumber: this.dataset.a100,
+                    publishDate: this.dataset.a101,
+                    chineseTitle: this.dataset.a298,
+                    originalTitle: this.dataset.a301,
+                    standardId: this.dataset.yf001
+                };
+
+                // 发送数据到后端
+                fetch('/api/user-alert/add-ale', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(response => response.json())
+                    .then(responseData => {
+                        if (responseData.data === true) {
+                            layer.msg('添加提醒成功')
+                            $this.find('.warn-icon').attr('src', '/img/success-notice-icon.png?v=1785730216')
+                        } else if (responseData.data === false) {
+                            layer.msg('已取消提醒')
+                            $this.find('.warn-icon').attr('src', '/img/notice-icon.png?v=1785730216')
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        layer.msg('添加提醒失败，请稍后重试');
+                    });
+            }
+        })
+    })
+    // 到馆阅读
+    $(document).on('click', '.dg-read', function () {
+        dgRead({yf001: this.dataset.yf001, a298: this.dataset.a298, a100: this.dataset.a100, a301: this.dataset.a301})
+    })
+</script>
+

@@ -1,0 +1,10 @@
+{"text":"距离2972W运道迎头最近的10#顶板离层仪距迎头88m。","entity":"顶板离层仪","entity_type":"监测指标","relation":"监测","object":"顶板","object_type":"地质构造","confidence":0.85,"source":"2024-10-23开滦钱家营矿较大顶板事故调查报告"}
+{"text":"2972W运道开口往里约100m范围内顶板有明显下沉。","entity":"","entity_type":"","relation":"","object":"2972W运道","object_type":"巷道分区","confidence":0.95,"source":"2024-10-23开滦钱家营矿较大顶板事故调查报告"}
+{"text":"部分顶板锚杆托盘、锚索托板有压翻现象，帮部存在锚杆断裂、钢筋梯梁变形断裂等现象，帮鼓明显。","entity":"","entity_type":"","relation":"","object":"锚索托板","object_type":"支护设备","confidence":0.9,"source":"2024-10-23开滦钱家营矿较大顶板事故调查报告"}
+{"text":"巷道顶板岩层破坏范围超出了锚杆支护长度（无锚索支护）。","entity":"锚杆","entity_type":"支护设备","relation":"支护","object":"顶板","object_type":"地质构造","confidence":0.9,"source":"2024-10-23开滦钱家营矿较大顶板事故调查报告"}
+{"text":"岩层冒落，造成事故。","entity":"岩层","entity_type":"地质构造","relation":"诱发","object":"冒落","object_type":"顶板灾变","confidence":0.8,"source":"2024-10-23开滦钱家营矿较大顶板事故调查报告"}
+{"text":"对破碎带、大面积淋水及应力影响段等特殊区段要加密测点、加强观测。","entity":"","entity_type":"","relation":"","object":"破碎带","object_type":"地质构造","confidence":0.85,"source":"2024-10-23开滦钱家营矿较大顶板事故调查报告"}
+{"text":"严格落实作业规程关于锚索紧跟迎头施工的要求。","entity":"","entity_type":"","relation":"","object":"锚索","object_type":"支护设备","confidence":0.95,"source":"2024-10-23开滦钱家营矿较大顶板事故调查报告"}
+{"text":"迎头中下部片落两块岩石块（老底，粉砂岩），单块尺寸约为0.6m×0.7m×0.5m。","entity":"","entity_type":"","relation":"","object":"粉砂岩","object_type":"地质构造","confidence":0.9,"source":"2024-07-04承德兴程矿业顶板事故调查报告"}
+{"text":"陈某某让停止打炮眼，对工作面迎头进行找掉。","entity":"陈某某","entity_type":"岗位角色","relation":"调度","object":"找掉","object_type":"处置规程","confidence":0.75,"source":"2024-07-04承德兴程矿业顶板事故调查报告"}
+{"text":"迎头上部泥岩与下部粉砂岩粘结不紧密，上部大块泥岩片落，砸中作业人员。","entity":"泥岩","entity_type":"地质构造","relation":"诱发","object":"片落","object_type":"顶板灾变","confidence":0.8,"source":"2024-07-04承德兴程矿业顶板事故调查报告"}

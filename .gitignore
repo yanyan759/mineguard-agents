@@ -1,0 +1,31 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+*.py[cod]
+*.log
+.chrome-verify/
+.scratch/
+.tmp_pdf/
+output/
+updated/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.db
+*.sqlite
+*.sqlite3
+Thumbs.db
+desktop.ini
+
+# 本机临时浏览器调试脚本与构建缓存
+.verify_*.py
+*.tsbuildinfo
+
+# 大型研究档案和需从出版方获取的学位论文；获取方式见 docs/external-data.md
+/煤矿资料收集/07_监测阈值标定_研究文献/ElkCreek矿震数据集_NIOSH开源.zip
+/煤矿资料收集/07_监测阈值标定_研究文献/千秋煤矿冲击地压综合预警技术研究_李学龙_*

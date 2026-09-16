@@ -1,0 +1,18 @@
+{
+  "method_id": "elkcreek-hourly-q99-v1",
+  "label": "Elk Creek历史研究方法（非现场配置）",
+  "status": "research",
+  "mine_id": "ELK-CREEK",
+  "area": "NIOSH study volume",
+  "source": "NIOSH Elk Creek",
+  "window_minutes": 60,
+  "count_threshold": 6,
+  "energy_threshold_j": 62382.225509932425,
+  "coordinates_bounds": [[9800, 12800], [4200, 6500], [1400, 2100]],
+  "valid_from": "2010-10-30T00:00:00+00:00",
+  "valid_to": "2013-02-01T00:00:00+00:00",
+  "calibration_period": "2010-08-01/2010-10-30",
+  "validation": "5/5事件命中，报警窗口占41.64%，窗口precision0.83%；不足以支持现场采用",
+  "source_url": "https://doi.org/10.1007/s42461-026-01497-0",
+  "parameter_source": "本项目原始目录前90天99%分位数计算，非论文批准阈值"
+}

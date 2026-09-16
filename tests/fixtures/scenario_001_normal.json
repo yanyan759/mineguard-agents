@@ -1,0 +1,104 @@
+{
+  "scenario_id": "e2e-001-normal-no-alert",
+  "description": "数据正常，微震指标均在安全范围内，无需进入完整处置链，直接记录结果后结束",
+  "perception_input": {
+    "context": {
+      "workflow_run_id": "run-001",
+      "trace_id": "trace-001",
+      "thread_id": "thread-001",
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-001",
+      "current_stage": "perception_warning",
+      "iteration_count": 0,
+      "max_iterations": 2,
+      "started_at": "2026-07-24T08:00:00"
+    },
+    "monitoring_window": {
+      "start_time": "2026-07-24T07:00:00",
+      "end_time": "2026-07-24T08:00:00",
+      "sampling_metadata": {
+        "expected_frequency_hz": 1.0,
+        "actual_frequency_hz": 0.98,
+        "missing_rate": 0.02
+      }
+    },
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "microseismic_events": [
+      {
+        "event_id": "evt-001-001",
+        "timestamp": "2026-07-24T07:10:00",
+        "area": "工作面-1",
+        "energy_j": 1200.0,
+        "event_frequency_per_hour": 2.0,
+        "source_coordinate": [100.0, 200.0, -300.0],
+        "b_value": 1.4
+      },
+      {
+        "event_id": "evt-001-002",
+        "timestamp": "2026-07-24T07:25:00",
+        "area": "工作面-1",
+        "energy_j": 800.0,
+        "event_frequency_per_hour": 1.5,
+        "source_coordinate": [102.0, 198.0, -302.0],
+        "b_value": 1.45
+      },
+      {
+        "event_id": "evt-001-003",
+        "timestamp": "2026-07-24T07:40:00",
+        "area": "工作面-1",
+        "energy_j": 1500.0,
+        "event_frequency_per_hour": 2.5,
+        "source_coordinate": [101.0, 201.0, -301.0],
+        "b_value": 1.42
+      }
+    ],
+    "borehole_stress": [],
+    "roof_separation": [],
+    "hydraulic_support_resistance": [],
+    "roadway_surface_displacement": []
+  },
+  "expected_warning": {
+    "agent_name": "感知预警 Agent",
+    "status": "success",
+    "warning_id": "warning-001",
+    "risk_level": "normal",
+    "risk_score": 0.08,
+    "model_version": "MOA-Transformer-v1",
+    "threshold_version": "simulation-v1",
+    "model_mode": "rule_based",
+    "affected_area": {
+      "mine_id": "MINE-001",
+      "roadway_id": "RDW-001",
+      "locations": ["工作面-1"]
+    },
+    "causal_factors": [],
+    "anomalies": [],
+    "data_quality": {
+      "completeness": 0.98,
+      "timeliness": 0.98,
+      "missing_sources": ["borehole_stress", "roof_separation", "hydraulic_support_resistance", "roadway_surface_displacement"],
+      "issues": []
+    },
+    "triggered_rules": ["all_demo_indicators_below_blue_score"],
+    "fast_alert_required": false,
+    "recommended_recheck_minutes": 30,
+    "summary": "所有微震监测指标均在安全范围内，无异常趋势，当前风险等级为 normal",
+    "evidence": [
+      {
+        "source_type": "microseismic_monitor",
+        "description": "微震事件能量 800-1500J，b 值 1.4-1.45，频次 1.5-2.5 次/小时，均在正常范围",
+        "value": {"max_energy_j": 1500.0, "min_b_value": 1.4, "max_frequency": 2.5}
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "started_at": "2026-07-24T08:00:01",
+    "finished_at": "2026-07-24T08:00:02",
+    "duration_ms": 1000,
+    "next_action": "finish",
+    "confidence": 0.95
+  },
+  "resource_snapshot": null,
+  "expected_resource_feasibility": null
+}

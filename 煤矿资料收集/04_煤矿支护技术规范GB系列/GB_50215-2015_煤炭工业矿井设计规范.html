@@ -1,0 +1,2458 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>GB50215-2015：煤炭工业矿井设计规范</title>
+	
+<link rel="shortcut icon" href="https://ebook.chinabuilding.com.cn//favicon.ico" type="image/x-icon">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<script>
+	var frontAppContext = 'https://ebook.chinabuilding.com.cn/zbooklib/';
+	var siteID = "1";
+	var siteUrl = "https://ebook.chinabuilding.com.cn/";
+</script>
+
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/v3/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/v3/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/v3/css/v3-framework.css" type="text/css" />
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/v3/css/v3-common.css" type="text/css" />
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/v3/css/v3-site.css" type="text/css" />
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/v3/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/v3/css/style-rel.css" type="text/css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<style>
+@media (max-width:767px) {
+.hidden-xs-headerbranchname {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+    display: inline-block;
+}
+.hidden-xs-headername {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 120px;
+    display: inline-block;
+}
+.other-xs-b {
+ float:right
+}
+#memberbranchname {
+    background: url(../../images/top-bg.png) no-repeat left 9px;
+}
+#headermembername {
+    background: url(../../images/top-bg.png) no-repeat left -29px;
+}
+}
+</style>
+<script src="https://ebook.chinabuilding.com.cn/js/zcms_require.js" contextpath="https://ebook.chinabuilding.com.cn/zbooklib/"></script>
+<script src="https://ebook.chinabuilding.com.cn/js/zcms_common.js"></script>
+<script src="https://ebook.chinabuilding.com.cn/v3/js/bootstrap.min.js"></script>
+<script>
+if(isIE8){
+
+}else{
+	importJS('../v3/js/hammer.min.js')
+}
+</script>
+<script src="https://ebook.chinabuilding.com.cn/v3/js/scroll/smoothscroll.js"></script>
+<script src="https://ebook.chinabuilding.com.cn/v3/js/v3_common.js"></script>
+<script src="https://ebook.chinabuilding.com.cn/v3/js/v3_site.js"></script>
+<script type="text/javascript" src="https://ebook.chinabuilding.com.cn/js/jquery.SuperSlide.2.1.js"></script>	
+<script>
+if(isIE && ieVersion<9 || isIE8){
+  importJS('../v3/js/ie/html5shiv.js')
+  if(!isIE6 && !isIE7){
+    importJS('../v3/js/ie/respond.min.js')
+  }
+  importJS('../v3/js/ie/excanvas.js')
+}
+if(/MSIE (6|7)\.0/.test(navigator.userAgent)){
+  importCSS('../v3/css/bootstrap-ie6.css')
+  importJS('../v3/js/ie/bootstrap-ie6.js')
+}
+if(inTouch){
+  importJS('../v3/js/ie/hammer.min.js')
+}
+window.jQuery.bootstrapFlag = true;
+</script>
+ <script type="text/javascript">
+ 		var preview="false";
+ 		if(preview!="true"){
+   		window.Membered={};
+   		window.Membered.info=null;
+   		window.Membered.loginSuccess=[];
+     	window.Membered.afterLogined=function(f){
+     		if(f&&(f instanceof Function)){
+     			window.Membered.loginSuccess.push(f);
+     		}
+     		if(window.Membered.info){
+     			for(var i=0;i<window.Membered.loginSuccess.length;i++){
+  					window.Membered.loginSuccess[i](window.Membered.info);
+     			}
+  			}
+     		var previewel=$("#readPDFPriv");
+     		var elnum=previewel.length;
+     		if(elnum>0){
+     			var muid=window.Membered.info.UID
+     			if(muid==0){
+     				if(!Cookie.get("TriedReflush")){
+	     				Cookie.set("TriedReflush","1");
+		     			window.location=window.location.href;
+     				}
+     			}
+     		}
+     	};
+  	 	var isLogin=false;
+      var ssoLogin=false;
+      loadJsonp("https://ebook.chinabuilding.com.cn/sso//online?ContentType=jsonp",function(info){
+        ssoLogin=info.Login;
+        var ssoname=info.Name;
+        var ssoType = info.AccessType
+        Server.sendRequest("member/logined",null,function(rep){
+          ipAddress = rep.IP;
+          if(true){
+        	  $("#IpAddress").text("您的IP地址为："+ipAddress)
+        	  //内网ip 显示菜单
+        	  if (isInPrivateRange(ipAddress)) {
+        		  $("#epshow").show();
+        	  }
+          }
+      	  isLogin=rep.IsLogin;
+      	  var shopname=rep.UserName;
+    		  var sameuser = false;
+    		  if(ssoname == shopname){
+    			  sameuser=true;
+    		  }
+    		  if (ssoType == 2) {
+    			  sameuser=true;
+    		  }
+      	  if(isLogin&&ssoLogin&&sameuser){
+      			window.Membered.info=rep;
+      			window.Membered.afterLogined();
+      	  }else if(isLogin){
+      		  Cookie.set("TriedIPLogin","");
+      		  window.location=frontAppContext+"member/login?Action=logout&Referer="+encodeURIComponent(window.location.href);
+      	  }else if(ssoLogin){
+      		  window.location=frontAppContext+"member/login?SiteID="+siteID+"&Referer="+encodeURIComponent(window.location.href);
+      	  }else{
+      		  if(Cookie.get("TriedIPLogin")){
+        			//已经尝试过IP登录
+  		      	$("#headermemberelogin").show();
+  			  		$("#headermemberregist").show();
+  			  	$("#headeriplogin").show();
+  			  		window.Membered.info={};
+        			window.Membered.afterLogined();
+      		  }else{
+      			  var callback="_callback_"+Date.now();
+              	window[callback]=function(data){
+                Cookie.set("TriedIPLogin","1");
+                if(data.IsLogin){
+              		window.Membered.info=data;
+        					window.Membered.afterLogined();
+                } else {
+                	$("#headermemberelogin").show();
+    			  			$("#headermemberregist").show();
+    			  			$("#headeriplogin").show();
+	    						var message=data.Message;
+        			  	if(false){
+    	    			  	if(message && "机构并发数已达上限！"==message){
+    		    			  	alert("机构并发数已达上限，请联系管理员！");
+    	    			  	}
+        			  	} else {
+        			  		if(message && message.startsWith("超过最大登录限制")){
+        			  			if (true) {
+        			  				loadJsonp("https://ebook.chinabuilding.com.cn/sso//memberConcurrent/log");
+        			  			}
+    		    			  	alert("机构并发数已达上限，请联系管理员！");
+    	    			  	}
+        			  	}
+        			  	window.Membered.info={};
+            			window.Membered.afterLogined();
+                }
+                window[callback]=null;
+              };
+              loadJsonp("https://ebook.chinabuilding.com.cn/sso//doLogin?plat=IP&ContentType=jsonp&client_id=18c90d15c753481496b266de0da02698&response_type=code&scope=user_info&redirect_uri=https://ebook.chinabuilding.com.cn/zbooklib/member/login?callback="+callback,function(data){
+              	window[callback](data);
+              });
+      		  }
+      	  }
+        });
+      });
+    }else{
+    	window.Membered={'afterLogined':function(){}};
+    }
+	function isInPrivateRange(ip) {
+	    // 将IP地址转换为32位数字 
+	    function ipToInt(ip) {
+	        return ip.split('.').reduce((acc,  octet) => (acc << 8) + parseInt(octet, 10), 0) >>> 0;
+	    }
+	    const ipInt = ipToInt(ip);
+	    // 检查10.0.0.0/8 (10.0.0.0 - 10.255.255.255)
+	    if ((ipInt >>> 24) === 10) return true;
+	    // 检查172.16.0.0/12 (172.16.0.0 - 172.31.255.255)
+	    if ((ipInt >>> 20) === (0xAC1 << 4)) return true;
+	    // 检查192.168.0.0/16 (192.168.0.0 - 192.168.255.255)
+	    if ((ipInt >>> 16) === 0xC0A8) return true;
+	    return false;
+	}	
+  </script>
+  <script type="text/javascript">
+    function doiplogin() {
+       Cookie.set("TriedIPLogin","");
+       var callback="_callback_"+Date.now();
+       window[callback]=function(data){
+	       Cookie.set("TriedIPLogin","1");
+	       if(data.IsLogin){
+	     		window.Membered.info=data;
+	     		window.Membered.afterLogined();
+	       } else {
+	    	   $("#headermemberelogin").show();
+	 			$("#headermemberregist").show();
+	 			$("#headeriplogin").show();
+	 			var message=data.Message;
+	 		  	if(message){
+	     			alert(message);
+	    		}
+	 		  	window.Membered.info={};
+	    		window.Membered.afterLogined();
+	       }
+	       window[callback]=null;
+      };
+      loadJsonp("https://ebook.chinabuilding.com.cn/sso//doLogin?plat=IP&ContentType=jsonp&client_id=18c90d15c753481496b266de0da02698&response_type=code&scope=user_info&redirect_uri=https://ebook.chinabuilding.com.cn/zbooklib/member/login?callback="+callback,function(data){
+     	  window[callback](data);
+      });
+    }
+    function dologin(){
+    	var reffer = window.location.href;
+    	if(false){
+    		window.location = "https://ebook.chinabuilding.com.cn/zbooklib/branchUser/login?SiteID=" + siteID + "&Referer=" + encodeURIComponent(reffer);
+    	} else {
+    	    window.location="https://ebook.chinabuilding.com.cn/zbooklib/member/login?SiteID=&Referer=" + encodeURIComponent(reffer);
+    	}
+    }
+    function logout(reffer){
+      //未登录
+      if(!isLogin){
+        return;
+      }
+      if(!reffer){
+        reffer=window.location.href;
+      }
+      Cookie.set("TriedIPLogin","");
+      Cookie.set("TriedCheckMobile","");
+      Cookie.set("TriedCheckMobile","",10,"/");
+      Cookie.remove("TriedCheckMobile");
+      Cookie.remove("TriedCheckMobile","/");
+      var loginout="https://ebook.chinabuilding.com.cn/zbooklib/member/login?SiteID=" + siteID + "&Action=logout&Referer="+encodeURIComponent(reffer);
+      window.location="https://ebook.chinabuilding.com.cn/sso/ssoLogout?AppID=1&Referer="+encodeURIComponent(loginout);
+    }
+    function regist(reffer){
+      if(!reffer){
+        reffer=window.location.href;
+      }
+      window.location="https://ebook.chinabuilding.com.cn/sso/regist?AppID=1&Referer="+encodeURIComponent(reffer);
+    }
+    function loginswitch(reffer){
+      if(!reffer){
+        reffer=window.location.href;
+      }
+      Cookie.set("TriedIPLogin","");
+      if(false){
+    	  var loginurl = "https://ebook.chinabuilding.com.cn/zbooklib/branchUser/login?SiteID=" + siteID + "&Referer=" + encodeURIComponent(reffer);
+      }else{
+    	  var loginurl = "https://ebook.chinabuilding.com.cn/zbooklib/member/login?SiteID=1&Referer="+encodeURIComponent(reffer);
+    	  loginurl = "https://ebook.chinabuilding.com.cn/sso/ssoLogout?AppID=1&Referer="+encodeURIComponent(loginurl);
+      }
+      window.location = loginurl;
+    }
+    function check(form) {
+       if(form.SearchKey.value=='') {
+           form.SearchKey.focus();
+           return false;
+       }
+       showdiv();
+       return true;
+    }
+    //刷新sso登录票据，保持sso登录状态
+    $(function(){
+    	var reflushticket=function(){
+    		setTimeout(function(){
+    				if(!Membered||!Membered.info||!Membered.info.IsLogin){
+    					return;
+    				}
+      			loadJsonp("https://ebook.chinabuilding.com.cn/sso//online?time="+Date.now()+"&ContentType=jsonp",function(data){
+      				if(data.Login){
+        				reflushticket();
+        			}else{
+        				window.location=frontAppContext+"member/login?Action=logout&Referer="+encodeURIComponent(window.location.href);
+        			}
+          	});
+    		},10*60*1000);
+    	};
+    	var bid = ''//定制机构不刷新ticket
+    	var configBranchIDs = '7521'
+    	var refFlag = false
+    	if (configBranchIDs != '' && bid != '') {
+    		var ids = configBranchIDs.split(",")
+            var result= $.inArray(bid, ids);
+            if (result >= 0) {
+                refFlag = true
+            }
+    	}
+    	if (!refFlag) {
+    		reflushticket();
+    	}
+    });
+    
+    $(function(){
+    	if(false){
+	    	var refreshBranchSession=function(){
+	    		setTimeout(function(){
+	    			loadJsonp(frontAppContext + "maintainLogin?time="+Date.now()+"&ContentType=jsonp",function(data){});
+	    			refreshBranchSession();
+				},30*1000);
+	    	}
+	    	refreshBranchSession();
+    	}
+    });
+    	
+  </script> 
+  <script src="https://ebook.chinabuilding.com.cn/js/spin.min.js"></script>
+<style>
+	#bsWXBox{height:257px!important;}
+	#bsBox{height:419px!important;}
+	.bsTop{width:auto!important;}
+	#bsMorePanel{width:auto!important;}
+	.bFind-wrapper-top{height:25px!important;}
+	.col-md-8 h4 .active{display: inline-block;width:44px;text-align:center;height:22px;line-height:22px;display:inline-block;margin-left:10px;font-size:12px; color:#fff;background-color:#5eb42a;}
+	.col-md-8 h4 .unenforced{display: inline-block;padding:0px 10px;height:22px;line-height:22px;margin-left:10px;font-size:12px; color:#fff;background-color:#f4a417;}
+	.col-md-8 h4 .abolish{display: inline-block;padding:0px 10px;height:22px;line-height:22px;margin-left:10px;font-size:12px; color:#fff;background-color:#f55956;}
+	.page-bar-1{margin:0;}
+	.page-bar-1 a{display:inline-block;margin:50px 2px;}
+	#success span{
+		 background: url(https://ebook.chinabuilding.com.cn/images/ico-dui.png) no-repeat left ;
+		 font-size: 15px;
+    	 padding:10px 0 10px 60px;    	
+    	 line-height: 22px;
+    	 margin-left: 26px;
+    	 display: inline-block;
+    	 background-size:41px;
+	}
+	
+	.relateReadCon2 .slide .p-sm {
+  border-left: 2.5px solid #e3dfdf !important; /* 默认设置左边框 */
+  border-right: 2.5px solid #e3dfdf !important; /* 默认设置右边框 */
+}
+ 
+ 
+/* 添加左边框*/
+.relateReadCon2 .slide:first-child .p-sm {
+  border-left: 3px solid #e3dfdf !important;
+}
+ 
+/* 添加右边框*/
+.relateReadCon2 .slide:last-child .p-sm {
+  border-right:3px solid #e3dfdf !important;
+}
+	
+	.relateReadCon3 .slide:not(:first-child) .p-sm{
+		#border-left-width: 0px !important;
+    	#border-right: 1px solid #e3dfdf !important;
+	}
+	
+	
+	
+	#fail span{
+		background: url(https://ebook.chinabuilding.com.cn/images/tips.png) no-repeat left ;
+		 font-size: 15px;
+    	 padding:10px 0 20px 58px;
+    	 line-height: 22px;
+    	 display: inline-block;
+    	 background-size:41px;
+	}
+	.comment-con {
+    	color: #2e3e4e;
+    	margin: 10px 0;
+    }
+    .p-r-sm {
+       color:#cccccc;
+    }
+	.but-group a.no-res-btn{    background: #CCC;}
+	
+	.related-reading a span.help_arrow {
+    background: url(https://ebook.chinabuilding.com.cn/images/search-arrow2.png) no-repeat left top;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    float: left;
+    margin: 1px 4px 0 0;
+}
+
+.relateReadCon2 .slick-prev,.relateReadCon2 .slick-next{text-indent:-9999px;position:absolute;bottom:-13px;z-index:99;border:none;background:url(https://ebook.chinabuilding.com.cn/images/imgArrows.png) no-repeat left top;width:11px;height:19px;}
+.relateReadCon2 .slick-prev,.relateReadCon2 .slick-next{bottom:-15px;}
+.newBook .slick-prev,.recommend .slick-prev,.relateReadCon2 .slick-prev{left:45%;}
+.relateReadCon2 .slick-prev{left:38%;}
+.newBook .slick-next,.recommend .slick-next,.relateReadCon2 .slick-next{background-position:left -24px;right:45%;}
+.relateReadCon2 .slick-next{right:38%;}
+.relateReadCon2{margin-bottom:20px;}
+.relateReadCon2 dl{margin:0px;}
+.relateReadCon2 .slick-dots{height:6px;margin:10px 0 0;}
+.newBook .slick-dots li,.recommend .slick-dots li,.relateReadCon2 .slick-dots li{width:6px;height:6px;background:url(https://ebook.chinabuilding.com.cn/images/imgArrows.png) no-repeat left -60px; }
+.newBook .slick-dots li a,.recommend .slick-dots li a,.relateReadCon2 .slick-dots li a{text-indent:-9999px;display:inline-block;}
+.newBook .slick-dots li.slick-active,.recommend .slick-dots li.slick-active,.relateReadCon2 .slick-dots li.slick-active{background:url(https://ebook.chinabuilding.com.cn/images/imgArrows.png) no-repeat left -49px;}
+
+.relateReadCon3 .slick-prev,.relateReadCon3 .slick-next{text-indent:-9999px;position:absolute;bottom:-13px;z-index:99;border:none;background:url(https://ebook.chinabuilding.com.cn/images/imgArrows.png) no-repeat left top;width:11px;height:19px;}
+.relateReadCon3 .slick-prev,.relateReadCon3 .slick-next{bottom:-15px;}
+.newBook .slick-prev,.recommend .slick-prev,.relateReadCon3 .slick-prev{left:45%;}
+.relateReadCon3 .slick-prev{left:38%;}
+.newBook .slick-next,.recommend .slick-next,.relateReadCon3 .slick-next{background-position:left -24px;right:45%;}
+.relateReadCon3 .slick-next{right:38%;}
+.relateReadCon3{margin-bottom:20px;}
+.relateReadCon3 dl{margin:0px;}
+.relateReadCon3 .slick-dots{height:6px;margin:10px 0 0;}
+.newBook .slick-dots li,.recommend .slick-dots li,.relateReadCon3 .slick-dots li{width:6px;height:6px;background:url(https://ebook.chinabuilding.com.cn/images/imgArrows.png) no-repeat left -60px; }
+.newBook .slick-dots li a,.recommend .slick-dots li a,.relateReadCon3 .slick-dots li a{text-indent:-9999px;display:inline-block;}
+.newBook .slick-dots li.slick-active,.recommend .slick-dots li.slick-active,.relateReadCon3 .slick-dots li.slick-active{background:url(https://ebook.chinabuilding.com.cn/images/imgArrows.png) no-repeat left -49px;}
+</style>
+</head>
+<body>
+  
+  
+    
+	<!--- 移动端导航菜单 --->
+	<!-- 头部 -->
+    <div class="head">
+    	<div class="dead_top">
+            <div class="container">
+                <div class="row">
+	                <div class="col-md-4 hidden-xs">
+                  	
+	                	<a target="_blank" href="http://www.chinabuilding.com.cn/">国标网</a>
+	                	&nbsp;&nbsp;&nbsp;&nbsp;
+	                	<a target="_blank" href="https://shop.chinabuilding.com.cn">国标电子书库商城</a>
+	                	&nbsp;&nbsp;&nbsp;&nbsp;
+	                	<a target="_blank" href="https://ebook.chinabuilding.com.cn/zbooklib/index?SiteID=1&IsSiteUrl=Y">国标电子书库</a>
+                    
+	                </div>
+	                <div class="col-md-8 text-right rightSpace">
+	                     <span class="hidden-xs" style="margin-right: 10px;" id="IpAddress"></span>
+                    	 <a href="javascript:void(0)"  class="p-r-md hidden-xs-headerbranchname" style="display:none;" id="memberbranchname">
+                    	 </a>
+                    	 <a href="javascript:void(0)"  class="p-l-sm p-r-sm hidden-xs-headername" style="display:none;" id="headermembername">
+	                     </a>
+		                 <a href="javascript:void(0)"  class="p-r-md hidden-xs-headerbranchname" style="display:none;"  id="memberbranchname">
+                    	 </a>
+                    	 <a href="javascript:logout()" style="display:none;" class="p-l-sm other-xs-b" id="headermemberelogout">[退出]</a>
+                      	 <a href="javascript:doiplogin()" style="display:none;" class="p-l-sm" id="headeriplogin">IP登录</a>
+		                <a href="javascript:dologin()" style="display:none;" class="p-l-sm other-xs-b" id="headermemberelogin">登录</a>
+                    	<a href="javascript:regist()" style="display:none;" class="p-l-md other-xs-b" id="headermemberregist">注册</a>
+	                </div>
+                </div>
+                <script type="text/javascript">
+                var isMirror='N'
+				window.Membered.afterLogined(function(member){
+				    if(member.IsLogin){
+						if(member.UID>0){
+							$("#headermembername").text(member.UserName);
+							if(member.IsBranchAdmin=="true"){
+								$("#headermembername").attr("href",frontAppContext+"enterprise/index?SiteID="+siteID).show();
+							}else{
+								if(isMirror||isMirror=='Y'){
+									$("#headermembername").attr("href",frontAppContext+"memberManager/favoriteManager?SiteID="+siteID).show();
+								}else{
+									$("#headermembername").attr("href",frontAppContext+"personallyBooklib/view?SiteID="+siteID).show();
+								}
+							}
+							if(member.BID>0){
+								$("#memberbranchname").text(member.BranchName).attr("href",frontAppContext+"enterprise/bookSublibIndex?SiteID="+siteID).show();
+							}else{
+								$("#memberbranchname").hide();
+							}
+							$("#headermemberregist").hide();
+							$("#headermemberelogout").text("[退出]").attr("href","javascript:logout();");
+							$("#headermemberelogout").show();
+							if(isMirror && isMirror=='Y'){
+							}else{
+								if(Cookie.get("TriedCheckMobile")){
+								} else {
+									Cookie.set("TriedCheckMobile","1",12*60*60*1000,"/");
+									Cookie.set("TriedCheckMobile","1");
+									Server.sendRequest("member/mobilerelainfo",null,function(rep){
+										var r = rep.BindMobile;
+										if(r || member.UserName.endWith('_wx')|| member.UserName.startWith('7507_')){
+										} else {
+											var diag = new Dialog();
+											diag.width = 370;
+											diag.height = 100;
+											diag.title = "提示";
+											diag.url = "https://ebook.chinabuilding.com.cn/zbooklib/CheckMobileMSGDialog?SiteID=1";
+											diag.show();
+										}
+									});
+								}
+							}
+							$("#headeriplogin").hide();
+						}else{
+							$("#memberbranchname").text(member.UserName).attr("href",frontAppContext+"enterprise/bookSublibIndex?SiteID="+siteID).show();
+							$("#headermemberelogin").attr("href","javascript:loginswitch();").show();
+							$("#headermemberregist").show();
+							if(member.BID>0){
+								$("#headeriplogin").hide();
+							} else {
+								$("#headeriplogin").show();
+							}
+						}
+					}
+				});
+                </script>
+            </div>
+        </div>
+        <div class="container hidden-xs ">
+        	<div class="row p-t-md p-b-md">
+            	<div class="col-md-5"><a href="https://ebook.chinabuilding.com.cn/zbooklib/index?SiteID=1&IsSiteUrl=Y"><img src="https://ebook.chinabuilding.com.cn/images/logo.png" class="img-responsive" style="height: 69px;" /></a></div>
+                <div class="col-md-6 cancelRig">
+                    <div class="search-query clear m-t">
+                    	<form action="https://ebook.chinabuilding.com.cn/zbooklib/search" onsubmit="return check(this);">
+                    		<div id="secondpane" class="menu_list">
+	                        	<div style="">
+	                                <span class="menu_head" id="parSelected"><a href="javascript:void(0);" _value="">全部</a></span>
+	                                <ul class="menu_body list-unstyled"  id ="search_sub" style="display:none;">
+	                                	<li><a href="javascript:void(0);" _value="">全部</a></li>
+	                                    <li><a href="javascript:void(0);" _value="Bookcode">编号</a></li>
+	                                    <li><a href="javascript:void(0);" _value="Title">名称</a></li>
+	                                    <li><a href="javascript:void(0);" _value="AbstractCH">简介</a></li>
+	                                    <li><a href="javascript:void(0);" _value="KeyWord">关键词</a></li>
+	                                    <li><a href="javascript:void(0);" _value="AandatoryProvision">强制性条文</a></li>
+	                                    <li><a href="javascript:void(0);" _value="Directory">目录</a></li>
+	                                </ul>
+	                            </div>
+                        	</div>
+	                        <input id="search-text" class="search-text pull-left" type="text" name="SearchKey"  placeholder="全库搜索" value=""/>
+	                        <input type="hidden" name="SiteID" value="1"/>
+	                        <input type="hidden" name="contentType" value="book"/>
+	                        <input type="hidden" value="" name="fieldType" id="head-field" />
+	                        <input class="search-submit pull-right" type="submit" />
+	                    </form>  
+                    </div>
+                </div>
+                <div class="col-md-1 advanceLink text-left"><a href="https://ebook.chinabuilding.com.cn/zbooklib/advsearch?SiteID=1">高级搜索</a></div>
+            </div>
+        </div>
+        <div class="nav hidden-xs ">
+        	<div class="container">
+                <ul class="list-unstyled">
+                    <li class="allClassical showMenu">
+                    	<a href="https://ebook.chinabuilding.com.cn/zbooklib/sublibBook/resultlist?SiteID=1">全部资源分类</a>
+                    </li>
+                    <li class="m-l-md"><a href="https://ebook.chinabuilding.com.cn/zbooklib/index?SiteID=1&IsSiteUrl=Y">首页</a></li>
+                    <li innercode="0029" ><a href="https://ebook.chinabuilding.com.cn/zbooklib/sublibBook/resultlist?SiteID=1&sublibID=2118">标准图集</a></li>
+                    <li innercode="0030"><a href="https://ebook.chinabuilding.com.cn/zbooklib/sublibBook/resultlist?SiteID=1&sublibID=2246">标准规范</a></li>
+                    <!-- 服务资讯 -->
+                    
+                      <li innercode="000027"><a href="https://ebook.chinabuilding.com.cn/fwzx/">服务资讯</a></li>
+                    
+                    	<!-- 关于书库 -->
+                    
+                       <li innercode="000028"><a  href="https://ebook.chinabuilding.com.cn/gysk/">关于书库</a></li>
+						        
+						        <li id="epshow" style="display:none">
+                      <a target="_blank" href="https://ep.chinabuilding.com.cn/">标准化数字平台</a>
+                    </li>
+					<li class="mobile-download top-menu hidden-md hidden-sm">
+                		<a href="https://shop.chinabuilding.com.cn/xzdzskydd/"  target="_blank" >下载电子书库移动端</a>
+                	</li> 
+                </ul>
+            </div>
+    	</div>
+    </div>
+
+	<!-- 移动端头部 -->
+    <div class="visible-xs  head_xs">
+        <div class="head_xs">
+            <div class="logo_xs clearfix">
+                <div class="col-xs-7"><a class="logo" href="https://ebook.chinabuilding.com.cn/zbooklib/index?SiteID=1&IsSiteUrl=Y"><img src="https://ebook.chinabuilding.com.cn/images/logo.png" onClick="toggleSidebar(this);" class="img-responsive v-middle" alt=""></a></div>
+                <div class="col-xs-5"><a class="btn_xs pull-right" onClick="$('#catalogNav').toggleClass('hidden')" href="#;"></a><span class="soBtn open"></span></div>
+            </div>
+            <div class="col-md-12">
+                <div class="search-query clear m-t">
+                    <form action="https://ebook.chinabuilding.com.cn/zbooklib/search" onsubmit="return check(this);">
+                        <input class="search-text pull-left" placeholder="请输入关键词" value="" type="text" name="SearchKey"/>
+                        <input type="hidden" name="SiteID" value="1"/>
+                        <input type="hidden" name="contentType" value="book"/>
+                        <input class="search-submit pull-right" type="submit" />
+                    </form>  
+                </div>
+            </div>
+            <div class="hidden catalogNav clearfix" id="catalogNav">
+              <ul class="list-unstyled catalogNav_list col-xs-12">
+                    <li><a href="https://ebook.chinabuilding.com.cn/zbooklib/index?SiteID=1&IsSiteUrl=Y">首页</a></li>
+                    <li innercode="0029" ><a href="https://ebook.chinabuilding.com.cn/zbooklib/sublibBook/resultlist?SiteID=1&sublibID=2118">标准图集</a></li>
+                    <li innercode="0030"><a href="https://ebook.chinabuilding.com.cn/zbooklib/sublibBook/resultlist?SiteID=1&sublibID=2246">标准规范</a></li>
+                    <!-- 服务资讯 -->
+                    
+                      <li innercode="000027"><a target="_blank" href="https://ebook.chinabuilding.com.cn/fwzx/">服务资讯</a></li>
+                    
+                    	<!-- 关于书库 -->
+                    
+                       <li innercode="000028"><a target="_blank" href="https://ebook.chinabuilding.com.cn/gysk/">关于书库</a></li>
+						        
+						        <li id="epshow" style="display:none">
+                      <a target="_blank" href="https://ep.chinabuilding.com.cn/">标准化数字平台</a>
+                    </li>
+					<li>
+                		<a href="https://shop.chinabuilding.com.cn/xzdzskydd/"  target="_blank" >下载电子书库移动端</a>
+                	</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+  <script>
+  
+  	  $("#search-text").focus(function(){
+	    $("#search-text").attr("placeholder","");
+	  });
+	  $("#search-text").blur(function(){
+	    $("#search-text").attr("placeholder","全库搜索");
+	  });
+  
+  	$(function(){	
+  		var hlinnercode=$("#HighLightInnerCode").val();
+  		$(".nav>.container>ul>li:gt(0)").each(function(){
+  			var innercode=$(this).attr("innercode");
+  			if(innercode&&hlinnercode&&hlinnercode.startsWith(innercode)){
+  				$(this).addClass("on");
+  				return false;
+  			}
+  		});
+  		
+  		$("#search_sub").delegate("a","click",function(){
+    		$("#head-field").val($(this).attr("_value"));
+    	});
+  		var value=$("#head-field").val();
+  		if(value){
+  			$("#parSelected").text($("#search_sub a[_value='"+value+"']").text());
+  		}
+  	});
+  </script>
+  <!-- 搜索遮罩层 s-->
+  <style>
+			#bg {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-color: black;
+				z-index: 1001;
+				-moz-opacity: 0.6;
+				opacity: .60;
+				filter: alpha(opacity=60);
+			}
+			#show {
+				display: none;
+				position: absolute;
+				top: 20%;
+				left: 22%;
+				width: 53%;
+				height: 49%;
+				padding: 8px;
+				z-index: 1002;
+			}
+			.rotate{
+				position: absolute;
+				left: 50%;
+				top: 10%;
+				z-index: 1003;
+			}
+			.rotate p{
+				color: #12b7f5;
+				font-size: 16px;
+				margin-top: 50px;
+				margin-left: -32px;
+				font-weight: bold;
+			}
+		</style>
+  
+		<div id="bg"></div>
+		<div id="show" >
+				<div id="foo" class="rotate" >
+					<p class="">正在搜索...</p>
+				</div>
+		</div>
+			
+			<script>
+			$(function() {
+	        	var opts = {
+	        		lines: 13, // 要绘制的行数 
+	        		length: 0, // 每一行的长度 
+	        		width: 10, // 线厚度
+	        		radius: 30, // 内圆的半径 
+	        		corners: 1, // Corner roundness (0..1)
+	        		rotate: 0, // 旋转偏移量
+	        		color: '#02a5d6', // #rgb or #rrggbb 颜色
+	        		speed: 1, // 每秒轮
+	        		trail: 60, // 余辉百分比 
+	        		shadow: false, // 是否要渲染一个阴影
+	        		hwaccel: false, // 是否使用硬件加速 
+	        		className: 'spinner', // 要分配给转轴器的css类
+	        		zIndex: 2e9, // z指数（默认为20000000000） 
+	        		top: 'auto', // 在px中相对于父母的顶部位置
+	        		left: 'auto' // 在px中相对于父本的左位置
+	        	};
+	        	var target = document.getElementById('foo');
+	        	var spinner = new Spinner(opts).spin(target);
+	        })
+			
+			// 遮罩
+			function showdiv() {
+	            document.getElementById("bg").style.display ="block";
+	            document.getElementById("show").style.display ="block";
+				// 阻止页面body滚动
+	            $('body').css("overflow", "hidden")
+	        }
+			</script>
+			
+<!-- 搜索遮罩层 e-->
+
+	
+  
+    <div class="main">
+    	<div class="crumbs">
+            <div class="container clearfix">
+                <div class="col-md-12 hidden-xs hidden-sm">
+      	
+                               
+                </div>
+            </div>  
+        </div>
+    	<div class="container clearfix marginTop15 m-b-lg">
+            <div class="clearfix">
+                <!-- 左侧 -->
+                <div class="col-md-9">
+                    <!-- 图书信息start -->
+                    <div class="book-Info">
+                        <div class="row">
+                            <div class="col-md-4 p-r-none text-center bookImg">
+                            	<input id="imgUrl" type="hidden" value="https://ebook.chinabuilding.com.cn/html/uploads/images/2016-05/2016052514475225063_s.jpg">
+                            	 
+                                    	 <a  href="https://ebook.chinabuilding.com.cn/zbooklib/bookpdf/probation?SiteID=1&bookID=60159" target="_blank" > <img src="https://ebook.chinabuilding.com.cn/html/uploads/images/2016-05/2016052514475225063_s.jpg" id="bookImage" alt="暂无图片" onerror="src='https://ebook.chinabuilding.com.cn/images/book_default.png'" style="max-height:192px;min-height:192px;"/></a>
+                                 
+                                 
+                            </div>
+                            <input type="hidden" value="0" id="memberIdFlag" />
+                            <input type="hidden" value="60159" id="bookDetailId"/>
+                       <div class="col-md-8 ">
+                                <h4 class="detailTit">
+                                <!-- <a href="${FrontAppContext}book/detail/show?SiteID=${site.ID}&bookID=${bookDetail.id}" id="bookDetailTitle">${bookDetail.BookCode}：${bookDetail.Title}<span class="${Data.Abolish=='1'?'unenforced':Data.Abolish=='2'?'active':Data.Abolish=='3'?'abolish':active}">${bookDetail.AbolishName}</span></a> -->
+                              <span id="bookDetailTitle" class="font-bold">GB50215-2015：煤炭工业矿井设计规范</span><span id="bookUnit" class="active">现行</span>
+                                </h4>
+                               <div class="bookDet bookDet_sub b-a p-sm clearfix">
+                                        <div class="col-md-4 hidden-sm hidden-xs">编号：<span  title="GB50215-2015" >GB50215-...</span></div>
+                                        <div class="col-md-4 hidden-sm hidden-xs">名称：<span title="煤炭工业矿井设计规范" >煤炭工业矿井设...</span></div>
+                                        <div class="col-md-4">资源类型：国家标准</div>
+                                        <div class="col-md-4">发布日期：2015-09-30</div>
+                                        <div class="col-md-4">实施日期：2016-03-01</div>
+                                        <div class="col-md-4">废止日期：-</div>
+                                        <div class="col-md-4">入库日期：2016-05-25</div>
+                                        
+                                    	<input   id="bookTitle" value="煤炭工业矿井设计规范" type="hidden" bookurl="" >
+                                        
+                                        <!-- <p>标准类型：${bookDetail.StandardBookType}</p> -->
+                                        <div class="col-md-12">主编单位：</div>
+                                       
+                                </div>      
+                                <div class="m-t-sm but-group">
+                                    <div class="pull-left">
+                                    
+                                    	
+                                    	 <a class="read-default" id="readPDFPriv"  href="https://ebook.chinabuilding.com.cn/zbooklib/bookpdf/probation?SiteID=1&bookID=60159" target="_blank" >PDF试读</a>
+                                    	
+                                    	
+                                    	
+                                    
+                                    
+                                    
+                                    </div>
+                                    <div class="pull-right" >
+                                       
+										<span class="collection-btn" id="detailCollection-btn" name="60159">收藏</span>
+                                     <!--  <span  class="share-btn m-l-md"  id="shareSpan-btn" >分享</span> -->
+                                      <!-- <div id="shareDiv" style="display:none;position:absolute;width:160px;right:0;" >
+ 								       <div class="bshare-custom" >
+		 								         <a title="分享到QQ空间" class="bshare-qzone"></a>
+		 								         <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+		 								         <a title="分享到人人网" class="bshare-renren"></a>
+		 								    	 <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+		 								   		 <a title="分享到网易微博" class="bshare-neteasemb"></a>
+		 								   		 <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+		 								    <span class="BSHARE_COUNT bshare-share-count">0</span>
+		 								  	  </div>
+		                            	</div> -->
+		                            	
+										<span class="share-btn m-l-md " id="shareSpan-btn">分享</span>
+                                        <div id="shareDiv" class="fire_share">
+ 								        	<div class="bshare-custom" >
+		 								        <ul class="list-unstyled">
+									        		<li><a href="javascript:void(0);" onclick="goShareDetail(this,'qfriends')" class="b-btn-4 b1" ><img src="https://ebook.chinabuilding.com.cn/images/qzone.png">&nbsp;&nbsp;QQ好友</a></li>
+									        		<li><a href="javascript:void(0);" onclick="goShareDetail(this,'tsina')" class="b-btn-4 " ><img src="https://ebook.chinabuilding.com.cn/images/tsina.png">&nbsp;&nbsp;新浪微博</a></li>
+									        		<li class="wx-share"><a href="javascript:void(0);" class="b-btn-4 " ><img src="https://ebook.chinabuilding.com.cn/images/weixin.png">&nbsp;&nbsp;微信扫一扫</a></li>
+									        		
+									        	</ul>									        	
+												<div class="wx-code">
+													<div  id="__QRCode1785849838441" class="z-qrcode"></div><script type="text/javascript"  src="https://ebook.chinabuilding.com.cn/zbooklib/framework/components/qrcode.js"></script><script type="text/javascript"> QRCode.show(document.getElementById('__QRCode1785849838441'),110,window.location.href+'#_z_s=Qrcode')</script>												
+												</div> 
+		 									</div>
+		                            	</div>
+                                        <div class="buyer-tips hidden">
+                                        	<i></i>
+                                        	<div class="buyer-tipsCon">点击可向企业管理员发送书籍采购申请</div>
+                                        </div>
+                                   </div>
+                                    </div>    
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 图书信息end -->
+                    <!--简介、目录...start-->
+                    <div class="info-carousel m-t-md">
+                        <div class="hd">
+                            <div class="hdCon">
+                                <ul class="list-unstyled clear">
+                                    <li class="on">简介</li>                                    
+                                    <li>目录</li> 
+                                    <li >强制性条文</li>
+                                    <li id="zjjd" style="display: none;">专家解读</li>
+                                    <li style="display: none;">产品信息</li>
+                                    <li style="display: none;">变更信息</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bd">
+                            <div class="m-t-md font14" style="text-indent:28px;">
+                            		
+                            </div>
+                            <div class="m-t-md font14">
+                            	<div class="clearfix">
+                            	
+                            		
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">GB50215-2015&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">1&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">1总则&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">19&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">2矿井资源/储量、设计生产能力和服务年限&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">20&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">2.1矿井资源/储量&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">20&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">2.2矿井设计生产能力和服务年限&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">21&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3井田开拓&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">24&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.1井田开拓方式&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">24&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.2井口位置与开采水平划分&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">25&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.3开拓巷道布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">26&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.4开采顺序与采区划分&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">28&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4井筒、井底车场及硐室&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">30&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4.1井筒&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">30&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4.2井底车场&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">32&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4.3主要硐室&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">33&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5井下开采&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">35&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.1采区布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">35&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.2采煤方法及工艺&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">35&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.3采区巷道布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">37&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.4巷道掘进与掘进机械化&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">38&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6井下运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">40&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">40&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.2煤炭运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">40&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.3辅助运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">42&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.4运输设备与车辆配备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">44&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7通风与安全&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">46&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.1通风&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">46&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.2瓦斯抽采&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">48&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.3井下灾害防治&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">50&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.4井下热害防治&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">52&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.5井下紧急避险系统&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">54&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8矿井主要固定设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">57&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.1提升设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">57&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.2通风设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">63&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.3排水设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">65&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.4压缩空气设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">67&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.5抽采瓦斯设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">69&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.6注氮设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">70&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9地面生产系统&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">71&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">71&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.2井口布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">71&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.3井口受煤仓&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">73&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.4筛分、选矸与破碎&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">73&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.5带式输送机运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">74&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.6储存与装车&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">76&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.7计量与煤质检查&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">76&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.8矸石和脏杂煤处理&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">77&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.9矿井修理车间、无轨胶轮车库及木材加工房&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">78&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10总平面布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">80&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.1矿井地面总布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">80&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.2工业场地总平面布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">82&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.3防洪及竖向设计&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">90&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.4场内运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">93&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.5管线综合布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">95&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11地面运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">98&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">98&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11.2标准轨距铁路&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">99&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11.3场外道路&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">100&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12供配电&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">101&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">101&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.2供电电源&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">101&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.3电压和电能质量&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">102&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.4电力负荷&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">103&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.5地面配电&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">105&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.6井下配电&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">107&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.7照明&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">108&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.8防雷、过电压保护和接地&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">109&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13信息与自动化&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">111&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">111&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.2监控及自动化&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">111&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.3计算机网络&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">114&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.4信息管理&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">115&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.5通信&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">116&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.6信号&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">118&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14地面建筑&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">121&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">121&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14.2主要工业建筑与构筑物&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">125&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14.3建筑面积&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">128&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15给水排水与供热通风&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">132&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.1水源&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">132&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.2给水排水&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">133&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.3井下消防洒水&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">134&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.4&#32;供热通风&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">137&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.5&#32;矿井井筒防冻&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">141&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.6&#32;锅炉房&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">142&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.7&#32;燃气供应&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">143&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16节能减排与综合利用&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">145&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.1&#32;一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">145&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.2&#32;井田开拓与开采&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">145&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.3&#32;矿井主要设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">146&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.4&#32;安全设施节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">147&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.5&#32;电气节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">148&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.6&#32;地面生产系统节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">150&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.7&#32;建筑、总图及地面运输节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">151&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.8&#32;给水排水及暖通节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">152&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.9&#32;环保设施节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">153&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.10&#32;新能源&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">154&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.11&#32;能源计量及能耗指标&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">154&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.12&#32;综合利用&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">154&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">17环境保护&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">156&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">17.1&#32;一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">156&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">17.2&#32;污染防治&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">156&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">17.3&#32;生态保护&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">157&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18建井工期&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">159&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18.1&#32;移交标准&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">159&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18.2&#32;施工进度&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">159&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18.3&#32;建井工期&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">160&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">附录A&#32;固体矿产资源分类&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">162&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">附录B&#32;煤炭资源量估算指标&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">163&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">附录C&#32;矿井初步可行性研究、可行性研究和初步设计资源/储量分类及计算&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">164&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">附录D&#32;建议的资源/储量比例&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">167&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">本规范用词说明&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">168&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">引用标准名录&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">169&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">附:条文说明&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">173&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">1总则&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">178&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">2矿井资源/储量、设计生产能力和服务年限&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">181&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">2.1矿井资源/储量&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">181&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">2.2矿井设计生产能力和服务年限&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">188&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3井田开拓&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">195&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.1井田开拓方式&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">195&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.2井口位置与开采水平划分&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">198&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.3开拓巷道布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">201&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">3.4开采顺序与采区划分&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">203&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4井筒、井底车场及硐室&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">206&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4.1井筒&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">206&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4.2井底车场&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">209&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">4.3主要硐室&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">209&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5井下开采&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">211&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.1采区布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">211&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.2采煤方法及工艺&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">211&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.3采区巷道布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">212&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">5.4巷道掘进与掘进机械化&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">213&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6井下运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">214&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">214&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.2煤炭运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">214&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.3辅助运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">216&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">6.4运输设备与车辆配备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">220&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7通风与安全&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">222&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.1通风&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">222&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.2瓦斯抽采&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">225&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.3井下灾害防治&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">227&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.4井下热害防治&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">228&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">7.5井下紧急避险系统&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">232&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8矿井主要固定设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">234&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.1提升设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">234&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.2通风设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">238&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.3排水设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">239&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.4压缩空气设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">240&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.5抽采瓦斯设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">241&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">8.6注氮设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">241&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9地面生产系统&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">242&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">242&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.2井口布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">242&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.3井口受煤仓&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">244&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.4筛分、选矸与破碎&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">245&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.5带式输送机运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">245&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.6储存与装车&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">246&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.7计量与煤质检查&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">247&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.8矸石和脏杂煤处理&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">247&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">9.9矿井修理车间、无轨胶轮车库及木材加工房&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">248&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10总平面布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">252&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.1矿井地面总布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">252&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.2工业场地总平面布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">253&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.3防洪及竖向设计&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">258&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.4场内运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">260&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">10.5管线综合布置&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">261&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11地面运输&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">262&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">262&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11.2标准轨距铁路&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">263&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">11.3场外道路&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">267&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12供配电&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">268&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">268&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.2供电电源&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">268&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.3电压和电能质量&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">269&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.4电力负荷&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">271&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.5地面配电&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">272&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.6井下配电&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">274&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.7照明&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">275&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">12.8防雷、过电压保护和接地&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">276&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13信息与自动化&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">277&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">277&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.2监控及自动化&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">277&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.3计算机网络&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">280&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.4信息管理&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">282&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.5通信&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">283&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">13.6信号&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">285&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14地面建筑&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">288&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14.1一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">288&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14.2主要工业建筑与构筑物&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">290&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">14.3建筑面积&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">292&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15给水排水与供热通风&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">298&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.1水源&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">298&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.2给水排水&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">299&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.3井下消防洒水&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">301&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.4&#32;供热通风&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">304&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.5&#32;矿井井筒防冻&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">309&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.6&#32;锅炉房&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">310&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">15.7&#32;燃气供应&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">312&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16节能减排与综合利用&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">313&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.1&#32;一般规定&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">313&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.2&#32;井田开拓与开采&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">313&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.3&#32;矿井主要设备&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">313&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.4&#32;安全设施节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">316&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.5&#32;电气节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">316&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.6&#32;地面生产系统节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">318&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.7&#32;建筑、总图及地面运输节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">319&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.8&#32;给水排水及暖通节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">319&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.9&#32;环保设施节能&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">321&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.10&#32;新能源&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">321&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.11&#32;能源计量及能耗指标&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">322&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">16.12&#32;综合利用&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">322&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">17环境保护&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">323&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">17.2&#32;污染防治&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">323&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">17.3&#32;生态保护&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">324&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18建井工期&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">326&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18.1&#32;移交标准&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">326&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18.2&#32;施工进度&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">326&nbsp;</div>
+	                            		<div class="col-md-9 col-sm-9 col-sx-9 text-left">18.3&#32;建井工期&nbsp;</div>
+	                            		<div class="col-md-3 col-sm-3 col-sx-3 text-right">328&nbsp;</div>
+                            	
+                            	</div>
+                            </div>
+                            <div class="m-t-md font14">
+                               	 <p style="text-indent: 0em;">2.1.4 计算矿井设计资源/储量时,应从工业资源/储量中减去断层、防水、井田境界、地面建（构）筑物等永久保护煤柱煤量及因法律、社会、环境保护等因素影响不得开采的保护煤柱煤量；计算设计可采储量时，应从设计资源/储量中减去工业场地、井筒、井下主要巷道等保护煤柱煤量，然后乘以采区（盘区或带区）采出率。矿井各类保护煤柱的留设应符合国家及行业对建筑物、水体、铁路及主要井巷煤柱留设与压煤开采的有关规定；高速铁路、城际铁路等客运专线及设计速度200km/h的客货共线铁路必须留设永久保护煤柱、铁路两侧永久保护煤柱线以内设为禁采区；煤矿开采及疏排水不得引起高速铁路、城际铁路等客运专线及设计速度200km/h的客货共线铁路路基、桥梁及隧道基础的沉降变形和承载力的降低。</p><p style="text-indent: 0em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">2.1.5 矿井采区的采出率应符合下列规定：</span><br/></p><p style="text-indent: 2em;">1 特殊和稀缺煤类应符合下列规定：</p><p style="text-indent: 2em;">1） 厚煤层不应小于78%，其中采用一次采全高的厚煤层不应小于83%；</p><p style="text-indent: 2em;">2） 中厚煤层不应小于83%；</p><p style="text-indent: 2em;">3） 薄煤层不应小于88%。</p><p style="text-indent: 2em;">2 其他煤类应符合下列规定：</p><p style="text-indent: 2em;">1） 厚煤层不应小于75%，其中采用一次采全高的厚煤层不应小于80%；</p><p style="text-indent: 2em;">2） 中厚煤层不应小于80%；</p><p style="text-indent: 2em;">3） 薄煤层不应小于85%。</p><p style="text-indent: 0em;">3.1.6 井筒数量及功能应符合下列规定:</p><p style="text-indent: 2em;">3 箕斗提升井或装有带式输送机的井筒兼作风井使用时，应符合下列规定：</p><p style="text-indent: 2em;">1） 箕斗提升井兼作回风井时，井上下装、卸载装置和井塔（架）必须采取密闭措施，其漏风率不得超过15%，并应采取防尘措施。装有带式输送机的井筒兼作回风井时，井筒中的风速不得超过6m/s，且必须装有甲烷断电仪；</p><p style="text-indent: 2em;">2） 箕斗提升井或装有带式输送机的井筒兼作进风井时，箕斗提升井筒中的风速不得超过6m/s、装有带式输送机的井筒中的风速不得超过4m/s，并应采取防尘措施，井筒中必须装设自动报警灭火装置和敷设消防管路。</p><p style="text-indent: 2em;">4 高瓦斯矿井、有煤（岩）与瓦斯（二氧化碳）突出危险的矿井必须设专用回风井。</p><p style="text-indent: 0em;">3.3.4 开拓巷道不得布置在下列层位与区域：</p><p style="text-indent: 2em;">1 有煤（岩）与瓦斯（二氧化碳）突出危险的煤层；</p><p style="text-indent: 2em;">2 有严重冲击地压的煤层；</p><p style="text-indent: 2em;">3 防水（砂）煤岩柱中。</p><p style="text-indent: 0em;">3.3.7 布置在自燃、容易自燃煤层中的开拓巷道，必须采用锚喷支护或拱碹支护。碹后的空隙和冒落处必须采用不燃性材料充填密实，或用无腐蚀性、无毒性的材料进行处理。</p><p style="text-indent: 0em;">3.3.9 开拓巷道的断面应符合下列规定:</p><p style="text-indent: 2em;">1 巷道净断面必须按支护最大允许变形后的断面设计；</p><p style="text-indent: 0em;">4.1.3 <span style="font-family: inherit;">立井井筒井壁结构型式、支护材料及强度应根据井筒用</span><span style="font-family: inherit;">途、服务年限、井筒所处围岩性质、施工方法等因素确定,并应符合</span><span style="font-family: inherit;">下列规定:</span></p><p style="text-indent: 2em;">3 位于地震烈度为7度及以上地区，或处于表土段不稳定的地层时，井筒上段30m以内井壁必须采用钢筋混凝土结构。</p><p style="text-indent: 0em;">4.1.4 立井井筒装备形式及构件材料应符合下列规定:</p><p style="text-indent: 2em;">3 立井井筒装备中金属构件及连接件必须采取防腐蚀处理措施；</p><p style="text-indent: 0em;">4.1.7 <span style="font-family: inherit;">平硐或斜井断面形状及支护方式应根据井筒穿过围岩性</span><span style="font-family: inherit;">质、地压情况、井筒用途及服务年限等因素确定,并应符合下列</span><span style="font-family: inherit;">规定:</span></p><p style="text-indent: 2em;">2井口到坚硬岩层之间必须采用砌碹支护，且碹体向坚硬岩层内应至少延伸5m；当地震烈度为8度及以上时，必须采用钢筋混凝土支护；</p><p style="text-indent: 0em;">4.2.2 井底车场巷道位置的选择应符合下列规定:</p><p style="text-indent: 2em;">2 井底车场巷道不得布置在有煤（岩）与瓦斯（二氧化碳）突出危险煤（岩）层，以及有冲击地压危险的煤层中。</p><p style="text-indent: 0em;">4.3.2 主要硐室位置的选择应符合下列规定:</p><p style="text-indent: 2em;">2 主要硐室不得布置在有煤（岩）与瓦斯（二氧化碳）突出危险的煤（岩）层以及有冲击地压危险的煤层中。</p><p style="text-indent: 0em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">5.2.6 采煤工作面的采出率应符合下列规定：</span><br/></p><p style="text-indent: 2em;">1 厚煤层不应小于93%；</p><p style="text-indent: 2em;">2 中厚煤层不应小于95%；</p><p style="text-indent: 2em;">3 薄煤层不应小于97%。</p><p style="text-indent: 0em;">5.3.3 <span style="font-family: inherit;">有煤(岩)与瓦斯(二氧化碳)突出危险的矿井,采区巷道布</span><span style="font-family: inherit;">置应符合下列规定:</span></p><p style="text-indent: 2em;">1 采区上山和下山等主要巷道应布置在岩层或非突出煤层中；</p><p style="text-indent: 2em;">2 位于突出煤层中的工作面运输巷、回风巷及开切眼等回采巷道，应布置在被保护区域或其他卸压区域；</p><p style="text-indent: 0em;">5.3.4 高瓦斯矿井、有煤（岩）与瓦斯（二氧化碳）突出危险的矿井的每个采区和开采容易自燃煤层的采区，或瓦斯矿井开采煤层群和分层开采采用联合布置的采区，必须设置专用回风巷；采区进、回风巷必须贯穿整个采区，严禁一段为进风巷、一段为回风巷。</p><p style="text-indent: 0em;">5.3.7 采区巷道断面应符合下列规定:</p><p style="text-indent: 2em;">1巷道净断面必须按支护最大允许变形后的断面设计；</p><p style="text-indent: 0em;">6.3.6 辅助运输人员运送应根据井下开拓布置与辅助运输系统方式确定，并应符合下列规定：</p><p style="text-indent: 2em;">1 长度超过1.5km的主要运输平巷，应采用机械方式运送人员；</p><p style="text-indent: 2em;">2 人员上下的主要倾斜井巷，垂深超过50m时，应采用机械方式运送人员；</p><p style="text-indent: 2em;">3 采用平巷人车运送人员时，列车行驶速度不得超过4m/s；</p><p style="text-indent: 2em;">4 无轨胶轮车输送人员时，运行速度不得超过25km/h；</p><p style="text-indent: 2em;">5 架空乘人装置运送人员，采用固定抱索器时，最大运行坡度不得超过28°；采用可摘挂抱索器时，最大运行坡度不得超过25°；架空乘人装置运行速度应满足表6.3.6的规定。运行速度超过1.2m/s时，不得采用固定抱索器；运行速度超过1.4m/s时，应设置调速装置，并应实现静止状态上下人员。</p><p><br/></p><p style="text-align:center;"><a href="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1213.jpg" target="_blank"><img imagerela="1213" src="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1213.jpg" title="6.3.6-665.147" alt="6.3.6-665.147" suffix="jpg"/></a></p><p style="text-indent: 0em;"><br/></p><p style="text-indent: 0em;">7.1.1 矿井通风设计应符合下列规定：</p><p style="text-indent: 2em;">1 应将新鲜空气送到井下工作场所，并应保证安全生产和劳动条件，同时应符合现行行业标准《煤矿井工开采通风技术条件》AQ1028的规定；</p><p style="text-indent: 2em;">2 应使通风系统合理、风流稳定、易于管理、安全可靠；</p><p style="text-indent: 2em;">3 必须具有抗灾应变能力，发生事故时，应有利于风流控制，且必须保证人员能够安全撤出；</p><p style="text-indent: 2em;">4 必须设置井下环境及安全监测监控系统。</p><p style="text-indent: 0em;">7.2.1 有下列情况之一的矿井必须进行瓦斯抽采，并应实现抽采达标：</p><p style="text-indent: 2em;">1 高瓦斯矿井；</p><p style="text-indent: 2em;">2 开采有煤（岩）与瓦斯（二氧化碳）突出危险煤层的矿井；</p><p style="text-indent: 2em;">3 矿井绝对瓦斯涌出量达到现行国家标准《煤矿瓦斯抽采工程设计规范》GB50471的规定。</p><p style="text-indent: 0em;">7.2.2 矿井瓦斯抽采设计应符合下列规定:</p><p style="text-indent: 2em;">1 高瓦斯或有突出危险的矿井应编制瓦斯抽采专项设计；</p><p style="text-indent: 0em;">7.2.4 瓦斯抽采系统的选择应符合下列规定：</p><p style="text-indent: 2em;">1 煤与瓦斯突出矿井和高瓦斯矿井必须建立地面固定抽采瓦斯系统，其他抽采瓦斯的矿井应建立井下临时抽采瓦斯系统；同时具有煤层瓦斯预抽和采空区瓦斯抽采方式的矿井，应分别建立高、低负压抽采瓦斯系统；</p><p style="text-indent: 2em;">2 瓦斯抽采系统设计抽采量大于或等于2m³/min的矿井，应建立地面固定瓦斯抽采系统。</p><p style="text-indent: 0em;">7.3.1 矿井防治水设计必须符合下列规定：</p><p style="text-indent: 2em;">1 受水害威胁的矿井必须计算和留设各类防水煤（岩）柱。在各类防隔水煤（岩）柱中严禁进行采掘作业；</p><p style="text-indent: 2em;">2 有突水历史或带压开采的矿井应分水平或分采区实行隔离开采。带压开采时，应计算安全隔水层厚度和突水系数。当隔水层不足以承受实际水头压力时，开采前，应采取疏水降压、帷幕注浆或局部注浆加固底板隔水层等措施；</p><p style="text-indent: 2em;">3 排水系统应配备与矿井涌水量相匹配的水泵、排水管路、配电设备和水仓等；</p><p style="text-indent: 2em;">4 水文地质条件复杂或有突水淹井危险的矿井，应在井底车场周围设置防水闸门，或在正常排水系统基础上另外安设具有独立供电系统且排水能力不小于最大涌水量的潜水泵。</p><p style="text-indent: 0em;">7.3.2 矿井设计必须采取综合防尘措施，并应符合下列规定：</p><p style="text-indent: 2em;">1 矿井必须建立健全防尘供水系统；</p><p style="text-indent: 2em;">2 在运输系统各转载点应采用声、光、触、磁等自动控制喷雾防尘；</p><p style="text-indent: 2em;">3 掘进工作面应采取湿式凿岩、喷雾酒水、选择局部通风除尘系统、风流净化、机械捕尘、个体防护等综合防尘措施；</p><p style="text-indent: 2em;">4 回采工作面应采取煤层注水、喷雾洒水、通风除尘、个体防护等综合防尘措施；</p><p style="text-indent: 2em;">5 开采有煤尘爆炸危险煤层的矿井，必须采取预防和隔绝煤尘爆炸的措施，并应设置水棚或岩粉棚。</p><p style="text-indent: 0em;">7.3.3 开采自燃和容易自燃的煤层，应符合下列规定:</p><p style="text-indent: 2em;">1 开采容易自燃和自燃煤层时，必须有相应的防灭火设计，并应采取综合防灭火措施；</p><p style="text-indent: 2em;">2 开采容易自燃或采用放顶煤开采自燃煤层的矿井，必须设计以灌浆为主的综合防灭火措施；</p><p style="text-indent: 0em;">7.3.4 开采有煤与瓦斯突出危险的矿井，必须编制防治煤与瓦斯突出专项设计，并应符合下列规定；</p><p style="text-indent: 2em;">1 矿井主要巷道应布置在岩层或非突出煤层中，并应减少井巷揭穿突出煤层的次数；</p><p style="text-indent: 2em;">2 开采有突出危险的煤层，必须采取区域综合防突和局部综合防突措施；</p><p style="text-indent: 2em;">3 开采煤层群并具备开采保护层条件时，应首先采用开采保护层作为区域防突措施，并应符合下列规定：</p><p style="text-indent: 2em;">1）开采保护层时，应同时抽采被保护层的瓦斯；</p><p style="text-indent: 2em;">2）开采近距离保护层时，应采取防止被保护层初期卸压瓦斯突然涌入保护层采掘工作面或误穿突出煤层的措施；</p><p style="text-indent: 2em;">3）开采保护层的矿井，被保护层的采掘作业必须在保护范围内进行；</p><p style="text-indent: 2em;">4）开采保护层时，采空区内不得留有煤（岩）柱。</p><p style="text-indent: 2em;">4 不具备保护层开采条件的矿井，必须采取预抽煤层瓦斯的区域防突措施。</p><p style="text-indent: 0em;">7.3.5 开采有冲击地压的煤层，必须编制防治冲击地压专项设计，并应符合下列规定：</p><p style="text-indent: 2em;">1 开采严重冲击地压煤层时，开拓巷道不得布置在严重冲击地压煤层中，永久硐室不得布置在冲击地压煤层中；在采空区不得留有煤柱；</p><p style="text-indent: 2em;">2 开采煤层群时，应选择无冲击地压或弱冲击地压煤层作为保护层开采；</p><p style="text-indent: 2em;">3 开采冲击地压煤层采用垮落法控制顶板时，支架工作阻力应满足切顶支护强度的要求，采空区中所有支柱必须回净；</p><p style="text-indent: 2em;">4 冲击地压煤层，应根据顶板岩性采用宽巷掘进；区段之间应采用无煤柱或窄煤柱；采用大煤柱护巷时，应避开应力集中区，严禁留大煤柱影响邻近层开采。巷道支护严禁采用混凝土，金属等刚性支架。严重冲击地压厚煤层中的巷道，应布置在应力集中区外；双巷掘进时，2条平行巷道在时间、空间上，应避开相互影响；</p><p style="text-indent: 2em;">5 开采冲击地压煤层时，在应力集中影响范围内不得布置2个工作面同时进行采掘作业；相邻矿井、相邻采区之间，应避免采掘相互影响。</p><p style="text-indent: 0em;">7.4.7 制冷剂的选择应符合防火、不爆炸、无毒、冷凝温度高、冷凝压力低、环保等要求。</p><p style="text-indent: 0em;">8.1.3 摩擦式提升机防滑安全校验应符合下列规定：</p><p style="text-indent: 2em;">1 摩擦式提升机工作闸或保险闸所产生的制动力矩均不得小于提升最大静荷重旋转力矩的3倍；并应根据设计实用最大不平衡负载，按闸间隙2mm时的弹簧力配备制动器对数；</p><p style="text-indent: 2em;">2 上提重载安全制动时全部机械的减速度不得大于5m/s²；下放重载安全制动时全部机械的减速度不得小于1.5m/s<span style="line-height: 22.4px; text-indent: 28px;">²</span>；在各种载荷和各种提升状态下，安全制动系统所产生的制动减速度计算值不得超过滑动极限。钢丝绳与摩擦轮间摩擦系数的取值不得大于0.25，必须计入由钢丝绳自重所引起的最大不平衡质量差；</p><p style="text-indent: 2em;">3 经安全制动防滑校验，当一级制动装置不能满足防滑要求时，必须采用二级制动装置或恒减速制动装置。</p><p style="text-indent: 0em;">8.1.4 主井箕斗提升必须采用定重装载，箕斗容积设计必须与提升选型设计所确定的载重量相适应。</p><p style="text-indent: 0em;">8.1.5 提升设备的卷筒、摩擦轮、天轮、导向轮的直径与钢丝绳公称直径之比值，应符合下列规定；</p><p style="text-indent: 2em;">1 落地式摩擦提升装置的摩擦轮及天轮、有导向轮的塔式摩擦提升装置的摩擦轮，井上不得小于90，井下不得小于80；围包角为180°无导向轮的塔式摩擦提升装置的摩擦轮，井上不得小于80，井下不得小于70；摩擦提升装置的导向轮，不得小于80；</p><p style="text-indent: 2em;">2 井上缠绕式提升装置的卷筒和围包角大于或等于90°的天轮，不得小于80；围包角小于90°的天轮，不得不小于60；</p><p style="text-indent: 2em;">3 井下缠绕式提升绞车的卷筒、井下架空乘人装置的主导轮和尾导轮、围包角大于或等于90°的天轮，不得小于60；围包角小于90°的天轮，不得小于40；</p><p style="text-indent: 2em;">4 矸石山提升装置的卷筒和导向轮，不得小于50；</p><p style="text-indent: 2em;">5 倾斜井巷提升系统的游动天轮，围包角小于35°的不得小于20，围包角大于或等于35°的不得小于40；</p><p style="text-indent: 2em;">6 提升设备使用密封式提升钢丝绳时，应将各相应的直径比值增加20%。</p><p style="text-indent: 0em;">8.1.6 提升钢丝绳选择应符合下列规定:</p><p style="text-indent: 2em;">1 提升钢丝绳悬挂时的安全系统最低值必须符合表8.1.6的规定；</p><p style="text-align:center;"><a href="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1214.jpg" target="_blank"><img imagerela="1214" src="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1214.jpg" title="8.1.6-602.424" alt="8.1.6-602.424" suffix="jpg"/></a></p><p><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">注：H为钢丝绳悬挂高度（M）,L为无极绳绞车驱动轮到尾轮的斜长（m）。</span></p><p style="text-indent: 0em;">8.1.7 提升设备的运行速度和正常运行加、减速度及加速度变化率应符合下列规定：</p><p style="text-indent: 2em;">1 立井罐笼升降人员时的最大加速度和减速度，不得超过0.75m/s²，升降人员时的最大速度，不得超过0.5m/s(H为提升高度)，且最大不得超过12m/s；</p><p style="text-indent: 2em;">2 立井升降物料时，多绳摩擦式提升的加、减速度不得超过1.2m/s<span style="line-height: 22.4px;">²</span>，单绳缠绕式提升的加、减速度不得超过1.0m/s<span style="line-height: 22.4px;">²</span>；升降物料时的最大速度，不得超过0.6m/s(H为提升高度)。斜井升降物料时的最大加速度和减速度不得超过0.5m/s<span style="line-height: 22.4px;">²</span>；斜井采用串车升降物料时的最大速度不得超过5m/s；斜井采用箕斗升降物料时的最大速度不得超过7m/s，当铺设固定道床并采用大于或等于38kg/m钢轨时，速度不得超过9m/s；</p><p style="text-indent: 2em;">3 提升系统的加速度变化率不得超过0.5m/s³;</p><p style="text-indent: 2em;">4 采用固定曲轨卸载方式时，滚轮进出曲轨时的速度不得大于1.5m/s；</p><p style="text-indent: 2em;">5 斜井提升容器在甩车道上的运行速度，不得大于1.5m/s。</p><p style="text-indent: 0em;">8.2.1 矿井的每一风井必须安装两套同等能力的主要通风机装置，新建矿井每一风井的主要通风机及辅助装置的型号，规格必须相同，其中一套应作为备用，且备用通风设备及辅助装置必须能在10min内开动。</p><p style="text-indent: 0em;">8.2.5 通风机的反风应符合下列规定:</p><p style="text-indent: 2em;">1 通风机的反风量不应小于正常供风量的40%；</p><p style="text-indent: 0em;">8.3.1 主要排水设备选择应符合下列规定:</p><p style="text-indent: 2em;">1 矿井井下主要排水设备应满足矿井排水的要求。除正在检修的水泵外，应配备工作水泵和备用水泵。工作水泵的能力应能在20h内排出矿井24h的正常涌水量（包括充填水及其他用水）。备用水泵的能力不应小于工作水泵能力的70%。检修水泵的能力不应小于工作水泵能力的25%。工作和备用水泵的总能力应能在20h内排出矿井24h的最大涌水量；</p><p style="text-indent: 0em;">8.3.2 主排水管的选择应符合下列规定:</p><p style="text-indent: 2em;">1 排水管路应设置工作排水管路和备用排水管路。工作排水管路的能力应能配合工作水泵在20h内排出矿井24h的正常涌水量。工作和备用排水管路的总能力应能配合工作和备用水泵在20h内排出矿井24h的最大涌水量；</p><p style="text-indent: 0em;">8.3.8 矿井应急排水系统的设置应符合第7.3.1条第4款的规定。</p><p style="text-indent: 0em;">8.4.1 <span style="font-family: inherit;">选择压缩空气站位置宜靠近用风负荷中心。设备选择应</span><span style="font-family: inherit;">符合下列规定:</span></p><p style="text-indent: 2em;">4 井下压缩空气站的固定式空气压缩机和储气罐应分设在2个硐室内。</p><p style="text-indent: 0em;">8.4.3 压缩空气管道设计应符合下列规定:</p><p style="text-indent: 2em;">6 压缩空气站应设置储气罐；储气罐的出口管路上应加装释压阀，且释压阀的口径不得小于出风管的直径；</p><p style="text-indent: 0em;">8.5.1 矿井瓦斯抽采设备应按“大流量、多抽泵、大管径、多回路”的原则进行装备，应符合现行国家标准《煤矿瓦斯抽采工程设计规范》GB50471的有关规定，并应符合下列规定：</p><p style="text-indent: 2em;">1 矿井瓦斯抽采设备能力应能满足瓦斯抽采设备服务范围或服务年限10a～15a内的最大瓦斯抽采量和最大抽采负压要求，抽采设备选型应进行工况流量换算；</p><p style="text-indent: 2em;">2 高、低负压抽采系统设备应单独备用。备用泵能力不得小于运行泵中最大一台单泵的能力，且备用泵的总能力不应小于工作泵总能力的25%；</p><p style="text-indent: 2em;">3 地面抽采瓦斯泵房内电气设备、照明和其他电器仪表应采用防爆型；</p><p style="text-indent: 2em;">4 泵站必须有直通矿调度室的电话和检测管道瓦斯浓度、流量、压力等参数的仪表或自动监控系统；</p><p style="text-indent: 2em;">5 干式抽采瓦斯泵吸气侧管路系统中，必须装设有防回火、防回气和防爆炸作用的安全装置。抽采瓦斯泵站放空管的高度应超过泵房房顶3m。</p><p style="text-indent: 0em;">9.2.2 矿车提升的斜井应设安全设施，并应符合下列规定：</p><p style="text-indent: 2em;">1 在上部平车场入口，应设置能控制车辆进入摘挂钩地点的阻车装置；</p><p style="text-indent: 2em;">2 在上部平车场接近变坡点处，应设置能阻止未连挂的车辆滑入斜井的阻车装置；</p><p style="text-indent: 2em;">3 斜井内应设置跑车防护装置。</p><p style="text-indent: 0em;">9.2.5 立井提升系统内必须设置过卷（放）安全保护装置。在井口过卷距离范围内应设置过卷缓冲装置和托罐装置，在井底过放距离范围内应设置过放缓冲装置。</p><p style="text-indent: 0em;">9.2.6 立井兼作回风井时，井口与井底必须采取密闭措施，井口应设置防爆门。</p><p style="text-indent: 0em;">9.5.4 <span style="font-family: inherit;">输送带应根据输送机长度、输送能力、输送带张力、物料性</span><span style="font-family: inherit;">质、受料条件、工作环境等因素确定,并应符合下列规定:</span></p><p style="text-indent: 2em;">4 井下应采用阻燃输送带。</p><p style="text-indent: 0em;">9.5.6 带式输送机应设置设备运行和人身安全的保护装置，并应符合现行国家标准《煤矿用带式输送机安全规范》GB22340和《带式输送机安全规范》GB14784的有关规定。</p><p style="text-indent: 0em;">9.5.7 倾斜带式输送机制动或逆止装置的选择应符合下列规定：</p><p style="text-indent: 2em;">1 发生逆转的向上输送的大型带式输送机和井下倾斜井巷向上输送的带式输送机，必须同时装设逆止装置和制动装置；</p><p style="text-indent: 2em;">2 向下输送的带式输送机必须装设制动装置和防超速保护装置。</p><p style="text-indent: 0em;">10.1.8 <span style="font-family: inherit;">每个矿井宜设置一个矸石周转场，其用地应能满足总容</span><span style="font-family: inherit;">量不大于生产期5a的排矸量的需要。矸石周转场的选址应符合</span><span style="font-family: inherit;">下列规定:</span></p><p style="text-indent: 2em;">1 矸石周转场的设置不得污染水源；</p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">2 矸石周转场与进风井口的距离不得小于80m；</span></p><p style="text-indent: 0em;"><span style="font-family: inherit; line-height: 1.6; text-indent: 0em;">10.2.8 通风机房的位置应符合下列规定:</span></p><p style="text-indent: 2em;"><span style="font-family: inherit; line-height: 1.6; text-indent: 0em;">1 通风机房周围20m以内不得布置有烟火作业的建筑和设施；</span></p><p style="text-indent: 0em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">10.2.9 瓦斯抽采站布置应符合下列规定:</span></p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">2 地面泵房距进风井口和主要建筑物不得小于50m，并应用栅栏或围墙保护；</span><br/></p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">3 地面泵房和泵房周围20m范围内，严禁堆积易燃物和出现明火；</span><br/></p><p><span style="text-indent: 0em; font-family: inherit;">10.2.20 汽油库应位于工业场地的边缘和运输方便的地点，至进风井口和通风机房的安全距离应符合下列规定：</span><br/></p><p style="text-indent: 2em;">1 储存量10t及以下不应小于30m；</p><p style="text-indent: 2em;">2 储存量11～45t及以下不应小于50m；</p><p style="text-indent: 2em;">3 储存量45t以上不应小于80m。</p><p style="text-indent: 0em;">10.2.23 支护材料场的布置应符合下列规定:</p><p style="text-indent: 2em;">2 坑木堆场边缘与进风井口的距离不得小于80m；</p><p style="text-indent: 0em;">10.3.1 <span style="font-family: inherit;">矿井不应受洪水威胁。井口及工业场地的防洪标准应符</span><span style="font-family: inherit;">合下列规定:</span></p><p style="text-indent: 2em;">1 矿井井口防洪设计标准应为重现期100年，并应按重现期300年的防洪校核标准进行校核。矿井地面变电所、通风机房、主副井提升机房以及与矿井井筒相连的风道、人行道等，应按矿井井口防洪标准采取防洪措施；</p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">3 当观测洪水位高于防洪设计标准时，应按观测洪水位设计；当观察洪水位低于防洪设计标准时，应按防洪设计标准设计。</span></p><p style="text-indent: 0em;">12.2.2 矿井应由双重电源供电，当一电源中断供电时，另一电源不应同时受到损坏。备用电源容量不应少于矿进全部一级负荷电力需求，并应满足大型及特大型矿井二级负荷电力需求。正常情况下，矿井电源线路应采用分列运行方式；电源线路一回路运行时，另一回路应带电热备；两电源线路上均不得分接任何负荷；任一条电源线路停止工作时，其余电源线路应满足矿井全部负荷的用电要求。</p><p style="text-indent: 0em;">12.4.1 矿井电力负荷的分级应符合表12.4.1的规定。</p><p style="text-align:center;"><a href="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1215.jpg" target="_blank"><img imagerela="1215" src="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1215.jpg" title="12.4.1-611.723" alt="12.4.1-611.723" suffix="jpg"/></a></p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">注：1 　表中设备均包括主机运转时必须的辅助设备；</span><br/></p><p style="text-indent: 2em;">　　2 　表中不含矿井建设范围内的民用建筑负荷，其等级划分应按现行行业标准《民用建筑电气设计规范》JGJ16的规定执行。　　</p><p style="text-indent: 0em;">12.5.3 矿井地面主变电所主变压器不应少于2台，当1台停止运行时，其余变压器的容量应保证主变压器的一级和二级负荷用电。</p><p style="text-indent: 0em;">12.6.3 由地面引至井下各变电所的全部电缆中任一回路停止供电时，其余下井回路应保证井下全部负荷用电。</p><p style="text-indent: 0em;">12.6.8 井下主变电所内的动力变压器不应少于2台。当1台停止运行时，其余变压器应保证全部一级、二级负荷用电。</p><p style="text-indent: 0em;">13.2.3 矿井必须装备矿井安全监控系统，严禁矿井安全监控系统与视频监控系统共用同一芯光纤。</p><p style="text-indent: 0em;">13.2.7 矿井安全监控系统配备的主机及系统联网主机必须双机备份，并应24h不间断运行。当工作主机发生故障时，备份主机应在5min内投入工作。</p><p style="text-indent: 0em;">13.2.12 矿井必须装备井下作业人员管理系统。</p><p style="text-indent: 0em;">13.2.16 矿井井下作业人员管理系统配备的主机及系统联网主机必须双机备份，并应24h不间断运行。当工作主机发生故障时，备份主机应在5min内投入工作。</p><p style="text-indent: 0em;">13.5.1 矿井必须装备有线调度通信系统。矿用有线调度通信电缆必须专用。</p><p style="text-indent: 0em;">13.5.10 矿山救护队、消防站必须设有与矿井调度室直通的有线调度电话，并应配有地面无线对讲系统。</p><p style="text-indent: 0em;">13.5.12 矿井直通电话设置应符合下列规定:</p><p style="text-indent: 2em;">1 采掘工作面及与其有直接联系的环节之间，应设置直通电话；</p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">2 防火灌浆站与灌浆地点之间，应设置直通电话；</span><br/></p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">3 罐笼提升的井底～井口～提升机房之间，以及箕斗提升的装载点～卸载点～提升机房之间，应设置直通电话；</span><br/></p><p style="text-indent: 2em;">4 斜井或斜巷的车场与提升机房之间，应设置直通电话；</p><p style="text-indent: 0em;">13.5.13 矿井地面变电所、地面主要通风机房、主副井提升机房、压风机房、井下主要水泵房、井下中央变电所、井底车场、运输调度室、采区变电所、上下山绞车房、水泵房、带式输送机集中控制硐室等主要机电设备硐室、采煤工作面、掘进工作面、突出煤层采掘工作面附近、爆破时撤离人员集中地点、突出矿井井下爆破起爆点、采区和水平最高点、避难硐室、瓦斯抽采泵房、爆炸物品库等，必须设有直通矿调度室的有线调度电话。</p><p style="text-indent: 0em;">13.5.14 矿井主变电所至上一级变电所应设置专用的电力通信设施，并应与矿井调度室直接通信。</p><p style="text-indent: 0em;">13.6.1 提升信号系统应符合下列规定:</p><p style="text-indent: 2em;">1 提升信号应包括工作信号、检修信号、紧急停车信号及直通电话；</p><p style="text-indent: 2em;">2 提升系统的所有信号装置均应由配电点引出的专用电源或专用电源变压器供电，并应设置电源指示灯。井下信号装置的额定电压不得大于127V，并应采用单相不接地系统；</p><p style="text-indent: 2em;">3 电气信号必须声光兼备。发信号地点应设置带保留的复式信号；</p><p style="text-indent: 2em;">4 单绳缠绕式提升机应设置松绳信号；</p><p style="text-indent: 2em;">5 多水平或多层罐笼提升时，各水平或井上、下各层出车平台必须设置信号装置和闭锁关系。发出的各种信号应有所区别；</p><p style="text-indent: 2em;">6 立井提升信号除应设置常用信号装置外，应有备用信号装置；</p><p style="text-indent: 0em;">13.6.2 罐笼及箕斗提升信号应符合下列规定：</p><p style="text-indent: 2em;">1 除单容器提升和井上、下信号联锁的自动化提升系统外，双罐笼提升的工作信号必须经井口转发。紧急停车信号应直发提升机房；</p><p style="text-indent: 2em;">2 兼作升降人员和物料的罐笼提升应有区分升降人员和物料的“保留信号”；</p><p style="text-indent: 2em;">3 箕斗提升信号必须采用定重装置的自动信号,并应能手动发送.信号应直发提升机房,并应能在装卸载点发出停车信号。装卸载点各部的执行元件与信号装置应有闭锁关系。当满仓时应能报警或自动断电；</p><p style="text-indent: 2em;">4 井口信号装置必须同提升机的控制回路闭锁。</p><p style="text-indent: 0em;">13.6.3 斜井串车双钩提升的工作信号应为转发式。</p><p style="text-indent: 0em;">13.6.7 矿井地面生产系统集中控制装置应设有声光兼备的启动预告信号。</p><p style="text-indent: 0em;">14.1.6 矿井地面工业建（构）筑物的火灾危险性分类与耐火等级应符合表14.1.6的规定。</p><p style="text-align:center;"><a href="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1216.jpg" target="_blank"><img imagerela="1216" src="/zbooklib/preview/jszyfwpt/upload/resources/image/2017/02/24/1216.jpg" title="14.1.6-605.641" alt="14.1.6-605.641" suffix="jpg"/></a></p><p style="text-indent: 2em;"><span style="text-indent: 0em; font-family: inherit; line-height: 1.6;">注：1　　凡本表未列入的矿井工业建（构）筑物、行政及公共建筑、居住建筑等的类别和耐火等级，应按现行国家标准《建筑设计防火规范》GB50016的有关规定确定；</span><br/></p><p style="text-indent: 2em;">2　　封闭式储煤场的防火设计应符合现行国家标准《建筑设计防火规范》GB50016中丙类厂房的有关规定。</p><p style="text-indent: 0em;">14.1.7 地面建(构)筑物安全出口的设置应符合下列规定:</p><p style="text-indent: 2em;">2 生产系统厂房安全出口的数目不应少于2个；</p><p style="text-indent: 2em;">5 栈桥和地道内，操作点与安全出口的距离不应大于75m。</p><p><br/></p><p style="text-indent: 0em;">15.1.1 <span style="font-family: inherit;">选择矿井水源时,应根据取水水量、用水水质以及水资源</span><span style="font-family: inherit;">环境等因素,经技术经济比较后确定,并应符合下列规定:</span></p><p style="text-indent: 2em;">5 采用地下水作为水源时，地下水开采不得引起高速铁路、城际铁路等客运专线及设计速度200km/h的客货共线铁路路基、桥梁及隧道基础的沉降变形和承载力的降低，水源井距高速铁路、城际铁路等客运专线及设计速度200km/h的客货共线铁路路堤坡脚、路堑坡顶或铁路桥梁外侧的距离应根据含水层性质、埋深及开采水量等因素计算确定，但不得小于200m。</p><p style="text-indent: 0em;">15.2.3 矿井地面与井下消防用水量应分别计算。地面室内外消防用水量、消防制度、消防给水系统、室内外消火栓设置范围与标准、建筑灭火器配置等均应符合现行国家标准《建筑设计防火规范》GB50016、《自动喷水灭火系统设计规范》GB50084、《煤矿井下消防、洒水设计规范》GB50383、《建筑灭火器配置设计规范》GB50140、《煤炭工业给水排水设计规范》GB50810、《消防给水及消火栓系统技术规范》GB50974等的有关规定。</p><p style="text-indent: 0em;">15.2.6 筛分、转载、装卸等产生粉尘的生产环节，当粉尘外在水分小于7%时，应设置喷雾降尘装置；并应设置冲洗用给水栓以及相应的排水设施。</p><p style="text-indent: 0em;">15.2.9 排出工业场地的生活污水、生产废水以及井下排水，必须根据受纳水体对水质的要求进行处理。处理后的水质应满足相关排放标准。污泥应进行防止二次污染的处理。</p><p style="text-indent: 0em;">15.3.1 矿井必须建立井下消防、洒水系统。</p><p style="text-indent: 0em;">15.3.3 井下下列部位必须设置喷雾降尘设施：</p><p style="text-indent: 2em;">1 井下煤仓放煤口、溜煤眼放煤口、翻车机、破碎机、输送机转载点和卸煤点；</p><p style="text-indent: 2em;">2 掘进工作面、采煤工作面；</p><p style="text-indent: 2em;">3 易产生煤尘，需要进行空气净化的巷道的适当位置。</p><p style="text-indent: 0em;">17.2.1 矿井的污染物排放必须达到国家和地方规定的排放标准，并应符合污染物排放总量控制要求。</p><p><br/></p>
+                            </div>
+                            <div class="m-t-md font14">
+	                            
+	                            <ul class="expertList list-unstyled">
+	                            	
+									
+								</ul>
+								
+                            </div>
+                            <div class="m-t-md font14" id="productinfo" style="text-indent:28px;">
+                            		
+                            </div>
+                            <div class="m-t-md font14" id="releaseinfo" style="text-indent:28px;">
+                            		
+                            </div>
+                        </div>
+                    </div>
+                    <!--简介、目录...end-->
+                    <!-- 参编单位start -->
+                     
+                     
+                    
+                    <!-- 参编单位end -->
+                    <!-- 相关产品start -->
+                     
+                     
+                    
+                    <!-- 相关产品end -->
+                     <!-- 相关案例start -->
+                     
+                     
+                    
+                    <!-- 相关案例end -->
+                    <!-- 相关阅读start -->
+                    <div class="related-reading">
+                        <h3 class="con-tit b-b">相关阅读</h3>
+                        
+                            
+                        	  <div class="row relateReadCon">
+                               
+                                 <div class="slide col-md-3 col-sm-6 col-sx-12 text-center">
+	                                 <dl>
+	                                    <dt class="p-sm"><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=60805&SiteID=1"><img src="https://ebook.chinabuilding.com.cn//html/uploads/images/2016-08/2016081909231215204_s.jpg" onerror="this.src='https://ebook.chinabuilding.com.cn/images/bookC3.png'" class="center-block"/></a></dt>
+	                                    <dd>
+	                                    	<a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=60805&SiteID=1"
+	                                    		title="煤炭工业露天矿建设标准" >
+	                                    		建标155-2011：煤炭工业露天矿建设标准
+	                                    	</a>
+	                                    </dd>
+	                                 </dl>
+                                 </div>
+                                 <div class="slide col-md-3 col-sm-6 col-sx-12 text-center">
+	                                 <dl>
+	                                    <dt class="p-sm"><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=74941&SiteID=1"><img src="https://ebook.chinabuilding.com.cn//upload/resources/pdfextend/20170719/160028658/GBT50451-2017.jpg" onerror="this.src='https://ebook.chinabuilding.com.cn/images/bookC3.png'" class="center-block"/></a></dt>
+	                                    <dd>
+	                                    	<a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=74941&SiteID=1"
+	                                    		title="煤矿井下排水泵站及排水管路&#32;设计规范" >
+	                                    		GB/T50451-2017：煤矿井下排水泵站及排水管路&#32;设计...
+	                                    	</a>
+	                                    </dd>
+	                                 </dl>
+                                 </div>
+                                 <div class="slide col-md-3 col-sm-6 col-sx-12 text-center">
+	                                 <dl>
+	                                    <dt class="p-sm"><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=99841&SiteID=1"><img src="https://ebook.chinabuilding.com.cn//upload/resources/pdfextend/20171222/132204238/GBT51229-2017.jpg" onerror="this.src='https://ebook.chinabuilding.com.cn/images/bookC3.png'" class="center-block"/></a></dt>
+	                                    <dd>
+	                                    	<a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=99841&SiteID=1"
+	                                    		title="矿井建井排水技术规范" >
+	                                    		GB/T51229-2017：矿井建井排水技术规范
+	                                    	</a>
+	                                    </dd>
+	                                 </dl>
+                                 </div>
+                                 <div class="slide col-md-3 col-sm-6 col-sx-12 text-center">
+	                                 <dl>
+	                                    <dt class="p-sm"><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=100651&SiteID=1"><img src="https://ebook.chinabuilding.com.cn//upload/resources/pdfextend/20180112/163930382/GBT50050-2017.jpg" onerror="this.src='https://ebook.chinabuilding.com.cn/images/bookC3.png'" class="center-block"/></a></dt>
+	                                    <dd>
+	                                    	<a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=100651&SiteID=1"
+	                                    		title="工业循环冷却水处理设计规范" >
+	                                    		GB/T50050-2017：工业循环冷却水处理设计规范
+	                                    	</a>
+	                                    </dd>
+	                                 </dl>
+                                 </div>
+                                 <div class="slide col-md-3 col-sm-6 col-sx-12 text-center">
+	                                 <dl>
+	                                    <dt class="p-sm"><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=101632&SiteID=1"><img src="https://ebook.chinabuilding.com.cn//upload/resources/pdfextend/20180205/160728937/GBT50417-2017.jpg" onerror="this.src='https://ebook.chinabuilding.com.cn/images/bookC3.png'" class="center-block"/></a></dt>
+	                                    <dd>
+	                                    	<a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?bookID=101632&SiteID=1"
+	                                    		title="煤矿井下供配电设计规范" >
+	                                    		GB/T50417-2017：煤矿井下供配电设计规范
+	                                    	</a>
+	                                    </dd>
+	                                 </dl>
+                                 </div>
+                        	</div>
+                        
+                        
+                     
+                    </div>
+                    <!-- 相关阅读end -->
+                    <!-- 图书评论start -->
+                    <div class="book-review">
+                        <h3 class="con-tit b-b" style="margin-top:0;">图书评论</h3>
+                        
+							
+                        <div class="noData"><span>暂无相关数据</span></div>
+					    
+						<input type="hidden" value="1" id="curPage">
+						<input type="hidden" value="0" id="totalPages">
+						<div class="page-bar page-bar-1 clearfix" id="page-bar">								                              
+                        </div>
+							 <script>
+									var totalPages = $("#totalPages").val();
+									var totalPagesint = parseInt(totalPages);
+									var curPagetr = $("#curPage").val();
+									var curPageint = parseInt(curPagetr);
+									function changePagebar(){
+										var str = "";
+										if(totalPagesint>1 && totalPagesint<=6){
+											str += "<span class='hidden-xs hidden-sm'>";
+											for (var i=1;i<=totalPagesint;i++){
+												if(i==curPageint){
+													str += "<a style='background:none; border:none' href='javascript:curPage("+i+");' >"+i+"</a>";
+												}else{
+													str += "<a href='javascript:curPage("+i+");' >"+i+"</a>";
+												}
+												
+											}
+											str += "</span><a id='nextPage' href='javascript:nextPage();'>下一页</a>";
+										}
+
+										if(totalPagesint>6){
+											str += "<span class='hidden-xs hidden-sm'>";
+											for (var i=1;i<=6;i++){
+												if(i==curPageint){
+													str += "<a style='background:none; border:none' href='javascript:curPage("+i+");' >"+i+"</a>";
+												}else{
+													str += "<a href='javascript:curPage("+i+");' >"+i+"</a>";
+												}
+											}			
+											str += "...</span><a id='nextPage' href='javascript:nextPage();'>下一页</a>";
+										}
+
+										$("#page-bar").html(str);
+									}
+									changePagebar();
+							</script>
+						
+						<!-- 图书评论end -->
+						    
+                        <div id = "comment" class="commentBox m-b-sm clearfix">
+                            <h5 class="font-bold m-b-md">我也要评论</h5>
+							<form id="comment-form">
+							<input type="hidden" value='1' id="SiteID">
+							<input type="hidden" value='60159' id="bookID">
+							
+                            <textarea  id="content" class="text-left" verify="只能输入2000个汉字或4000个字符|Script=checklength()" placeholder="写点什么...     "></textarea>
+                            
+                            <a class="submit-com-btn" href="javascript:subComment();">提交评论</a>
+							</form>
+                        </div>	
+                					
+                    </div>
+                </div>
+                <!-- 右侧 -->
+                <div class="col-md-3 hidden-xs hidden-sm">
+                  
+                    <div class="browse-footprint clearfix b-a" style="margin-top: 20px;">
+                        <h4>浏览足迹</h4>
+                        <div class="related-reading p-l-md p-r-md" id="bookBrowserList">
+                        	
+                        </div>
+                    </div>
+                    <div class="key-word">
+                   
+ 						
+ 							
+ 						
+ 					<form id="searchkeyword" target="_blank" action="https://ebook.chinabuilding.com.cn/zbooklib/search">
+ 						<input type="hidden" name="SiteID" value="1"/>
+	                	<input type="hidden" name="contentType" value="book"/>
+	                	<input type="hidden" value="KeyWord" name="fieldType" id="head-field" />
+	                	<input id="search-text-keyword" type="hidden" name="SearchKey"/>
+	                </form>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+    <!-- 底部 -->
+	
+<!--style>
+html {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+</style-->	
+<div class="foot">
+		<div class="footTop p-t-lg p-b-lg">
+        	<div class="container">
+            	<div class="row">
+                    <div class="col-md-4 footInfo">
+                        <div class="m-t-sm"><a href="http://www.cbs.com.cn/" target="_blank"><img src="https://ebook.chinabuilding.com.cn/images/footLogo.png"/></a></div>
+                        <div class="m-t-md m-l-sm icons_one">北京市海淀区首体南路9号主语国际2号楼</div>
+                        <div class="m-t-xs m-l-sm icons_two">100048</div>
+                        <div class="m-t-xs m-l-sm icons_three">010-68799100</div>
+                    </div>
+                    <div class="col-md-4 footLink">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>关于书库</h4>
+                                <ul class="list-unstyled m-t-sm">
+                                    <li><a href="https://ebook.chinabuilding.com.cn/gysk/" target="_blank">书库介绍</a></li> 
+                                    <li><a href="https://ebook.chinabuilding.com.cn/zbooklib/conciseCatalogueList?SiteID=1" target="_blank">简明目录</a></li>
+                                  <li style="display:none;"><a href="https://ebook.chinabuilding.com.cn/cgal/" target="_blank">成功案例</a></li> 
+                                    <li><a href="https://ebook.chinabuilding.com.cn/yxwl/" target="_blank">营销网络</a></li> 
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>客户服务</h4>
+                                <ul class="list-unstyled m-t-sm">
+                                  <li><a href="https://ebook.chinabuilding.com.cn/khfw/jszc/" target="_blank">技术支持</a></li>
+                                    
+                                    <li><a href="https://ebook.chinabuilding.com.cn/zbooklib/trialApplication/apply?SiteID=1" target="_blank">试用申请</a></li>
+                                    <li><a href="https://ebook.chinabuilding.com.cn/zbooklib/suggestions?SiteID=1" target="_blank">意见反馈</a></li>
+                                    
+                                    <li><a href="https://ebook.chinabuilding.com.cn/khfw/bzzx/" target="_blank">帮助中心</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>特色业务</h4>
+                                <ul class="list-unstyled m-t-sm">
+                                  <li><a href="https://ebook.chinabuilding.com.cn/tsyw/xgpx/" target="_blank">宣贯培训</a></li>
+                                  <li><a href="https://ebook.chinabuilding.com.cn/tsyw/jszx/" target="_blank">咨询服务</a></li>
+                                  <li><a href="https://ebook.chinabuilding.com.cn/tsyw/jsfw/" target="_blank">参编图集</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 footEwm">
+                        <dl>
+                            <dt><img src="https://ebook.chinabuilding.com.cn/images/ewm_one.png" class="img-responsive center-block"/></dt>
+                            <dd class="text-center m-t-sm">关注国标电子书库</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="https://ebook.chinabuilding.com.cn/images/ewm_two.png" class="img-responsive center-block"/></dt>
+                            <dd class="text-center m-t-sm" style="white-space: nowrap;" >关注国家标准建筑设计</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="https://ebook.chinabuilding.com.cn/images/ewm_three.png" class="img-responsive center-block"/></dt>
+                            <dd class="text-center m-t-sm">关注国标平台</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footBot">
+        	<div class="footBox text-center">
+        		<span>©国标电子书库平台V3.0,中国建筑标准设计研究院 版权所有</span>
+        		<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802025072" target="_blank" ><span class="foot-item">京公网安备 11010802025072号</span></a>
+        		<a href="https://beian.miit.gov.cn/" target="_blank" >京ICP备05012122号-8</a>
+              		   <a href="https://dxzhgl.miit.gov.cn/" target="_blank" style="margin-left: 5px;" >增值电信业务经营许可证：京B2-20214260</a>
+        		<span class="hidden-xs hidden-sm  foot-link">友情链接：<a href="http://www.mohurd.gov.cn/" target="_blank" class="p-l-xs p-r-xs">中华人民共和国住房和城乡建设部</a>|<a href="http://www.ccsn.gov.cn/" target="_blank" class="p-l-xs p-r-xs">国家工程建设标准化信息网</a>|<a href="https://bjjzts.tmall.com/" target="_blank" class="p-l-xs p-r-xs">标准院天猫官方自营店</a>|<a href="http://www.zjypxzx.com/" target="_blank" class="p-l-xs p-r-xs">中国建设科技有限公司人才培训中心</a>|<a href="http://www.jc315.com/" target="_blank" class="p-l-xs p-r-md">鉴材315网</a></span>
+        	</div>
+        </div>
+	</div>
+<!-- start 收藏 -->
+		<div class="m-keep"  >
+		    <div class="top" >收藏成功！选择收藏夹<em class="close"></em></div>
+		    <input type="hidden" id="favoriteID">
+		    <ul class="g-ul" id="favoriteType" >
+		    </ul>
+		    <div class="new">
+		       <p id="new-input" class="add">新建收藏夹</p>
+		       <div class="new-inp">
+		           <input type="text" id="favoriteName" placeholder="请输入收藏夹名称" class="g-inp">
+		       </div>
+		    </div>
+		    <button class="botn" id="addFavorite">确定</button>
+		</div>
+<!-- end 收藏 -->
+
+  <script type="text/javascript">
+  var book_target = "";
+  var book_id="";
+  var book_pro="";
+  $(".text-Collection").on("click",function(){
+		if(book_id!= $(this).attr("name")){
+			 $(".m-keep").hide();
+		}
+		book_id = $(this).attr("name");
+		book_target = $(this).offset();
+		book_pro=1;
+		btnCollection();
+	});
+  $(".search-collection-btn").on("click",function(){
+		if(book_id!= $(this).attr("name")){
+			 $(".m-keep").hide();
+		}
+		book_id = $(this).attr("name");
+		book_target = $(this).offset();
+		book_pro=2;
+		btnCollection();
+	});
+  $(".next-collection-btn").on("click",function(){
+	  	if(book_id!= $(this).attr("name")){
+	  		 $(".m-keep").hide();
+	  	}
+	  	book_id = $(this).attr("name");
+	  	book_target = $(this).offset();
+	  	book_pro=3;
+	  	btnCollection();
+  });
+  
+  $("#collection-btn").on("click",function(){
+	  	if(book_id!= $(this).attr("name")){
+	  		 $(".m-keep").hide();
+	  	}
+	  	book_id = $(this).attr("name");
+	  	book_target = $(this).offset();
+	  	book_pro=4;
+	  	btnCollection();
+  });
+  $("#detailCollection-btn").on("click",function(){
+	  	if(book_id!= $(this).attr("name")){
+	  		 $(".m-keep").hide();
+	  	}
+	  	book_id = $(this).attr("name");
+	  	book_target = $(this).offset();
+	  	book_pro=5;
+	  	btnCollection();
+});
+ 
+  function btnCollection(){
+	  $("#favoriteName").val("");
+	  var keep = $(".m-keep").prop("style");
+      if(keep.display=='block'){
+      	$(".m-keep").hide();
+      	return ;
+      } 
+      $(".m-keep").hide();
+      Server.sendRequest("MemberFavorites/memberCheckLogin","",function(data){
+      	if(!data.success){
+      		var a=Dialog.alert("登录后才可以收藏哦！");
+      		a.setTitle("提示");
+      		return false;
+      	}
+  	    var dc = new DataCollection();
+  		dc.add("BookID",book_id);
+  		Server.sendRequest("MemberFavorites.addMemberFavorite",dc,function(response){
+  			if(response.Status==1){
+  				 if(book_pro!=5){
+  					collectSuccessDialog('sc');
+			    }
+  				$("#favoriteID").val(response.favoriteID);
+  				var str="";
+  				if(response.favoriteList!=null){
+  					   var list = response.favoriteList;
+  					   for(var i =0 ;i<list.length; i++){
+  						   str+='<li>';
+  						   str+='<label for="k3">';
+  						   str+='<input type="checkbox"  name="checke" value="'+list[i].ID+'">'+list[i].FavoriteName+'';
+  						   str+='</label>';
+  						   str+='</li>';
+  					   }
+  				}
+  				$("#favoriteType").html(str);
+  			 	var keep = $(".m-keep").prop("style");
+  			    if(keep.display=='block'){
+  			    	$(".m-keep").hide();
+  			    	return ;
+  			    }
+  			    else{
+  			    	if(book_pro==5){
+  			    		$(".m-keep").css("top",book_target.top+20);
+  	  			    	$(".m-keep").css("left",book_target.left+50); 
+  	  			    	$(".m-keep").show();
+  			    	}
+  			    }
+  			  }else{
+  				var a=Dialog.warn(response.Message);
+  				a.setTitle("提示");
+  			}
+  	});
+  	});
+  }
+
+  $(function(){
+  	$('.m-keep .new p').click(function(event) {
+          $(this).hide().next('.m-keep .new-inp').show();
+      });
+      $('.m-keep #new-input button').click(function(event) {
+          $(this).parent('.m-keep #new-input').hide().prev('.m-keep .new p').show();
+      });
+      $('.m-keep .close').click(function(event) {
+          $(this).parents('.m-keep').hide();
+      });
+      $('.m-keep .botn').click(function(event) {
+          $(this).parents('.m-keep').hide();
+      });
+  })
+
+  $("#addFavorite").on("click",function(){
+  		var attr ="";
+  		$("#favoriteType input[name='checke']").each(function(){
+  			if($(this).prop("checked")){
+  				attr+=$(this).val()+",";
+  			}
+  		});
+  		var name = $("#favoriteName").val();
+  		if(name.trim().length ==0 && attr.trim().length==0){
+  			var str = "sc";
+  			collectSuccessDialog(str);
+  			return false; 
+  		}
+  		var dc = new DataCollection();
+  		dc.add("favoriteID",$("#favoriteID").val());
+  		dc.add("name",name);
+  		dc.add("BookID",book_id);
+  		dc.add("arr",attr.substring(0,attr.length-1));
+  		Server.sendRequest("MemberFavorites.addFavorite",dc,function(data){
+  				if(data.status ==1 ){
+  					var str = "sc";
+  					collectSuccessDialog(str);
+  					$(".m-keep").hide();
+  					
+  				}else{
+  					Dialog.alert(data.message);					
+  				}
+  		});
+  });
+  $(document).on("click",function(){
+	  
+	  $(".m-keep").hide();
+  })
+  $(".m-keep").click(function(event){
+	    event.stopPropagation();
+	});
+  
+  
+  /**
+	 操作成功弹出窗
+	*/
+	function collectSuccessDialog(str){
+		var diag = new Dialog();
+		diag.width = 370;
+		diag.height = 170;
+		diag.title = "提示";
+		diag.url = "https://ebook.chinabuilding.com.cn/zbooklib/successDialog?SiteID=1&fun="+str;
+		diag.show();
+	}
+  
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?290d35a74732af62e8d8c6b14e204d5e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+
+  </script>
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/css/popUp.css" type="text/css" />
+
+<script type="text/javascript" src="https://ebook.chinabuilding.com.cn/js/slick.min.js"></script>
+<link rel="stylesheet" href="https://ebook.chinabuilding.com.cn/css/slick.css" type="text/css" />
+<!-- <script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script> -->
+<!-- <script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/bshareC0.js"></script>                         -->
+<script type="text/javascript">
+function keywordserach(keyword){
+	if(keyword && keyword.length > 0){
+		$S("search-text-keyword",keyword);
+		$("#searchkeyword").submit();
+	}
+}
+	 $(function(){
+		 function stopPropagation(e) {
+			    var ev = e || window.event;
+			    if (ev.stopPropagation) {
+			        ev.stopPropagation();
+			    }
+			    else if (window.event) {
+			        window.event.cancelBubble = true;//    IE
+			    }
+			}
+			$("#shareSpan-btn").click(function (e) {
+			    if($(".fire_share").css('display')=="none"){
+			        $(".fire_share").show();
+			        stopPropagation(e);
+			    }else{
+			        $(".fire_share").hide();
+			    }
+			});
+			$(".fire_share .wx-share").click(function(e){
+				$(".wx-code").show();
+				stopPropagation(e);
+			});
+			$(document).bind('click', function () {
+			    $(".fire_share").hide();
+			    $(".wx-code").hide();
+			});
+			
+
+		 
+		$('.m-keep .new p').click(function(event) {
+            $(this).hide().next('.m-keep .new-inp').show();
+        });
+        $('.m-keep #new-input button').click(function(event) {
+            $(this).parent('.m-keep #new-input').hide().prev('.m-keep .new p').show();
+        });
+        $('.m-keep .close').click(function(event) {
+            $(this).parents('.m-keep').hide();
+        });
+        $('.m-keep .botn').click(function(event) {
+            $(this).parents('.m-keep').hide();
+        });
+        
+        $('.relateReadCon').slick({
+        	  autoplay:true,
+        	   dots: true,
+        	   slidesToShow:4,
+        	   slidesToScroll: 1,
+        	   arrows: true,
+        	  responsive: [
+        	  {
+        	    breakpoint: 769,
+        	    settings: {
+        	  slidesToShow: 2,
+        	  slidesToScroll: 1,
+        	    }
+        	  },
+        	  {
+        	    breakpoint: 480,
+        	    settings: {
+        	  slidesToShow: 1,
+        	  slidesToScroll: 1,
+        	    }
+        	  }
+        	   ]
+        	});
+        
+        $('.relateReadCon2').slick({
+      	  autoplay:true,
+      	   dots: true,
+      	   slidesToShow:5,
+      	   slidesToScroll: 1,
+      	   arrows: true,
+      	  responsive: [
+      	  {
+      	    breakpoint: 769,
+      	    settings: {
+      	  slidesToShow: 2,
+      	  slidesToScroll: 1,
+      	    }
+      	  },
+      	  {
+      	    breakpoint: 480,
+      	    settings: {
+      	  slidesToShow: 1,
+      	  slidesToScroll: 1,
+      	    }
+      	  }
+      	   ]
+      	});
+        
+        
+        $('.relateReadCon3').slick({
+        	  autoplay:true,
+        	   dots: true,
+        	   slidesToShow:7,
+        	   slidesToScroll: 1,
+        	   arrows: true,
+        	  responsive: [
+        	  {
+        	    breakpoint: 769,
+        	    settings: {
+        	  slidesToShow: 2,
+        	  slidesToScroll: 1,
+        	    }
+        	  },
+        	  {
+        	    breakpoint: 480,
+        	    settings: {
+        	  slidesToShow: 1,
+        	  slidesToScroll: 1,
+        	    }
+        	  }
+        	   ]
+        	});
+        })
+	 
+	  
+	
+
+var frontAppContext = 'https://ebook.chinabuilding.com.cn/zbooklib/';
+var siteID = "1";
+var memberIsLogin = "false";
+var memberID = "0";
+var productinfo = "";
+var releaseinfo = "";
+
+	/**
+	检测评论内容的长度
+	*/
+	function checklength()
+	{
+		var str = $("#content").val();
+	    var totalCount = 0;
+	    for (var i=0; i<str.length; i++)
+	    {
+	        var c = str.charCodeAt(i);
+	        if ((c >= 0x0001 && c <= 0x007e) || (0xff60<=c && c<=0xff9f))
+	        {
+	             totalCount++;
+	        }
+	        else
+	        {     
+	             totalCount+=2;
+	        }
+	     }
+	     if(totalCount<=4000){
+	    	 return true;
+	     }else{
+	    	 return false;
+	     }
+	} 
+	
+	/**
+		提交评论
+	*/
+	function subComment(){ 
+
+		var dc = Form.getData('comment-form');
+	
+		if(memberIsLogin=='false'|| memberID == 0){			
+			var a = Dialog.alert("登录后才可以评论哦！");
+			a.setTitle("提示");
+			return ;
+		}
+		
+		if(dc.content=='' || dc.content==null){				
+			var a = Dialog.alert("请填写评论内容！");
+			a.setTitle("提示");
+			return ;
+		}
+		
+		if(Verify.hasError()){
+			return ;
+		}
+		Server.sendRequest("CommentManger.add",dc,function(response){
+			if(response.Status==1){
+				var html = "<div id='success' ><span>评论成功！</span></div>";				
+				dialog_alert(html);	
+				$("#content").val("");
+			}else{
+				var a=Dialog.warn(response.Message);
+				a.setTitle("提示");
+			}
+		}); 
+	}
+	
+	getEditorUitList();
+	
+	function getEditorUitList(){
+		var dc = new DataCollection();
+		dc.add("BookID",60159);
+		dc.add("Type",1);
+		Server.sendRequest("EditorUnitFront.unitList",dc,function(response){
+			if(response.Status==1){
+				var arr = response.data;
+				var data = $.parseJSON(arr);	
+				if(data && data.length>0){
+					var str="";			
+					for(var i =0; i<data.length; i++){
+						var id = data[i].id;
+						var name = data[i].name;
+						if (name != '中国建筑标准设计研究院有限公司') {
+							str+= '<dl style="margin-bottom: 0px;" class="col-md-12 text-center">';
+				            str+= '<dd style="margin-top: 0px;padding-bottom: 5px;"><a  class="open"><span class="help_arrow"></span></a><a style="font-size: 15px;" href="https://ebook.chinabuilding.com.cn/zbooklib/EditorUnitFront/view?SiteID=1&Type=1&UnitID='+id+'">'+name+'</a></dd>';
+				      		str+= '</dl>';
+						}
+					}
+					$("#bookUnitList").html(str);
+				}else{
+					// $("#bookUnitList").html("<div class='noData'><span>暂无相关数据</span></div>");
+				}
+			}
+		})
+	}
+	
+	
+	//下一页
+	function nextPage(){
+		var curPagetr = $("#curPage").val();
+		var curPageint = parseInt(curPagetr);
+		var nextPageint = curPageint+1;
+		var dc = new DataCollection();
+		dc.add("page",nextPageint);
+		dc.add("bookID",60159);
+		if(nextPageint>totalPages){
+			
+		}else{
+			Server.sendRequest("CommentManger.getCommentListByPage",dc,function(response){
+				if(response.Status==1){
+					var commentarr = response.commentarr;
+					var count = commentarr.length;
+					var str = "";
+					for (var i=0;i<count;i++){
+						var addtime = dateFormat(commentarr[i].AddTime);
+						var replytime = dateFormat(commentarr[i].ReplyTime);
+						str += "<div class='comment-item b-b p-b-sm m-b-md'>";
+						str += "<h5 class='user-name'><a href='javascript:void();'>"+commentarr[i].CommentUser+"</a></h5>";
+						str += "<div class='clearfix'>"+
+								"<div class='comment-date pull-right text-right'>"+addtime+
+								"</div><span class='comment-con'>"+commentarr[i].Content+"</span></div>";	
+						if(commentarr[i].ReplyContent!="" && commentarr[i].ReplyContent!= null ){
+							str += "<div class='comment-reply'><span><i></i></span>"+
+								   "<h5>国标电子书库回复:</h5><div class='clearfix'>"+
+								   "<div class='comment-date pull-right text-right'>"+replytime+
+								   "</div><span class='comment-con'>"+commentarr[i].ReplyContent+
+								   "</span></div></div>";
+						}
+						str += "</div>";									
+					}
+					$("#commentlist").html(str);
+										
+				}else{
+					var html = "<div id='fail' ><span>"+response.Message+"</span></div>";
+					dialog_alert(html);
+					//Dialog.warn(response.Message,null,response.Status);
+				}
+			});
+
+			pageChanged(nextPageint);
+			$("#curPage").val(nextPageint);
+		}		
+	}
+
+	//当前页
+	function curPage(page){
+		var curPageint = parseInt(page);
+		var dc = new DataCollection();
+		dc.add("page",curPageint);
+		dc.add("bookID",60159);
+		Server.sendRequest("CommentManger.getCommentListByPage",dc,function(response){
+			if(response.Status==1){
+				var commentarr = response.commentarr;
+					var count = commentarr.length;
+					var str = "";
+					for (var i=0;i<count;i++){
+						var addtime = dateFormat(commentarr[i].AddTime);
+						var replytime = dateFormat(commentarr[i].ReplyTime);
+						str += "<div class='comment-item b-b p-b-sm m-b-md'>";
+						str += "<h5 class='user-name'><a href='javascript:void();'>"+commentarr[i].CommentUser+"</a></h5>";
+						str += "<div class='clearfix'>"+
+								"<div class='comment-date pull-right text-right'>"+addtime+
+								"</div><span class='comment-con'>"+commentarr[i].Content+"</span></div>";	
+						if(commentarr[i].ReplyContent!="" && commentarr[i].ReplyContent!= null){
+							str += "<div class='comment-reply'><span><i></i></span>"+
+								   "<h5>国标电子书库回复:</h5><div class='clearfix'>"+
+								   "<div class='comment-date pull-right text-right'>"+replytime+
+								   "</div><span class='comment-con'>"+commentarr[i].ReplyContent+
+								   "</span></div></div>";
+						}
+						str += "</div>";									
+					}
+					$("#commentlist").html(str);
+					
+				
+			}else{
+				var html = "<div id='fail' ><span>"+response.Message+"</span></div>";
+				dialog_alert(html);
+				//Dialog.warn(response.Message,null,response.Status);
+			}
+		});
+		
+		pageChanged(curPageint);
+		$("#curPage").val(curPageint);	
+	}
+	
+	
+	
+	//上一页
+	function prevPage(){
+		var curPagetr = $("#curPage").val();
+		var curPageint = parseInt(curPagetr);
+		var prevPageint = curPageint-1;//上一页变量
+		var dc = new DataCollection();
+		dc.add("page",prevPageint);
+		dc.add("bookID",60159);
+		if(prevPageint==0){
+			
+		}else{
+			Server.sendRequest("CommentManger.getCommentListByPage",dc,function(response){
+				if(response.Status==1){
+					var commentarr = response.commentarr;
+					var count = commentarr.length;
+					var str = "";
+					for (var i=0;i<count;i++){
+						var addtime = dateFormat(commentarr[i].AddTime);
+						var replytime = dateFormat(commentarr[i].ReplyTime);
+						str += "<div class='comment-item b-b p-b-sm m-b-md'>";
+						str += "<h5 class='user-name'><a href='javascript:void();'>"+commentarr[i].CommentUser+"</a></h5>";
+						str += "<div class='clearfix'>"+
+								"<div class='comment-date pull-right text-right'>"+addtime+
+								"</div><span class='comment-con'>"+commentarr[i].Content+"</span></div>";	
+						if(commentarr[i].ReplyContent!="" && commentarr[i].ReplyContent!= null){
+							str += "<div class='comment-reply'><span><i></i></span>"+
+								   "<h5>国标电子书库回复:</h5><div class='clearfix'>"+
+								   "<div class='comment-date pull-right text-right'>"+replytime+
+								   "</div><span class='comment-con'>"+commentarr[i].ReplyContent+
+								   "</span></div></div>";
+						}
+						str += "</div>";									
+					}
+					$("#commentlist").html(str);				
+				}else{
+					var html = "<div id='fail' ><span>"+response.Message+"</span></div>";
+					dialog_alert(html);
+					//Dialog.warn(response.Message,null,response.Status);
+				}
+			});
+
+			pageChanged(prevPageint);
+			$("#curPage").val(prevPageint);
+		}	
+	}
+   
+	function pageChanged(page){
+		var pagestr = "";
+		if(totalPagesint<=6){
+			if(page<=1){
+				pagestr += "<span class='hidden-xs hidden-sm'>";
+			}else{
+				pagestr += "<a id='prevPage' href='javascript:prevPage();'>上一页</a>"+
+				   "<span class='hidden-xs hidden-sm'>";
+			}
+			
+			for (var i=1;i<=totalPagesint;i++){
+				if(i==page){
+					pagestr +=  "<a style='background:none; border:none' href='javascript:curPage("+i+");' >"+i+"</a>";
+				}else{
+					pagestr += "<a href='javascript:curPage("+i+");' >"+i+"</a>";
+				}
+				
+			}
+			pagestr += "</span>";
+			if(page+1<=totalPagesint){
+				pagestr += "<a id='nextPage' href='javascript:nextPage();'>下一页</a>";
+			}
+		}else{
+			if(page+2>=totalPagesint){
+				if(page<=1){
+					pagestr += "<span class='hidden-xs hidden-sm'>";
+				}else{
+					pagestr += "<a id='prevPage' href='javascript:prevPage();'>上一页</a>"+
+					   "<span class='hidden-xs hidden-sm'>";
+				}
+				for (var i=totalPagesint-5;i<=totalPagesint;i++){
+					if(i==page){
+						pagestr += "<a style='background:none; border:none' href='javascript:curPage("+i+");' >"+i+"</a>";
+					}else{
+						pagestr += "<a href='javascript:curPage("+i+");' >"+i+"</a>";
+					}
+				}			
+				pagestr += "</span>";
+				if(page+1<=totalPagesint){
+					pagestr += "<a id='nextPage' href='javascript:nextPage();'>下一页</a>";
+				}
+				
+			}
+
+			if(page>=4 && page+2<totalPagesint ){
+				if(page<=1){
+					pagestr += "<span class='hidden-xs hidden-sm'>";
+				}else{
+					pagestr += "<a id='prevPage' href='javascript:prevPage();'>上一页</a>"+
+					   "<span class='hidden-xs hidden-sm'>";
+				}
+				for (var i=page-3;i<=page+2;i++){
+					if(i==page){
+						pagestr += "<a style='background:none; border:none' href='javascript:curPage("+i+");' >"+i+"</a>";
+					}else{
+						pagestr += "<a href='javascript:curPage("+i+");' >"+i+"</a>";
+					}
+				}			
+				pagestr += "...</span><a id='nextPage' href='javascript:nextPage();'>下一页</a>";
+			}
+
+			if(page<4){
+				if(page<=1){
+					pagestr += "<span class='hidden-xs hidden-sm'>";
+				}else{
+					pagestr += "<a id='prevPage' href='javascript:prevPage();'>上一页</a>"+
+					   "<span class='hidden-xs hidden-sm'>";
+				}
+				for (var i=1;i<=6;i++){
+					if(i==page){
+						pagestr += "<a style='background:none; border:none' href='javascript:curPage("+i+");' >"+i+"</a>";
+					}else{
+						pagestr += "<a href='javascript:curPage("+i+");' >"+i+"</a>";
+					}
+				}			
+				pagestr += "...</span><a id='nextPage' href='javascript:nextPage();'>下一页</a>";			
+			}
+		}
+		$("#page-bar").html(pagestr);
+	}
+	
+	/**
+	时间转换
+	*/
+	function dateFormat(str){
+		var d = new Date(str);
+		return d.format("yyyy-MM-dd");
+	}
+$(".info-carousel").slide({trigger:"click"});
+
+Page.onLoad(function(){
+	$(".book-review").focus();
+	bookBrowserHistoryCache();
+	browserCache('60159');
+	getGoods();
+	
+});
+
+	//初始化数据
+	function bookBrowserHistoryCache(){
+		var id = $("#bookDetailId").val();
+		var title=$("#bookDetailTitle").html();
+		var logoFile=$("#imgUrl").val();
+		var link=$("#bookTitle").attr("bookurl");
+		var idflag = "idflag" + $("#bookDetailId").val() + "idflag";
+		var data = getCacheJsonString(title,logoFile,link,idflag,id);
+		addCacheBook(data,idflag);
+	}
+	
+	//定义缓存对象
+	function getCacheJsonString(title,logoFile,link,idflag,id){
+		var data = "{\"Id\":\""+id+"\",\"idflag\":\""+idflag+"\",\"Title\":\""+title+"\",\"LogoFile\":\""+ logoFile+"\",\"Link\":\""+ link +"\"}";
+		return data;
+	}
+	
+	//商城
+	function getGoods(){
+	<!-- -->
+		var priv = "1";
+		var url = "https://shop.chinabuilding.com.cn/zshop/";
+		var flag = "false";
+		if(priv=="1"){
+			var bookID = '60159';
+			var bookCode = 'GB50215-2015';
+			if(bookID){
+				var dc = new DataCollection();
+				dc.add("bookID",bookID);
+				dc.add("bookCode",bookCode);
+				Server.sendRequest("book/shopGoodsInfo",dc,function(response){
+					if(response.isGoods){
+						var goodsID = response.goodID;
+						var siteID =  response.siteID;
+					 $("#readPDFPriv").after(" <a class='read-default' style='background: #f8b03a'  href='"+url+"goodsInfo/goodsDetail?SiteID="+siteID+"&goodsID="+goodsID+"' target='_blank' >立即购买</a>");
+				 }
+				})
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	//添加浏览历史记录
+	function addCacheBook(data,key){
+		var bookBrowserCache = localStorage.getItem("bookBrowserHistory");
+		if(!bookBrowserCache){
+			bookBrowserCache = "[]";
+		}
+		if(bookBrowserCache.lastIndexOf(key)==-1){
+			var index = bookBrowserCache.indexOf("[") + 1;
+			var prefix = bookBrowserCache.substring(0,index);
+			var sufix= bookBrowserCache.substring(index,bookBrowserCache.length);
+			prefix += data;
+			if(sufix.indexOf("{") >= 0){
+				prefix += ",";
+			}
+			bookBrowserCache = prefix + sufix;
+			if(bookBrowserCache.split("},{").length > 3){
+				bookBrowserCache = bookBrowserCache.substring(0,bookBrowserCache.lastIndexOf("},{")+1)+"]";
+			}
+			localStorage.setItem("bookBrowserHistory", bookBrowserCache);
+		}
+		var data = $.parseJSON("{\"data\":"+bookBrowserCache+"}");
+		displayBrowseHistory(data);		
+		
+	}
+	//浏览历史
+	function browserCache(bookId){
+			if(bookId){
+				var dc = new DataCollection();
+				dc.add("bookID",bookId);
+				Server.sendRequest("book/browserHistory",dc,function(){
+				memberLogin();
+				})
+			}
+		}
+	
+	//显示浏览历史数据
+	function displayBrowseHistory(json){
+		var flag = "false";	
+		if(flag=='false' || flag==''){
+		var str = "";
+		var data = json.data;
+			if(data && data.length>0){
+				for(var i =0; i<data.length; i++){
+					var id = data[i].Id;
+					var title = data[i].Title;
+					var logfile = data[i].LogoFile;
+					var link = data[i].Link;
+					str+= '<dl class="col-md-12 text-center">';
+		            str+= '<dt class="p-sm"><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?SiteID=1&bookID='+id+'"><img onerror="this.src=\'https://ebook.chinabuilding.com.cn/images/book_default.png\'"  src="'+logfile+'" style="max-height:116px;"/></a></dt>'; 
+		            str+= '<dd ><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?SiteID=1&bookID='+id+'">'+title+'</a></dd>';
+		      		str+= '</dl>';
+				}
+				$("#bookBrowserList").html(str);
+			}else{
+				$("#bookBrowserList").html("<div class='noData'><span>暂无相关数据</span></div>");
+			}
+		}
+	}
+	//是否会员登录
+	function memberLogin(){
+		var flag = "false";	
+		if(flag=="true"){
+		$.post("https://ebook.chinabuilding.com.cn/zbooklib/book/memberBrowser",function (data){
+			if(data && data.length>0){
+				var str="";			
+				data = $.parseJSON(data).data;				
+				for(var i =0; i<data.length; i++){
+					var title = data[i].Title;
+					var logfile ="https://ebook.chinabuilding.com.cn/"+ data[i].BookCoverPath;
+					var link = data[i].Link;
+					str+= '<dl class="col-md-12 text-center">';
+		            str+= '<dt class="p-sm"><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?SiteID=1&bookID='+data[i].BookID+'"><img  onerror="this.src=\'https://ebook.chinabuilding.com.cn/images/book_default.png\'"  src="'+logfile+'" style="max-height:116px;"/></a></dt>'; 
+		            str+= '<dd ><a href="https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?SiteID=1&bookID='+data[i].BookID+'">'+data[i].BookCode+':'+title+'</a></dd>';
+		      		str+= '</dl>';
+				}
+				$("#bookBrowserList").html(str);
+			}else{
+				$("#bookBrowserList").html("<div class='noData'><span>暂无相关数据</span></div>");
+			}
+		});
+		}
+	}
+	
+	
+	//申请采购
+	function applyPurchase(){
+		var dc={"BookID":"60159"};
+		Server.sendRequest("ApplyPurchaseBook.add",dc,function(response){
+			if(response.Status==1){
+				var html = "<div id='success' ><span>已向企业管理员发送采购请求!</span></div>";				
+				dialog_alert(html); 
+			}else{				
+				var a=Dialog.warn(response.Message);
+				a.setTitle("提示");
+				//Dialog.warn(response.Message,null,response.Status);
+			}
+		});
+	}
+	
+	
+	
+	$(function(){
+		$("a.buyer-btn").hover(function(){
+			$(this).toggleClass("cur");
+			$(".buyer-tips").toggleClass("hidden");
+		});	
+	})
+	
+	function relatedProductClick(link,id){
+		if (link) {
+			var dc={"ProductID":id};
+			Server.sendRequest("UnitProductStatFront.stat",dc,function(response){
+			});
+			var diag = new Dialog();
+			diag.width = 600;
+			diag.title = "提示";
+			diag.html = '您即将离开"国标电子书库"，前往第三方外部网站。请仔细确认外部网站的域名及可信度，注意您的隐私和信息安全。如有违法违规内容请通过"意见反馈"举报。您即将访问的链接是：'+link;
+			diag.cancelText="取消";
+			diag.okText="继续访问";
+			diag.onOk = function(){
+				window.open(link)
+			};
+			diag.onCancel=function(){
+				diag.close()
+			};
+			diag.show(); 
+		}
+	}
+	
+	function relatedUnitClick(link,id){
+		if (link) {
+			var dc={"UnitID":id};
+			Server.sendRequest("UnitProductStatFront.stat",dc,function(response){
+			});
+			var diag = new Dialog();
+			diag.width = 600;
+			diag.title = "提示";
+			diag.html = '您即将离开"国标电子书库"，前往第三方外部网站。请仔细确认外部网站的域名及可信度，注意您的隐私和信息安全。如有违法违规内容请通过"意见反馈"举报。您即将访问的链接是：'+link;
+			diag.cancelText="取消";
+			diag.okText="继续访问";
+			diag.onOk = function(){
+				window.open(link)
+			};
+			diag.onCancel=function(){
+				diag.close()
+			};
+			diag.show(); 
+		}
+	}
+	
+	
+	//提示框
+	function dialog_alert(html_str){
+		var diag = new Dialog();
+		diag.title = "提示";
+		diag.html = html_str;
+		diag.onOk = diag.close;
+		diag.show(); 	
+	}
+	
+    //分享
+    function goShareDetail(ele, method){
+        var title = document.title;
+        var sharePic = 'https://ebook.chinabuilding.com.cn/html/uploads/images/2016-05/2016052514475225063_s.jpg';
+        var shareUrl = "https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?SiteID=1&bookID=60159";
+        var sitename = '国标电子书库';
+        
+        var shareInfo = {
+            'title' : title,
+            'pic' : encodeURIComponent(sharePic),
+            'url' : encodeURIComponent(shareUrl),
+            'sitename' : sitename
+        }
+
+        var shareSite = {
+            "qfriends"  : "http://connect.qq.com/widget/shareqq/index.html?url={url}&desc={title}&pics={pic}&site={sitename}",
+            "tsina" : "http://service.weibo.com/share/share.php?appkey=2992571369&url={url}&title={title}&pic={pic}&source=&sourceUrl=&content=utf-8"
+        };
+
+        var url = shareSite[method].replace(/{url}/, shareInfo['url']).replace(/{title}/, shareInfo['title']).replace(/{pic}/, shareInfo['pic']).replace(/{sitename}/, shareInfo['sitename']);
+        $(ele).attr("href", url).attr("target", "_blank");
+
+        $('.fire_share').hide();
+    }
+</script>
+
+<script src="https://ebook.chinabuilding.com.cn/zbooklib/stat/front/stat.js" type="text/javascript"></script>
+<script>
+if(window._zcms_stat)_zcms_stat("SiteID=1&Dest=https://ebook.chinabuilding.com.cn/zbooklib/stat/dealer");
+</script>
+
+<!-- App=ZBOOKLIB(国标电子书库) 2.4.27378,CostTime=892,PublishDate=2026-08-04 21:23:59 -->
+</body>
+</html>

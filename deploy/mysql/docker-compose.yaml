@@ -1,0 +1,43 @@
+# 煤矿顶板灾变系统本地 MySQL 业务数据环境
+#
+# 运行位置：在 deploy/mysql 目录执行 docker compose up -d。
+# 首次启动时，sql/01_create_tables.sql 与 02_seed_data.sql 会被官方镜像
+# 自动执行到 coal_mine_db 数据库（按文件名字母序）。数据卷已存在时不会重复执行。
+#
+# 与 agent1/.env 保持一致：MYSQL_PORT=3307、MYSQL_PASSWORD 见 deploy/mysql/.env
+
+name: coal-mine-agents
+
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: coal-mine-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD:-agent1_dev}
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-coal_mine_db}
+      TZ: Asia/Shanghai
+    # 与 Python 连接配置保持一致，避免中文字段或日期时间在导入、查询时出现偏差
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --default-time-zone=+08:00
+      - --sql-mode=TRADITIONAL
+    ports:
+      # agent1/.env.example 默认使用 3307，避免和本机已有 MySQL 的 3306 端口冲突
+      - "${MYSQL_PORT:-3307}:3306"
+    volumes:
+      - coal_mine_mysql_data:/var/lib/mysql
+      # 只读挂载初始化 SQL，容器首次创建数据目录时会自动执行
+      - ./sql/01_create_tables.sql:/docker-entrypoint-initdb.d/01-create-tables.sql:ro
+      - ./sql/02_seed_data.sql:/docker-entrypoint-initdb.d/02-seed-data.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$${MYSQL_ROOT_PASSWORD} --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+volumes:
+  coal_mine_mysql_data:
