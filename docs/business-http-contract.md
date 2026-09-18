@@ -69,4 +69,4 @@ GET `/api/business/runs/{run_id}` 返回当前方案、输入快照编号、数�
 
 已实现的持久化用于单后端工作进程和本机SQLite。多实例分布式派工需使用共享业务账本、共同幂等协议另行验收。运行中审批恢复仍受原检查点后端能力限制，终态查询与反馈独立持久化。
 
-验证命令：`D:\python\python.exe -m unittest discover -s tests -p test_business_gateway.py`。专项测试包含真实本机HTTP往返、六节点资源读取、可信审批、显式通知、失败/超时、幂等及回执；不使用真实人员或设备作为测试目标。
+验证命令：`python -m unittest discover -s tests -p test_business_gateway.py`。专项测试包含真实本机HTTP往返、六节点资源读取、可信审批、显式通知、失败/超时、幂等及回执；不使用真实人员或设备作为测试目标。

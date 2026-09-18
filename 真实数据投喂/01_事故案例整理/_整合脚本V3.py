@@ -7,8 +7,9 @@ from pathlib import Path
 import yaml
 from collections import Counter
 
-BASE = Path(r"e:/编程系统/precode")
-MY = BASE / "agent1/真实数据投喂/01_事故案例整理"
+# 根据脚本位置定位发布包，不依赖开发者本机的绝对路径。
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+MY = PROJECT_ROOT / "真实数据投喂/01_事故案例整理"
 
 final_path = MY / "事故案例_真实报告FINAL.yaml"
 raw = yaml.safe_load(final_path.read_text(encoding="utf-8"))

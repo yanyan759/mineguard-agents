@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 import os, re
-base = r"E:\codexcreate\煤矿资料收集"
+base = os.path.dirname(os.path.abspath(__file__))
 def text_of(p):
     data = open(p, "rb").read()
     if data[:5] == b"%PDF-":

@@ -198,16 +198,16 @@ perception_warning
 Redis 必须先启动：
 
 ```powershell
-cd E:\编程系统\precode\agent1
+cd <项目目录>
 docker compose -f deploy/redis/docker-compose.yaml up -d
 $env:REDIS_URL = "redis://:agent1_dev@localhost:6380/0"
-D:\python\python.exe -m uvicorn api.server:app --host 0.0.0.0 --port 8000
+python -m uvicorn api.server:app --host 0.0.0.0 --port 8000
 ```
 
 前端：
 
 ```powershell
-cd E:\编程系统\precode\agent1\frontend
+cd <项目目录>/frontend
 npm.cmd install
 npm.cmd run dev -- --host 0.0.0.0
 ```
@@ -225,7 +225,7 @@ Compose 文件和环境变量模板应提交到源码仓库；Docker Desktop、�
 必须通过：
 
 ```powershell
-D:\python\python.exe -m unittest discover -s tests -p "test_*.py"
+python -m unittest discover -s tests -p "test_*.py"
 cd frontend
 npm.cmd run build
 ```

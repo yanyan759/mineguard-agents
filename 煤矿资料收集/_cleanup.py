@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 import os, re, html as htmllib
 
-BASE = r"E:\codexcreate\煤矿资料收集"
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 # 1) cleanup
 removals = [

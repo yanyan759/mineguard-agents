@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 import os, gzip
-base = r"E:\codexcreate\煤矿资料收集"
+base = os.path.dirname(os.path.abspath(__file__))
 files = [
  r"01_煤矿安全规程_顶板管理_冲击地压章节\2025版煤矿安全规程_全文_应急管理部.html",
  r"01_煤矿安全规程_顶板管理_冲击地压章节\应急管理部令第17号_公布令.html",

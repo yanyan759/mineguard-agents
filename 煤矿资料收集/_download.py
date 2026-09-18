@@ -2,7 +2,7 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _net import fetch
-BASE = r"E:\codexcreate\煤矿资料收集"
+BASE = os.path.dirname(os.path.abspath(__file__))
 u = "https://www.7-zip.org/a/7zr.exe"
 try:
     data, ctype = fetch(u, timeout=120)

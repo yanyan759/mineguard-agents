@@ -13,7 +13,7 @@
 
 ```powershell
 ./.venv/Scripts/python.exe -m pip install pyarrow==25.0.0
-./.venv/Scripts/python.exe scripts/replay_elkcreek.py --archive "C:/实际下载目录/elkcreek-e08af5c89a3ac440458d2ac93fe40eb7996a33ea.zip" --output output/validation/elkcreek
+./.venv/Scripts/python.exe scripts/replay_elkcreek.py --archive "downloads/elkcreek-e08af5c89a3ac440458d2ac93fe40eb7996a33ea.zip" --output output/validation/elkcreek
 ```
 
 macOS/Linux 将 Python 路径替换为 `./.venv/bin/python`。脚本读取档案内的原始事件 parquet 与事故标签，校验标签 SHA256 后生成回放结果、样本和来源清单。前端的 NIOSH 历史样本入口使用这些生成文件。档案必须包含 `data/raw/events/rocksigma_events/`、`ims_events/` 与 `burst_events.csv`；若上游分发内容调整，以官方数据获取说明为准，不使用空文件代替。

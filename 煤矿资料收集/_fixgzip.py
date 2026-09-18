@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 import os, gzip
-base = r"E:\codexcreate\煤矿资料收集"
+base = os.path.dirname(os.path.abspath(__file__))
 fixed, failed = [], []
 for cat in os.listdir(base):
     d = os.path.join(base, cat)

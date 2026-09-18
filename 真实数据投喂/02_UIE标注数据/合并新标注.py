@@ -9,11 +9,14 @@
 from pathlib import Path
 import csv
 import json
+import os
 import sys
 
-BASE = Path(r"e:/编程系统/precode")
-CSV_PATH = BASE / "任务成果" / "02_UIE标注数据" / "标注_合并_2026-08-17.csv"
-NEW_JSON = Path(r"C:/Users/HONOR/AppData/Local/Temp/claude/e-------precode/ffaf5a8d-6968-4c19-9235-6d1ed6279fd4/tasks/uie_35rows.json")
+# 默认使用发布包内的标注文件；外部新增批次通过环境变量传入，避免泄露本机路径。
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = PROJECT_ROOT / "真实数据投喂/02_UIE标注数据"
+CSV_PATH = Path(os.getenv("MINEGUARD_UIE_CSV", str(DATA_DIR / "标注_合并_2026-08-17.csv")))
+NEW_JSON = Path(os.getenv("MINEGUARD_UIE_NEW_JSON", str(DATA_DIR / "新增标注.json")))
 OUT_PATH = CSV_PATH  # 覆盖写回（内容增加）
 
 ENTITY_TYPES = {"地质构造", "支护设备", "顶板灾变", "监测指标", "处置规程", "岗位角色", "巷道分区"}

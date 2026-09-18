@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 import os
 from pypdf import PdfReader
-BASE = r"E:\codexcreate\煤矿资料收集\07_监测阈值标定_研究文献"
+BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "07_监测阈值标定_研究文献")
 for f in ["基于b值的巷道冲击地压预警分析_高丁丁_矿业装备2021_全文.pdf", "千秋煤矿冲击地压综合预警技术研究_李学龙_中国矿大硕士2015_全文.pdf"]:
     p = os.path.join(BASE, f)
     r = PdfReader(p)

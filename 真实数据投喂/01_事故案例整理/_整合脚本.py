@@ -3,11 +3,14 @@
 运行后生成 事故案例_真实报告FINAL.yaml（17 份），并校验完整性。
 """
 from pathlib import Path
+import os
 import yaml, json
 
-BASE = Path(r"e:/编程系统/precode")
-MY = BASE / "agent1/真实数据投喂/01_事故案例整理"
-CODE = BASE / "任务成果/01_事故案例整理"
+# 根据脚本位置定位发布包；外部整理资料通过环境变量显式传入，避免绑定某台电脑的目录。
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+MY = PROJECT_ROOT / "真实数据投喂/01_事故案例整理"
+REFERENCE_ROOT = Path(os.getenv("MINEGUARD_REFERENCE_DATA_DIR", str(PROJECT_ROOT.parent / "任务成果")))
+CODE = REFERENCE_ROOT / "01_事故案例整理"
 
 # 我的 case_id -> codex case_id（按矿名一一对应，两套编号体系不同，必须显式映射）
 MINE_TO_CODEX = {
