@@ -1,0 +1,60 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+*.py[cod]
+*.log
+.chrome-verify/
+.scratch/
+.tmp_pdf/
+output/
+updated/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.db
+*.sqlite
+*.sqlite3
+Thumbs.db
+desktop.ini
+
+# 本机临时浏览器调试脚本与构建缓存
+.verify_*.py
+*.tsbuildinfo
+
+# 大型研究档案和需从出版方获取的学位论文；获取方式见 docs/external-data.md
+/煤矿资料收集/07_监测阈值标定_研究文献/ElkCreek矿震数据集_NIOSH开源.zip
+/煤矿资料收集/07_监测阈值标定_研究文献/千秋煤矿冲击地压综合预警技术研究_李学龙_*
+
+# 仓库外的真实语料、本机整理产物和未脱敏标注
+/updated/optional_corpus/
+/煤矿资料收集/**/__pycache__/
+/真实数据投喂/**/__pycache__/
+/真实数据投喂/01_事故案例整理/事故案例_真实报告*.yaml
+/真实数据投喂/01_事故案例整理/codex_URL映射.json
+/真实数据投喂/02_UIE标注数据/标注示例_真实报告*
+
+# RAGFlow 真实语料目录只保留分类 README，资料通过外部路径导入
+/deploy/ragflow/docs/real/**/*.pdf
+/deploy/ragflow/docs/real/**/*.doc
+/deploy/ragflow/docs/real/**/*.docx
+/deploy/ragflow/docs/real/**/*.html
+/deploy/ragflow/docs/real/**/*.htm
+/deploy/ragflow/docs/real/**/*.txt
+/deploy/ragflow/docs/real/**/*.zip
+
+# 资料索引目录中的原始下载文件不进入公开仓库
+/煤矿资料收集/**/*.pdf
+/煤矿资料收集/**/*.doc
+/煤矿资料收集/**/*.docx
+/煤矿资料收集/**/*.html
+/煤矿资料收集/**/*.htm
+/煤矿资料收集/**/*.txt
+/煤矿资料收集/**/*.zip
+/真实数据投喂/**/*.csv
+/真实数据投喂/**/*.jsonl
+!/真实数据投喂/02_UIE标注数据/标注模板_空.csv

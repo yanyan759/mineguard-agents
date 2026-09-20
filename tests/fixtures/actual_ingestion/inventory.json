@@ -1,0 +1,21 @@
+{
+  "personnel": [
+    {
+      "resource_id": "p1",
+      "name": "监测值班员",
+      "available": 3,
+      "required": 1,
+      "unit": "人"
+    }
+  ],
+  "support_materials": [],
+  "equipment": [
+    {
+      "resource_id": "e1",
+      "name": "巡检仪",
+      "available": 2,
+      "required": 1,
+      "unit": "台"
+    }
+  ]
+}

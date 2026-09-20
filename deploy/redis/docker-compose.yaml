@@ -1,0 +1,14 @@
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    container_name: coal-mine-redis
+    ports:
+      - "6380:6379"          # 宿主 6380 → 容器 6379（避开 6379 常见占用）
+    environment:
+      REDIS_ARGS: "--requirepass agent1_dev --appendonly yes"   # 密码 + AOF 持久化
+    volumes:
+      - coal_mine_redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  coal_mine_redis_data:

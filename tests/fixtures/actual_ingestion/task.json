@@ -1,0 +1,378 @@
+{
+  "input_type": "raw_events",
+  "mine_id": "ACCEPT-UI-0916",
+  "roadway_id": "RDW-ACCEPT",
+  "area": "浏览器验收测区",
+  "source": "软件验收输入，非矿井实测",
+  "method_id": "statistics-v1",
+  "window_start": "2026-09-16T00:00:00Z",
+  "window_end": "2026-09-16T01:00:00Z",
+  "events": [
+    {
+      "event_id": "e1",
+      "timestamp": "2026-09-16T00:00:00Z",
+      "energy": 100,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e2",
+      "timestamp": "2026-09-16T00:01:00Z",
+      "energy": 200,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e3",
+      "timestamp": "2026-09-16T00:02:00Z",
+      "energy": 300,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e4",
+      "timestamp": "2026-09-16T00:03:00Z",
+      "energy": 400,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e5",
+      "timestamp": "2026-09-16T00:04:00Z",
+      "energy": 500,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e6",
+      "timestamp": "2026-09-16T00:05:00Z",
+      "energy": 600,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e7",
+      "timestamp": "2026-09-16T00:06:00Z",
+      "energy": 700,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e8",
+      "timestamp": "2026-09-16T00:07:00Z",
+      "energy": 800,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e9",
+      "timestamp": "2026-09-16T00:08:00Z",
+      "energy": 900,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e10",
+      "timestamp": "2026-09-16T00:09:00Z",
+      "energy": 1000,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e11",
+      "timestamp": "2026-09-16T00:10:00Z",
+      "energy": 1100,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e12",
+      "timestamp": "2026-09-16T00:11:00Z",
+      "energy": 1200,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e13",
+      "timestamp": "2026-09-16T00:12:00Z",
+      "energy": 1300,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e14",
+      "timestamp": "2026-09-16T00:13:00Z",
+      "energy": 1400,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e15",
+      "timestamp": "2026-09-16T00:14:00Z",
+      "energy": 1500,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e16",
+      "timestamp": "2026-09-16T00:15:00Z",
+      "energy": 1600,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e17",
+      "timestamp": "2026-09-16T00:16:00Z",
+      "energy": 1700,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e18",
+      "timestamp": "2026-09-16T00:17:00Z",
+      "energy": 1800,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e19",
+      "timestamp": "2026-09-16T00:18:00Z",
+      "energy": 1900,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e20",
+      "timestamp": "2026-09-16T00:19:00Z",
+      "energy": 2000,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e21",
+      "timestamp": "2026-09-16T00:20:00Z",
+      "energy": 2100,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e22",
+      "timestamp": "2026-09-16T00:21:00Z",
+      "energy": 2200,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e23",
+      "timestamp": "2026-09-16T00:22:00Z",
+      "energy": 2300,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e24",
+      "timestamp": "2026-09-16T00:23:00Z",
+      "energy": 2400,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e25",
+      "timestamp": "2026-09-16T00:24:00Z",
+      "energy": 2500,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e26",
+      "timestamp": "2026-09-16T00:25:00Z",
+      "energy": 2600,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e27",
+      "timestamp": "2026-09-16T00:26:00Z",
+      "energy": 2700,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e28",
+      "timestamp": "2026-09-16T00:27:00Z",
+      "energy": 2800,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e29",
+      "timestamp": "2026-09-16T00:28:00Z",
+      "energy": 2900,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e30",
+      "timestamp": "2026-09-16T00:29:00Z",
+      "energy": 3000,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e31",
+      "timestamp": "2026-09-16T00:30:00Z",
+      "energy": 3100,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e32",
+      "timestamp": "2026-09-16T00:31:00Z",
+      "energy": 3200,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e33",
+      "timestamp": "2026-09-16T00:32:00Z",
+      "energy": 3300,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e34",
+      "timestamp": "2026-09-16T00:33:00Z",
+      "energy": 3400,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e35",
+      "timestamp": "2026-09-16T00:34:00Z",
+      "energy": 3500,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e36",
+      "timestamp": "2026-09-16T00:35:00Z",
+      "energy": 3600,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e37",
+      "timestamp": "2026-09-16T00:36:00Z",
+      "energy": 3700,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e38",
+      "timestamp": "2026-09-16T00:37:00Z",
+      "energy": 3800,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e39",
+      "timestamp": "2026-09-16T00:38:00Z",
+      "energy": 3900,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e40",
+      "timestamp": "2026-09-16T00:39:00Z",
+      "energy": 4000,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e41",
+      "timestamp": "2026-09-16T00:40:00Z",
+      "energy": 4100,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e42",
+      "timestamp": "2026-09-16T00:41:00Z",
+      "energy": 4200,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e43",
+      "timestamp": "2026-09-16T00:42:00Z",
+      "energy": 4300,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e44",
+      "timestamp": "2026-09-16T00:43:00Z",
+      "energy": 4400,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e45",
+      "timestamp": "2026-09-16T00:44:00Z",
+      "energy": 4500,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e46",
+      "timestamp": "2026-09-16T00:45:00Z",
+      "energy": 4600,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e47",
+      "timestamp": "2026-09-16T00:46:00Z",
+      "energy": 4700,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e48",
+      "timestamp": "2026-09-16T00:47:00Z",
+      "energy": 4800,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e49",
+      "timestamp": "2026-09-16T00:48:00Z",
+      "energy": 4900,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e50",
+      "timestamp": "2026-09-16T00:49:00Z",
+      "energy": 5000,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e51",
+      "timestamp": "2026-09-16T00:50:00Z",
+      "energy": 5100,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e52",
+      "timestamp": "2026-09-16T00:51:00Z",
+      "energy": 5200,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e53",
+      "timestamp": "2026-09-16T00:52:00Z",
+      "energy": 5300,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e54",
+      "timestamp": "2026-09-16T00:53:00Z",
+      "energy": 5400,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e55",
+      "timestamp": "2026-09-16T00:54:00Z",
+      "energy": 5500,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e56",
+      "timestamp": "2026-09-16T00:55:00Z",
+      "energy": 5600,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e57",
+      "timestamp": "2026-09-16T00:56:00Z",
+      "energy": 5700,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e58",
+      "timestamp": "2026-09-16T00:57:00Z",
+      "energy": 5800,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e59",
+      "timestamp": "2026-09-16T00:58:00Z",
+      "energy": 5900,
+      "energy_unit": "J"
+    },
+    {
+      "event_id": "e60",
+      "timestamp": "2026-09-16T00:59:00Z",
+      "energy": 6000,
+      "energy_unit": "J"
+    }
+  ],
+  "missing_rate": 0,
+  "b_method": {
+    "method": "energy_mle",
+    "minimum_energy_j": 100,
+    "minimum_samples": 50
+  }
+}
