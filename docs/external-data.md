@@ -2,6 +2,8 @@
 
 源码仓库包含启动六 Agent、运行七个演示场景、上传实际资料和执行自动化测试所需的代码与配置。以下大型资料按需从原始来源获取，不是后端启动的前置依赖，也不随源码仓库分发。
 
+公开仓库、固定版本和可选 Release 附件的边界见 [公开仓库与 Release 分发说明](release-and-data-distribution.md)。
+
 ## 煤矿参考资料
 
 公开参考资料的下载索引位于 [`docs/public-data-manifest.json`](public-data-manifest.json) 和 [`煤矿资料收集/00_总索引README.md`](../煤矿资料收集/00_总索引README.md)。索引只提供来源、版本和用途线索；下载前请确认出版方授权、访问条件和资料适用范围。下载后的文件应放在仓库外，并通过 `MINEGUARD_SOURCE_CORPUS_DIR` / `MINEGUARD_CORPUS_DIR` 接入 RAGFlow。

@@ -885,6 +885,8 @@ Redis Compose 当前使用 latest。长期严格复现需在验证后固定镜�
 
 保留源码、前端 lockfile、依赖快照、部署配置、模板和必要 fixture。大型论文、标准全文、事故报告和矿方资料通过来源索引按需获取，不默认进入源码下载包。排除 .env、虚拟环境、node_modules、dist、浏览器验证配置、日志、会话附件和数据库账本。
 
+公开仓库与大型资料的边界、Release 的作用、附件授权要求和评审者复现路径见 [公开仓库与 Release 分发说明](docs/release-and-data-distribution.md)。Release 是固定版本和可选资料附件，不是启动服务的额外依赖；没有大型附件时，源码仓库和版本标签即可完成复现。
+
 .gitignore 不会清除已经跟踪的敏感内容，发布前检查实际文件清单。
 
 `tests/fixtures/` 保留小型脱敏演示数据，保证无外部语料也能启动。`deploy/ragflow/docs/real/` 只保留可选语料目录说明；需要 RAGFlow 真实资料时，按 [外部研究资料说明](docs/external-data.md) 和来源索引下载并通过 `MINEGUARD_CORPUS_DIR` 配置。`.gitignore` 不会清除已经跟踪的敏感内容，发布前必须检查实际文件清单。
@@ -922,6 +924,7 @@ Redis Compose 当前使用 latest。长期严格复现需在验证后固定镜�
 - [煤矿安全资料索引](煤矿资料收集/00_总索引README.md)
 - [业务 HTTP 契约](docs/business-http-contract.md)
 - [公开参数与数据来源](docs/public-mine-parameter-evidence-2026-09-12.md)
+- [公开仓库与 Release 分发说明](docs/release-and-data-distribution.md)
 - [现场校准准备](docs/field-calibration-readiness-2026-09-12.md)
 - [软件验证记录](docs/software-gap-verification-2026-09-12.md)
 - [证据来源核对](docs/evidence-source-verification-2026-09-12.md)
