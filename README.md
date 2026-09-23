@@ -309,6 +309,29 @@ docker compose -f deploy/redis/docker-compose.yaml exec redis redis-cli -a agent
 
 最后一条应返回 PONG。容器 running 只表示进程存在，PING 可进一步确认 Redis 响应。命令使用仓库默认演示密码。
 
+这一步不要求用户预先准备 Redis 镜像。Compose 文件中的
+`redis/redis-stack-server:latest` 是镜像地址，不是仓库内的二进制文件：
+
+- 如果该镜像已经存在于本机，`up -d` 直接复用本地镜像，不会重复下载；
+- 如果本机没有镜像，`up -d` 会从配置的容器镜像仓库自动拉取，然后创建
+  `coal-mine-redis` 容器和 `coal_mine_redis_data` 数据卷；
+- GitHub ZIP 不包含 Docker Desktop、镜像缓存或数据卷，用户只需安装并启动
+  Docker Desktop（Linux 容器模式），Docker Compose 会处理镜像和容器创建；
+- 若网络受限，可先执行 `docker compose -f deploy/redis/docker-compose.yaml pull`
+  查看拉取错误，再配置 Docker Desktop 的镜像加速或网络代理。镜像拉取完成后，
+  重新执行 `up -d` 即可。没有 Docker 引擎时会出现
+  `dockerDesktopLinuxEngine` 管道不存在，这不是项目代码或前端故障。
+
+可用下面的命令确认 Compose 实际使用的镜像和容器状态：
+
+```powershell
+docker image inspect redis/redis-stack-server:latest --format '{{.Id}}'
+docker compose -f deploy/redis/docker-compose.yaml ps
+```
+
+默认演示版只需要 Redis Stack。MySQL、Neo4j、RAGFlow 和 Ollama 的镜像属于可选
+外部服务，第一次启动七个演示场景和 README 示例输入不需要下载或配置它们。
+
 ### 7.5 启动后端
 
 在项目根目录运行，并保持终端打开：
@@ -865,6 +888,13 @@ Get-NetTCPConnection -LocalPort 5173 -State Listen | Select-Object LocalAddress,
 ### 17.2 如何分享 Docker 环境
 
 GitHub 分享 Compose、配置模板和说明。用户安装 Docker 后拉取镜像，不需要你的 Docker Desktop 程序、容器缓存和运行卷。
+
+因此，发布仓库时不需要把你电脑里的镜像文件上传到 GitHub。用户执行第 7.4 节的
+`docker compose ... up -d` 后，Compose 会优先使用本地已有的
+`redis/redis-stack-server:latest`；本地没有时自动下载同名镜像。只有在用户所在网络
+无法访问镜像仓库时，才需要先配置 Docker Desktop 的镜像加速/代理，或由管理员提供
+离线镜像包，再运行同一条 Compose 命令。Compose 文件、端口、密码和健康检查命令
+已经随源码提供，用户不需要知道你本机的镜像缓存位置。
 
 Redis Compose 当前使用 latest。长期严格复现需在验证后固定镜像版本或 digest；直接依赖快照与 latest 镜像不等于环境完全锁定。
 
